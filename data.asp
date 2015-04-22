@@ -11,31 +11,7 @@
             </div>
         </div>
     </div>
-    <div class="container content">
-        <div class="row search-bar">
-          <div class="col-md-5 col-md-offset-1 border-right">
-            <h4>Search for Drilling Rigs:</h4>
-                <form method="post" action="search.asp" class="form-inline">
-                    <div class="form-group input-group">
-                        <select class="form-control" name="searchtype">
-                            <option value="loc"> by Location </option>
-                            <option value="con"> by Contractor </option>
-                            <option value="op"> by Operator </option>
-                        </select>
-                        <span class="input-group-btn">
-                        <input class="btn search-btn" type="submit" value="" />
-                        </span> </div>
-                </form>
-            </div>
-        
-            <div class="col-md-4 col-md-offset-1">
-                <div>
-               
-                    <a href="#" class="page-scroll btn btn-xl btn-blk" target="_blank">View Interactive Rig Locator Map</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    
     <div class="container content">
         <div class="row">
             <div class="col-md-9">
@@ -78,6 +54,26 @@
                     <p><a href="/service.asp">Click here</a> for important information about <em>Rig Locator</em> service rig data.</p>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="container content">
+        <div class="row search-bar">
+          <div class="col-md-6 col-md-offset-3">
+            <h4>Search for Drilling Rigs:</h4>
+                <form method="post" action="search.asp" class="form-inline">
+                    <div class="form-group input-group">
+                        <select class="form-control" name="searchtype">
+                            <option value="loc"> by Location </option>
+                            <option value="con"> by Contractor </option>
+                            <option value="op"> by Operator </option>
+                        </select>
+                        <span class="input-group-btn">
+                        <input class="btn search-btn" type="submit" value="" />
+                        </span> </div>
+                </form>
+            </div>
+        
+            
         </div>
     </div>
 </section>

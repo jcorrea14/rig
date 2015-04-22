@@ -80,7 +80,7 @@
                                 <li class="hidden"> <a href="#page-top"></a> </li>
                                 <li> <a href="#">My Profile</a> </li>
                                 <li> <a href="https://secure.junewarren-nickles.com/corp-accounts.aspx" target="_blank">Corporate Accounts</a> </li>
-                                <li> <a class="page-scroll" href="#">About Us</a> </li>
+                                <li> <a href="#">About Us</a> </li>
 						  <li> <a href="#">Contact Us</a> </li>
                             </ul>
                           </div>
@@ -107,22 +107,22 @@
                       <ul class="nav navbar-nav navbar-right navbar-home">
                         <li class="hidden"> <a href="#page-top"></a> </li>
                         
-                        <li> <a class="page-scroll" href="../data.asp">Rig Locator Data</a> </li>
-				    <li> <a class="page-scroll" href="#">Rig Locator Map</a> </li>
+                        <li> <a class="page-scroll" href="../data.asp">Rig Data</a> </li>
+				    <li> <a class="page-scroll" href="#">Rig Map</a> </li>
                         <li> <a class="page-scroll" href="alerts.asp">Email Alerts</a> </li>
                         <li class="dropdown"> <a class="page-scroll" href="#team" class="dropdown-toggle" data-toggle="dropdown">Drilling Rig Reports</a>
                               <ul class="dropdown-menu">
-                                <li><a href="#">Contractors' Summary</a></li>
-                                <li><a href="#">Top Operators</a></li>
-                                <li><a href="#">Depth Activity</a></li>
-                                <li><a href="#">Planned Drilling Projects</a></li>
-                                <li><a href="#">Drilling Activity Surveys</a></li>
-						  <li><a href="#">Western Canada Drilling Chart</a></li>
-						  <li><a href="#">Contractor Utilization Summary</a></li>
-						  <li><a href="#">Download and print reports</a></li>
+                                <li><a href="report.asp?report=rig%2Fsummary%2Ehtml">Contractors' Summary</a></li>
+                                <li><a href="/report.asp?report=rig%2Foperators%2Ehtml">Top Operators</a></li>
+                                <li><a href="/report.asp?report=rig%2Fdepth%2Ehtml">Depth Activity</a></li>
+                                <li><a href="/report.asp?report=rig%2Fprojects%2Ehtml">Planned Drilling Projects</a></li>
+                                <li><a href="/report.asp?report=rig%2Fdr-activity%2Ehtml">Drilling Activity Surveys</a></li>
+						  <li><a href="/report.asp?report=rig%2Fsurvey%2Ehtml">Western Canada Drilling Chart</a></li>
+						  <li><a href="/report.asp?report=rig%2Futilization%2Ehtml">Contractor Utilization Summary</a></li>
+						  <li><a href="/download.asp">Download and print reports</a></li>
                             </ul>
                           </li>
-                        <li> <a class="page-scroll" href="#">Drilling Summary</a> </li>
+                        <li> <a href="../summary.asp">Drilling Summary</a> </li>
                         
                     </ul>
                   </div>

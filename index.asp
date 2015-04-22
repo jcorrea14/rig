@@ -38,6 +38,7 @@
                             <li class="hidden"> <a href="#page-top"></a> </li>
                             <li> <a href="#">My Profile</a> </li>
                             <li> <a href="https://secure.junewarren-nickles.com/corp-accounts.aspx" target="_blank">Corporate Accounts</a> </li>
+                            <li> <a href="#">About Us</a> </li>
                             <li> <a href="#">Contact Us</a> </li>
                         </ul>
                     </div>
@@ -108,18 +109,18 @@
         </div>
         <div class="row text-center">
             <div class="col-md-4 col-md-offset-2"> <span class="feature-icon-1"> </span>
-                <h3 class="section-subheading text-muted">Control of the map is in your hands with our advanced search filters and intuitive toolkit.</h3>
+                <p class="lead text-muted">Control of the map is in your hands with our advanced search filters and intuitive toolkit.</h3>
             </div>
             <div class="col-md-4"> <span class="feature-icon-2"></span>
-                <h3 class="section-subheading text-muted"> Save your search parameters for use another day. </h3>
+                <p class="lead text-muted"> Save your search parameters for use another day. </h3>
             </div>
         </div>
         <div class="row text-center">
             <div class="col-md-4 col-md-offset-2"> <span class="feature-icon-3"></span>
-                <h3 class="section-subheading text-muted">Search for rigs any way you like. You can search by location, name, LSD coordinates, NTS coordinates, or within a chosen radius.</h3>
+                <p class="lead text-muted">Search for rigs any way you like. You can search by location, name, LSD coordinates, NTS coordinates, or within a chosen radius.</h3>
             </div>
             <div class="col-md-4"> <span class="feature-icon-4"> </span>
-                <h3 class="section-subheading text-muted"> Our drilling reports are concise and up-to-date. The data is gathered every day from government and industry sources, and cleaned of bugs and redundancies. </h3>
+                <p class="lead text-muted"> Our drilling reports are concise and up-to-date. The data is gathered every day from government and industry sources, and cleaned of bugs and redundancies. </h3>
             </div>
         </div>
     </div>
