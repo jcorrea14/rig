@@ -1,6 +1,9 @@
-<% title = "Rig Locator Drilling Rig E-mail Alerts" %>
-<!--#include virtual="/include/nav.inc"-->
-<% = nauthbeacon %>
+<%@ Page
+    MasterPageFile="/master/page.master"
+    Title="Rig Locator Dashboard"
+    %>
+
+<asp:Content runat="server" ContentPlaceholderId="page_content">
 <section class="mainContent">
     <div class="container">
         <div class="row">
@@ -133,4 +136,4 @@
     </div>
 </section>
 
-<!--#include virtual="/include/footer.inc" -->
+</asp:Content>
