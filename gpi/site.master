@@ -1,0 +1,264 @@
+<%@ Master Language="C#" AutoEventWireup="true"%>
+<%@ Register Src="/common/footer/footer.ascx" TagName="footer" TagPrefix="jwn" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+  <title>Rig Locator | JuneWarren-Nickle's Energy Group</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="/common/footer/footer121109.css"  />
+  <link rel="stylesheet" type="text/css" href="/include/style-140416.css"  />
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <asp:contentplaceholder id="page_css" runat="server" />
+  <script type="text/javascript">
+    (function() {
+       var useSSL = 'https:' == document.location.protocol;
+       var src = (useSSL ? 'https:' : 'http:') +
+                  '//www.googletagservices.com/tag/js/gpt.js';
+       document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+     })();
+  </script>
+  <script type="text/javascript">
+    googletag.defineSlot('/4326737/JWNWS_JWN_jwn-site_jwn-section_jwn-subsection_728x90_S1_RON_JWN-network', [728, 90], 'div-gpt-ad-1329923512779-13').addService(googletag.pubads())
+    .setTargeting("publisher", "JWN")
+    .setTargeting("site", "RIGW")
+    .setTargeting("section", "homepage");
+
+    googletag.defineSlot('/4326737/JWNWS_JWN_jwn-site_jwn-section_jwn-subsection_228x90_S1_RON_JWN-network', [228, 90], 'div-gpt-ad-1329923512779-9').addService(googletag.pubads())
+    .setTargeting("publisher", "JWN")
+    .setTargeting("site", "RIGW")
+    .setTargeting("section", "homepage");
+
+    googletag.defineSlot('/4326737/JWNWS_JWN_jwn-site_jwn-section_jwn-subsection_300x250_S1_RON_JWN-network', [300, 250], 'div-gpt-ad-1329923512779-10').addService(googletag.pubads())
+    .setTargeting("publisher", "JWN")
+    .setTargeting("site", "RIGW")
+    .setTargeting("section", "homepage");
+
+    googletag.defineSlot('/4326737/JWNWS_JWN_jwn-site_jwn-section_jwn-subsection_160x600_S1_RON_JWN-network', [160, 600], 'div-gpt-ad-1329923512779-3').addService(googletag.pubads())
+    .setTargeting("publisher", "JWN")
+    .setTargeting("site", "RIGW")
+    .setTargeting("section", "homepage");
+
+    googletag.defineSlot('/4326737/JWNWS_JWN_jwn-site_jwn-section_jwn-subsection_300x120_S1_RON_JWN-network', [300, 120], 'div-gpt-ad-1335301288326-2').addService(googletag.pubads())
+    .setTargeting("publisher", "JWN")
+    .setTargeting("site", "RIGW")
+    .setTargeting("section", "homepage");
+
+    googletag.pubads().enableSyncRendering();
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  </script>
+  <script type="text/javascript">function load() { }</script>
+</head>
+<body onload="load();">
+  <div style="text-align: center; ">
+    <div id="body-content">
+      <a name="top"></a>
+      <div class="banner">
+        <div style="width: 728px; float: left;">
+          <!-- JWNWS_JWN_jwn-site_jwn-section_jwn-subsection_728x90_S1_RON_JWN-network -->
+          <div id='div-gpt-ad-1329923512779-13' style='width:728px; height:90px;'>
+            <script type='text/javascript'>
+              googletag.display('div-gpt-ad-1329923512779-13');
+            </script>
+          </div>
+        </div>
+        <div style="width: 228px; float: right;">
+          <!-- JWNWS_JWN_jwn-site_jwn-section_jwn-subsection_228x90_S1_RON_JWN-network -->
+          <div id='div-gpt-ad-1329923512779-9' style='width:228px; height:90px;'>
+            <script type='text/javascript'>
+              googletag.display('div-gpt-ad-1329923512779-9');
+            </script>
+          </div>
+        </div>
+        <div style="clear: both;"></div>
+      </div>
+      <div id="banner-block">
+        <div id="last-update">
+          Last update:
+          <!--#include virtual="/include/update.inc"-->
+        </div>
+      </div>
+      <div id="upper-menu" class="menu-text">
+        <a href="/">Home</a> |
+        <a href="http://www.junewarren-nickles.com/new-membership/rig.html">Subscribe</a> |
+        <a href="/common/nauth/profile.asp?publication=Rig+Locator&pub=RIG%5FANY">My Profile</a> |
+        <a href="https://secure.junewarren-nickles.com/corp-accounts.aspx">Corporate Accounts</a> |
+        <a href="/help.asp">Help</a>
+      </div>
+
+  
+      <div>
+        <table cellspacing="0" cellpadding="0" border="0" width="100%">
+          <tr valign="top">
+            <td id="nav-left" width="165">
+              <div style="text-align: center; padding: 4px;">
+                <!--#include virtual="/common/include/mag-cover.inc"-->
+              </div>
+
+              <div class="nav-section" style="margin-top: 0px;">
+                SITE NAVIGATION
+              </div>
+
+              <div class="nav">
+                <a href="/">Home</a>
+              </div>
+              
+              <div class="nav">
+                <a href="http://www.junewarren-nickles.com">Publications and Services</a>
+              </div>
+
+              <div class="nav">
+                <a href="/common/advertise.asp">Advertise</a>
+              </div>
+
+              <div class="nav">
+                <a href="/common/about.asp">About Us</a>
+              </div>
+
+              <div class="nav">
+                <a href="/common/contact.asp">Contact Us</a>
+              </div>
+
+              <div class="nav-section">
+                DRILLING RIG REPORTS
+              </div>
+
+              <div class="nav">
+                <a href=
+                   "/report.asp?report=rig%2Fsummary%2Ehtml">Contractors'
+                Summary</a>
+              </div>
+
+              <div class="nav">
+                <a href="/report.asp?report=rig%2Foperators%2Ehtml">Top
+                Operators</a>
+              </div>
+
+              <div class="nav">
+                <a href="/report.asp?report=rig%2Fdepth%2Ehtml">Depth
+                Activity</a>
+              </div>
+
+              <div class="nav">
+                <a href="/report.asp?report=rig%2Fprojects%2Ehtml">Planned
+                Drilling Projects</a>
+              </div>
+              <div class="nav">
+                <a href="/report.asp?report=rig%2Fdr%2Dactivity%2Ehtml">
+                Drilling Activity Surveys</a>
+              </div>
+
+              <div class="nav">
+                <a href="/report.asp?report=rig%2Fsurvey%2Ehtml">Western
+                Canada Drilling Chart</a>
+              </div>
+
+              <div class="nav">
+                <a href=
+                   "/report.asp?report=rig%2Futilization%2Ehtml">
+                Contractor Utilization Summary</a>
+              </div>
+              
+              <div class="nav">
+                <a href="/download.asp">Download and print reports</a>
+              </div>
+
+              <div class="nav-section">
+                OTHER INFORMATION
+              </div>
+              <div class="nav">
+                <a href="http://www.cossd.com/">COSSD Buyers' Guide</a>
+              </div>
+
+              <div class="nav">
+                <a href="http://www.datacentralcanada.com/licences.asp">Daily Well Licences</a>
+              </div>
+
+              <div class="nav">
+                <a href="/common/toolkit.asp">Energy Toolkit</a>
+              </div>
+
+              <div class="nav">
+                <a href="http://events.nickles.com/Events/">Events Calendar</a>
+              </div>
+
+              <div class="nav">
+                <a href="http://www.junewarren-nickles.com/history/">Oilpatch History</a>
+              </div>
+              
+              <div class="figure">
+                <a href="http://www.psac.ca" target="_blank"><img
+                src="/graphics/psac-small.png" alt="PSAC" border="0" /></a>
+              </div>
+            </td>
+            <td>
+              <div id="content-area">
+                <asp:contentplaceholder id="page_content" runat="server" />
+                <div style="padding: 8px 0;">
+                  <!-- JWNWS_JWN_jwn-site_jwn-section_jwn-subsection_300x250_S1_RON_JWN-network -->
+                  <div id='div-gpt-ad-1329923512779-10' style='width:300px; height:250px;'>
+                    <script type='text/javascript'>
+                      googletag.display('div-gpt-ad-1329923512779-10');
+                    </script>
+                  </div>
+                </div>
+              </div>
+            </td>
+            <td id="nav-right" style="width: 176px;">
+              <div class="right-nav-block">
+                <div class="toc">
+                  <a href="/alerts.asp">E-mail Alerts</a>
+                </div>
+                <div class="toc">
+                  <a href="http://www.datacentralcanada.com/licences.asp">Daily Well Licences</a>
+                </div>
+                <div class="toc">
+                  <a href="/summary.asp">Drilling Summary</a>
+                </div>
+                <div class="toc">
+                  <a href="/news.asp?article=rig%2Fnews%2Findex%2Ehtml">Rig News</a>
+                </div>
+                <div class="toc">
+                  <a href="/news.asp?article=rig%2Fmembers.html">Contractor Directory</a>
+                </div>
+                <div class="toc">
+                  <a href="/zoom.asp?img=graphics/psacmap_big.png&amp;title=PSAC+Area+Map">PSAC Area Map</a>
+                </div>
+              </div>
+              <div class="banner">
+                <!-- JWNWS_JWN_jwn-site_jwn-section_jwn-subsection_160x600_S1_RON_JWN-network -->
+                <div id='div-gpt-ad-1329923512779-3' style='width:160px; height:600px;'>
+                  <script type='text/javascript'>
+                    googletag.display('div-gpt-ad-1329923512779-3');
+                  </script>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+      <div id="lower-menu" class="menu-text">
+        <a href="/">Home</a> |
+        <a href="/howtosubscribe.asp">Subscribe</a> |
+        <a href="/common/contact.asp">Contact Us</a> |
+        <a href="/help.asp">Help</a>
+      </div>
+      <div>
+        <jwn:footer ID="jwnfooter" runat="server" />
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+  document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+  </script>
+  <script type="text/javascript">
+  try {
+    var pageTracker = _gat._getTracker("UA-6217271-15");
+    pageTracker._trackPageview();
+  } catch(err) {}
+  </script>
+  <asp:contentplaceholder id="page_js" runat="server" />
+</body>
+</html>

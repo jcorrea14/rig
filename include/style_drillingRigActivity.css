@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* CSS Document */
+
+a:link {color:#FFF; text-decoration:none; border:0px}
+a:visited {color:#FFF; text-decoration:none;}
+a:hover {color:#C8181B; text-decoration:none;}
+a:active {text-decoration: none;}
+
+body {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+}
+
+tr {
+	padding:0;
+	margin:0;
+}
+
+td {
+	padding:2px 16px;
+	font-size:11px;
+}
+
+.heading-block {
+	width:400px;
+	font-size:15px;
+	font-weight:bold;
+	text-transform:uppercase;
+	padding:25px 0 0 20px;
+	background:#C8181B scroll none;
+	color:#fff;
+	border:2px solid #000;
+	border-bottom:0px solid #000;
+}
+
+.nd-par {
+	width:400px;
+	font-size:10px;
+	text-align:left;
+	padding:0 0 5px 20px;
+	background:#C8181B scroll none;
+	color:#fff;
+	border-left:2px solid #000;
+	border-right:2px solid #000;
+}
+
+.header-left {
+	text-transform:uppercase;
+	font-weight:bold;
+	border-top:1px solid #4D4D4D;
+}
+
+.header-right {
+	text-align: right;
+	font-weight: bold;
+}
+
+.count {
+	
+}
+
+.percent {
+	
+}
+
+.count-bold {
+	text-transform:uppercase;
+	font-weight:bold;
+	border-top:1px solid #4D4D4D;
+
+}
+
+.percent-bold {
+	text-transform:uppercase;
+	font-weight:bold;
+	border-top:1px solid #4D4D4D;
+
+}
+
+.nd-report {
+	width:424px;
+	background:#000;
+	border:2px solid #000;
+	color:#fff;
+	padding:0px 2px;
+	margin:0px;
+	font-size:8pt;
+}
+
+.footer {
+	background:url(footer_RigLoc.png) no-repeat #000;
+	padding:5px 5px 30px 10px;
+	font-size:9px;
+	font-weight:bold;
+	text-align:right;
+	vertical-align:top;
+	text-transform:uppercase;
+	border:0;
+}
+
+.copyright {
+	width:424px;
+	color:#fff;
+	background:#000;
+	font-size:9px;
+	text-align:center;
+	margin:0;
+	padding:5px 0;
+}

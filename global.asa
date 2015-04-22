@@ -1,0 +1,17 @@
+<SCRIPT LANGUAGE="VBScript" RUNAT="Server">
+
+sub application_onStart
+
+  on error resume next	
+  
+  application.lock
+  application("RigConnectionString") = "Provider=SQLOLEDB;" & _
+                                       "Data Source=192.168.104.30;" & _
+                                       "Initial Catalog=WebOnline;" & _
+                                       "User ID=WebUser;" & _
+                                       "Password=651Mon77"
+  application.unlock
+
+End Sub
+
+</SCRIPT>
