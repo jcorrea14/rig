@@ -1,9 +1,4 @@
-<!--#include virtual="/common/nauth/authenticate.asp"--><%
-  Authenticate "RIG_ANY", "Rig Locator"
-
-  set client = Server.CreateObject("NAuth2.COMAuthenticationClient")
-  set user = client.getUser(nauthreference)
-
+<%
   DocName = Replace (Request("report"), "\", "/")
   p = instrrev(DocName, "/")
   if p > 0 then
@@ -12,16 +7,6 @@
 
   Filename = Request("report")
   ext = UCase(right(Filename, 4))
-  if ext = ".XLS" or ext = ".CSV" then
-     if not user.CanAccess("RIG_EXPORT") then
-       response.redirect "premium.asp"
-     end if
-  else
-    if not user.CanAccess("RIG_BROWSE") then
-      response.redirect "drilling.asp"
-    end if
-  end if
-
   set f = Server.CreateObject("WebMan.WebFile")
   f.Name = Filename
 
@@ -58,10 +43,17 @@
       f.GetArticle
 %>
 
-<!--#include virtual="/include/rpthdr.inc"-->
-<% = nauthbeacon %>
-<% Response.Write f.StoryText %>
-<!--#include virtual="/include/rptftr.inc"-->
+<!--#include virtual="/include/nav.inc"-->
+<section class="mainContent">
+      <div class="container content">
+        <div class="row">
+              <div class="col-lg-12 text-center">
+                <% Response.Write f.StoryText %>
+            </div>
+          </div>
+    </div>
+  </section>
+<!--#include virtual="/include/footer.inc"-->
 <%
     case else
       Response.ContentType = "application/octet-stream"
