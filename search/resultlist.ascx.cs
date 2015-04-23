@@ -28,9 +28,9 @@ select
 from vwWebRig2 where RigType = 'D'");
       SqlDataAdapter ad = new SqlDataAdapter(sql, conn);
       DataSet ds = new DataSet();
-      ad.Fill(ds, "well");
+      ad.Fill(ds, "rig");
       conn.Close();
-      result.DataSource = ds.Tables["well"];
+      result.DataSource = ds.Tables["rig"];
       result.DataBind();
     }
   }

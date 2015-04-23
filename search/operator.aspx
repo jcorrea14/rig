@@ -84,11 +84,16 @@
     <div class="col-md-1">
       <asp:Button
           runat="server"
-          text="SEARCH" />
+          text="SEARCH"
+          onclick="search_click" />
     </div>
   </div>
 </div>
 <div id="results" runat="server" visible="false">
-  <riglocator:resultslist id="result" runat="server" />
+  <div class="container">
+    <div class="row">
+      <riglocator:resultslist id="result" runat="server" />
+    </div>
+  </div>
 </div>
 </asp:Content>
