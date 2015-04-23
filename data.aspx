@@ -68,10 +68,10 @@
                         <!--#include file="ops.inc" --> 
                     </div>
                     <div>
-                        <p><a href="/caodc.asp">Click here</a> for important information about the CAODC's rig utilization data and the <em>Rig Locator</em>'s rig activity data.</p>
+                        <p><a href="/caodc.aspx">Click here</a> for important information about the CAODC's rig utilization data and the <em>Rig Locator</em>'s rig activity data.</p>
                     </div>
                     <div>
-                        <p><a href="/service.asp">Click here</a> for important information about <em>Rig Locator</em> service rig data.</p>
+                        <p><a href="/service.aspx">Click here</a> for important information about <em>Rig Locator</em> service rig data.</p>
                     </div>
                 </div>
             </div>
