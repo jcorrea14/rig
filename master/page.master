@@ -53,7 +53,7 @@
     <header>
       <div class="mainNav sub-page">
         <div class="leaderboard-holder">
-          <div class="container"><img src="img/leaderboard.jpg" alt="Leaderboard"/> </div>
+          <div class="container"><img src="/img/leaderboard.jpg" alt="Leaderboard"/> </div>
         </div>
         <div class="utilityNavWrap">
           <div class="utilityNav"> 
@@ -100,7 +100,7 @@
                 <li> <a class="page-scroll" href="/alerts.aspx">Email Alerts</a> </li>
                 <li class="dropdown"> <a class="page-scroll" href="#team" class="dropdown-toggle" data-toggle="dropdown">Drilling Rig Reports</a>
                 <ul class="dropdown-menu">
-                  <li><a href="report/summary">Contractors' Summary</a></li>
+                  <li><a href="/report/summary">Contractors' Summary</a></li>
                   <li><a href="/report/operators">Top Operators</a></li>
                   <li><a href="/report/depth">Depth Activity</a></li>
                   <li><a href="/report/projects">Planned Drilling Projects</a></li>
