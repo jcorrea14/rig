@@ -105,9 +105,9 @@
                   <li><a href="/report.asp?report=rig%2Fdepth%2Ehtml">Depth Activity</a></li>
                   <li><a href="/report.asp?report=rig%2Fprojects%2Ehtml">Planned Drilling Projects</a></li>
                   <li><a href="/report.asp?report=rig%2Fdr-activity%2Ehtml">Drilling Activity Surveys</a></li>
-						      <li><a href="/report.asp?report=rig%2Fsurvey%2Ehtml">Western Canada Drilling Chart</a></li>
-						      <li><a href="/report.asp?report=rig%2Futilization%2Ehtml">Contractor Utilization Summary</a></li>
-						      <li><a href="/download.asp">Download and print reports</a></li>
+			   <li><a href="/report.asp?report=rig%2Fsurvey%2Ehtml">Western Canada Drilling Chart</a></li>
+			   <li><a href="/report.asp?report=rig%2Futilization%2Ehtml">Contractor Utilization Summary</a></li>
+			   <li><a href="/download.asp">Download and print reports</a></li>
                 </ul>
                 </li>
                 <li> <a href="../summary.asp">Drilling Summary</a> </li>
