@@ -6,10 +6,10 @@ using System.Data.SqlClient;
 public partial class OperatorSearch : System.Web.UI.Page {
 
   protected void search_click (object sender, EventArgs e) {
-    try {
+//    try {
       result.Criteria = "";
       results.Visible = true;
-    } catch (Exception ex) {  }
+//    } catch (Exception ex) {  }
   }
 
 

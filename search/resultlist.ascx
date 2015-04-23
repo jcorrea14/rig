@@ -1,26 +1,26 @@
 <%@ Control
 CodeFile="resultlist.ascx.cs"
 Inherits="ResultList" %>
-<table cellspacing=1 cellpadding=2 border=0 width="100%" class="nd-report">
-  <tr valign="baseline">
-    <th>Prov</th>
-    <th>Location</th>
-    <th>Area</th>
-    <th>Contractor</th>
-    <th>Rig</th>
-    <th>Status</th>
-    <th>Capac</th>
-    <th>Operator</th>
-    <th>UC</th>
-    <th>Type</th>
-    <th>Class</th>
-    <th>Spud</th>
-    <th>P Depth</th>
-    <th>Camp</th>
+<table class="nd-report">
+  <tr style="display: table-row; vertical-align: baseline;">
+    <td>Prov</td>
+    <td>Location</td>
+    <td>Area</td>
+    <td>Contractor</td>
+    <td>Rig</td>
+    <td>Status</td>
+    <td>Capac</td>
+    <td>Operator</td>
+    <td>UC</td>
+    <td>Type</td>
+    <td>Class</td>
+    <td>Spud</td>
+    <td>P Depth</td>
+    <td>Camp</td>
   </tr>
   <asp:Repeater id="result" runat="server">
     <ItemTemplate runat="server">
-      <tr valign="top">
+      <tr style="vertical-align: baseline;">
         <td>
           <%# Eval("Prov") %>
         </td>
@@ -33,20 +33,20 @@ Inherits="ResultList" %>
         <td>
           <%# Server.HtmlEncode(Eval("ContractorName").ToString()) %>
         </td>
-        <td>
+        <td style="text-align: right;">
           <%# Eval("Rig") %>
         </td>
         <td>
           <%# Eval("Status") %>
         </td>
-        <td>
+        <td style="text-align: right;">
           <%# Eval("Capacity") %>
         </td>
         <td>
           <%# Server.HtmlEncode(Eval("OperatorName").ToString()) %>
         </td>
         <td>
-          <%# Eval("UC") %>
+          <%# ((bool)(Eval("UC"))) ? "*": ""  %>
         </td>
         <td>
           <%# Eval("WellType") %>
@@ -55,51 +55,16 @@ Inherits="ResultList" %>
           <%# Eval("Class") %>
         </td>
         <td>
-          <%# Eval("Spud") %>
+          <%# Eval("Spud") == System.DBNull.Value ? "" : ((DateTime)(Eval("Spud"))).ToString("MMM d, yyyy") %>
+        </td>
+        <td style="text-align: right;">
+          <%# Eval("ProjDepth") == System.DBNull.Value ?
+                      "" :
+                      Double.Parse(Eval("ProjDepth").ToString()).ToString("#,###.0;-#,###.0,#") %>
         </td>
         <td>
-          <%# Eval("ProjDepth") %>
+          <%# ((bool)(Eval("Camp"))) ? "*": ""  %>
         </td>
-        <td>
-          <%# Eval("Camp") %>
-        </td>
-
-
-
-
-
-
-
-
-
-
-
-<%--
-
-
-        <td>
-          <%# ((DateTime)Eval("LicenceDate")).ToString("MMM d, yyyy") %>
-        </td>
-        <td>
-          <%# Server.HtmlEncode(Eval("Operator").ToString()) %><br />
-          <%# Server.HtmlEncode(Eval("UWI").ToString()) %>
-        </td>
-        <td>
-          <%# Eval("WellClass") %>
-        </td>
-        <td>
-          <%# Eval("Objective") %>
-        </td>
-        <td>
-          <%# Eval("Type") %>
-        </td>
-        <td>
-          <%# Server.HtmlEncode(Eval("ProjectedZone").ToString()) %>
-        </td>
-        <td align="right">
-          <%# Double.Parse(Eval("ProjectedDepth").ToString()).ToString("#,###.0;-#,###.0,#") %>
-        </td>
-  --%>
       </tr>
     </ItemTemplate>
   </asp:Repeater>
