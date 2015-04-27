@@ -17,7 +17,7 @@
                 <div class="col-md-3 col-md-offset-2">
                     <h4>Search for Drilling Rigs:</h4>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <form method="post" action="search.asp" class="form-inline">
                         <div class="form-group input-group">
                             <select class="form-control" name="searchtype">

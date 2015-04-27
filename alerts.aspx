@@ -7,7 +7,7 @@
 <section class="mainContent">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 text-center">
+            <div class="col-lg-12">
                 <h2>DRILLING RIG E-MAIL ALERTS SERVICE</h2>
                  <p class="lead">You may have a report automatically e-mailed to you notifying you of any rig
                     activity or new well licences issued in a selected area. Choose the area of

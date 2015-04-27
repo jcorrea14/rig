@@ -55,27 +55,25 @@
         <div class="leaderboard-holder">
           <div class="container"><img src="/img/leaderboard.jpg" alt="Leaderboard"/> </div>
         </div>
-        <div class="utilityNavWrap">
-          <div class="utilityNav"> 
+        
             <!-- Navigation -->
-            <nav class="navbar navbar-utility navbar-static-top utility-subpage">
+            <nav class="navbar navbar-utility navbar-static-top utility-nav">
               <div class="container"> 
                 <!-- Collect the nav links, forms, and other content for toggling -->
-                <div class="collapse navbar-collapse bs-example-navbar-collapse-1">
+                <div class="collapse navbar-collapse">
                   <ul class="nav navbar-nav navbar-right">
                     <li class="hidden"> <a href="#page-top"></a> </li>
                     <li> <a href="#">My Profile</a> </li>
                     <li> <a href="https://secure.junewarren-nickles.com/corp-accounts.aspx" target="_blank">Corporate Accounts</a> </li>
                     <li> <a href="#">About Us</a> </li>
-						        <li> <a href="#">Contact Us</a> </li>
+				<li> <a href="#">Contact Us</a> </li>
                   </ul>
                 </div>
                 <!-- /.navbar-collapse --> 
               </div>
               <!-- /.container-fluid --> 
             </nav>
-          </div>
-        </div>
+          
         <!-- Navigation -->
         
         <nav class="navbar navbar-default navbar-static-top nav-subpage">
@@ -96,22 +94,22 @@
                 <li class="hidden"> <a href="#page-top"></a> </li>
                 
                 <li> <a class="page-scroll" href="/data.aspx">Rig Data</a> </li>
-				        <li> <a class="page-scroll" href="http://maps.riglocator.ca">Rig Map</a> </li>
+			 <li> <a class="page-scroll" href="http://maps.riglocator.ca">Rig Map</a> </li>
                 <li> <a class="page-scroll" href="/alerts.aspx">Email Alerts</a> </li>
                 <li class="dropdown"> <a class="page-scroll" href="#team" class="dropdown-toggle" data-toggle="dropdown">Drilling Rig Reports</a>
                 <ul class="dropdown-menu">
-                  <li><a href="/report.aspx?report=rig%2Fsummary%2Ehtml">Contractors' Summary</a></li>
-                  <li><a href="/report.aspx?report=rig%2Foperators%2Ehtml">Top Operators</a></li>
-                  <li><a href="/report.aspx?report=rig%2Fdepth%2Ehtml">Depth Activity</a></li>
-                  <li><a href="/report.aspx?report=rig%2Fprojects%2Ehtml">Planned Drilling Projects</a></li>
-                  <li><a href="/report.aspx?report=rig%2Fdr-activity%2Ehtml">Drilling Activity Surveys</a></li>
-			   <li><a href="/report.aspx?report=rig%2Fsurvey%2Ehtml">Western Canada Drilling Chart</a></li>
-			   <li><a href="/report.aspx?report=rig%2Futilization%2Ehtml">Contractor Utilization Summary</a></li>
+                  <li><a href="/report/summary">Contractors' Summary</a></li>
+                  <li><a href="/report/operators">Top Operators</a></li>
+                  <li><a href="/report/depth">Depth Activity</a></li>
+                  <li><a href="/report/projects">Planned Drilling Projects</a></li>
+                  <li><a href="/report/dr-activity">Drilling Activity Surveys</a></li>
+			   <li><a href="/report/survey">Western Canada Drilling Chart</a></li>
+			   <li><a href="/report/utilization">Contractor Utilization Summary</a></li>
 			   <li><a href="/download.asp">Download and print reports</a></li>
                 </ul>
                 </li>
 			 <li> <a href="http://www.datacentralcanada.com/licences.asp" target="_blank">Well Licenses</a> </li>
-                <li> <a href="../summary.asp">Drilling Summary</a> </li>
+                <li> <a href="../summary.aspx">Drilling Summary</a> </li>
                 
               </ul>
             </div>
@@ -119,6 +117,7 @@
           </div>
           <!-- /.container-fluid --> 
         </nav>
+	   <div class="spacer"></div>
       </div>
     </header>
     <asp:ContentPlaceHolder runat="server" id="page_content" />
