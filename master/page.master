@@ -3,7 +3,6 @@
     MasterPageFile="base.master"
     CodeFile="page.cs"
     Inherits="PageMaster"
-    EnableViewState="false"
 %>
 <asp:Content runat="server" ContentPlaceHolderId="page_js_head">
   <script type="text/javascript">

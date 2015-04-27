@@ -3,15 +3,15 @@ using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 
-public partial class OperatorSearch : System.Web.UI.Page {
+public partial class ContractorSearch : System.Web.UI.Page {
 
   private String _criteria = "";
 
   private void addClause(String clause) {
-    if(_criteria != "")
-      _criteria += " and ";
-    else
+    if(_criteria == "")
       _criteria += " where ";
+    else
+      _criteria += " and ";
     _criteria += clause;
   }
 
@@ -27,16 +27,16 @@ public partial class OperatorSearch : System.Web.UI.Page {
     try {
       _criteria = "";
 
-      String operatorName = op.SelectedValue;
+      String contractorName = contractor.SelectedValue;
       String prov = province.SelectedValue;
       String rigStatus = status.SelectedValue;
       String sort = "";
 
-      if (operatorName == "[SELECT AN OPERATOR]") {
+      if (contractorName == "[SELECT A CONTRACTOR]") {
         noselectionmsg.Visible = true;
         return;
       } else {
-        addClause("OperatorName = " + sqlString(operatorName));
+        addClause("Contractor = " + sqlString(contractorName));
       }
 
       switch(prov) {
@@ -65,7 +65,6 @@ public partial class OperatorSearch : System.Web.UI.Page {
     } catch (Exception ex) {  }
   }
 
-
   override protected void OnLoad(EventArgs e) {
     try {
       if (!IsPostBack) {
@@ -75,23 +74,20 @@ public partial class OperatorSearch : System.Web.UI.Page {
         String sql = @"
 select * from (
 select
-  '[SELECT AN OPERATOR]' Operator
+  '[SELECT A CONTRACTOR]' Contractor
 union
 select
-  distinct OperatorName as Operator
-from vwWebRig2
-where
-  Operator is not null
-  and RigType = 'D') T
-order by Operator";
+  distinct Contractor
+from vwWebRig2) T
+order by Contractor";
         SqlDataAdapter ad = new SqlDataAdapter(sql, conn);
         DataSet ds = new DataSet();
-        ad.Fill(ds, "operator");
+        ad.Fill(ds, "contractor");
         conn.Close();
-        op.DataSource = ds.Tables["operator"];
-        op.DataValueField = "Operator";
-        op.DataBind();
-        op.SelectedIndex = 0;
+        contractor.DataSource = ds.Tables["contractor"];
+        contractor.DataValueField = "Contractor";
+        contractor.DataBind();
+        contractor.SelectedIndex = 0;
       }
     } catch (Exception ex) { }
   }
