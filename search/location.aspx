@@ -11,8 +11,8 @@
       <div class="row">
         <h1>Drilling Rig Search</h1>
         <ul>
-          <li><a href="/search/operator.aspx">By Operator</a></li>
-          <li><a href="/search/contractor.aspx">By Contractor</a></li>
+          <li><a href="/search/operator">By Operator</a></li>
+          <li><a href="/search/contractor">By Contractor</a></li>
           <li><span class="selected">By Location</span></li>
         </ul>
       </div>

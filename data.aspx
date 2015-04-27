@@ -20,14 +20,12 @@
                 <div class="col-md-3">
                     <form method="post" action="search.asp" class="form-inline">
                         <div class="form-group input-group">
-                            <select class="form-control" name="searchtype">
-                                <option value="loc"> by Location </option>
-                                <option value="con"> by Contractor </option>
-                                <option value="op"> by Operator </option>
-                            </select>
-                            <span class="input-group-btn">
-                            <input class="btn search-btn" type="submit" value="" />
-                            </span> </div>
+                            <ul>
+                                <li><a href="/search/operator">By Operator</a></li>
+                                <li><a href="/search/contractor">By Contractor</a></li>
+                                <li><a href="/search/location">By Location</a></li>
+                            </ul>
+                        </div>
                     </form>
                 </div>
             </div>

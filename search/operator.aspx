@@ -14,8 +14,8 @@
         <h1>Drilling Rig Search</h1>
         <ul>
           <li><span class="selected">By Operator</span></li>
-          <li><a href="/search/contractor.aspx">By Contractor</a></li>
-          <li><a href="/search/location.aspx">By Location</a></li>
+          <li><a href="/search/contractor">By Contractor</a></li>
+          <li><a href="/search/location">By Location</a></li>
         </ul>
       </div>
       <div class="row">
@@ -94,9 +94,9 @@
       <div class="row">
         <h1>Drilling Rig Search Results</h1>
         <ul>
-          <li><a href="/search/operator.aspx">By Operator</a></li>
-          <li><a href="/search/contractor.aspx">By Contractor</a></li>
-          <li><a href="/search/location.aspx">By Location</a></li>
+          <li><a href="/search/operator">By Operator</a></li>
+          <li><a href="/search/contractor">By Contractor</a></li>
+          <li><a href="/search/location">By Location</a></li>
         </ul>
       </div>
       <div class="row">
