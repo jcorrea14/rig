@@ -2,61 +2,56 @@
          Language="C#"
          CodeFile="index.aspx.cs"
          Inherits="index"
-         MasterPageFile="site.master" %>
-<%@ Register Src="/common/nauth/webauth.ascx" TagName="webauth" TagPrefix="jwn" %>
+         MasterPageFile="/master/page.master" %>
 <asp:Content ContentPlaceHolderID="page_content" runat="server">
-  <jwn:webauth id="auth"
-               runat="server"
-               Publication="RIG_EXPORT"
-               Redirect="/gpi/verify.aspx"
-               Product="Rig Locator" />
-  <form runat="server"></form>
-  <h1>
-    Rig Locator for Garmin!
-  </h1>
-  <div>
-    <ul>
-      <li>Connect your Garmin GPS to your computer with the USB cable provided
-      <li>Click on the "Find Devices" button below to retrieve and select the
-      device*</li>
-      <li>Click on "Obtain Unlock Code" to get unlock code for your device</li>
-      <li>Click on "Download Files" to obtain the Rig Locator POI file</li>
-    </ul>
-    <div id="GarminTools">
-      <select name="deviceSelect" id="deviceSelect" disabled="disabled">
-      </select>
-      <input type="button" value="Find Devices" id="findDevices" />
-      <input type="button" id="obtainUnlock" value="Obtain Unlock Code"
-             onclick="getUnlockCode()" disabled="disabled" />
-      <input type="button" id="downloadFile"
-             value="Download Files" disabled="disabled" />
-      <div id="downloadStatus"></div>
-      <div id="status"></div>
-      <div id="progressBar" style="display: none; text-align: center;">
-        <div id="progressWrapper" style="border: solid 1px black; width: 400px; margin:  auto;">
-          <div id="progressBarDisplay" style="background-color: #1111cc; height: 1em;"></div>
+  <div class="container">
+    <h1>
+      Rig Locator for Garmin
+    </h1>
+    <div>
+      <ul>
+        <li>Connect your Garmin GPS to your computer with the USB cable provided</li>
+        <li>Click on the "Find Devices" button below to retrieve and select the
+        device*</li>
+        <li>Click on "Obtain Unlock Code" to get unlock code for your device</li>
+        <li>Click on "Download Files" to obtain the Rig Locator POI file</li>
+      </ul>
+      <div id="GarminTools">
+        <select name="deviceSelect" id="deviceSelect" disabled="disabled">
+        </select>
+        <input type="button" value="Find Devices" id="findDevices" />
+        <input type="button" id="obtainUnlock" value="Obtain Unlock Code"
+               onclick="getUnlockCode()" disabled="disabled" />
+        <input type="button" id="downloadFile"
+               value="Download Files" disabled="disabled" />
+        <div id="downloadStatus"></div>
+        <div id="status"></div>
+        <div id="progressBar" style="display: none; text-align: center;">
+          <div id="progressWrapper" style="border: solid 1px black; width: 400px; margin:  auto;">
+            <div id="progressBarDisplay" style="background-color: #1111cc; height: 1em;"></div>
+          </div>
         </div>
+        <div id="unlockCode"></div>
+        <p class="note">
+          *If this is your first download, you'll be asked to install the Garmin
+          Communicator Plugin.
+        </p>
+        <div id="pluginStatus" ></div>
+        <div id="deviceStatus" style="visibility: hidden;"></div>
+        <select name="fileSelect" id="fileSelect" style="visibility: hidden;"
+                disabled="disabled">
+        </select>
       </div>
-      <div id="unlockCode"></div>
-      <p class="note">
-        *If this is your first download, you'll be asked to install the Garmin
-        Communicator Plugin.
-      </p>
-      <div id="pluginStatus" ></div>
-      <div id="deviceStatus" style="visibility: hidden;"></div>
-      <select name="fileSelect" id="fileSelect" style="visibility: hidden;"
-              disabled="disabled">
-      </select>
     </div>
+    <p>
+      Compatible GPS devices: Garmin nüvi series, Zumo series, StreetPilot
+      7200, GPSMap 60CSx or CSx, GPSMap 76CSX or any other Garmin hand-held
+      unit with the letter "x" in the model name (ex. HCx)
+    </p>
+    <p>
+      <a href="help/rig-locator-garmin.pdf" target="_blank">Download instructions (PDF)</a>
+    </p>
   </div>
-  <p>
-    Compatible GPS devices: Garmin nüvi series, Zumo series, StreetPilot
-    7200, GPSMap 60CSx or CSx, GPSMap 76CSX or any other Garmin hand-held
-    unit with the letter "x" in the model name (ex. HCx)
-  </p>
-  <p>
-    <a href="help/rig-locator-garmin.pdf" target="_blank">Download instructions (PDF)</a>
-  </p>
 </asp:Content>
 
 <asp:Content ContentPlaceHolderID="page_js" runat="server">
