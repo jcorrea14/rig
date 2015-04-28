@@ -6,7 +6,6 @@ using System.Data.SqlClient;
 public partial class ResultList : System.Web.UI.UserControl {
   public String Criteria {
     set {
-      Response.Write("|" + value + "|");
       SqlConnection conn = new SqlConnection(
           ConfigurationManager.ConnectionStrings["WellConnectionString"].ToString());
       conn.Open();

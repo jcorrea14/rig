@@ -29,5 +29,3 @@
         <td class="count" align="right">5</td>
       </tr>
     </table>
-  </body>
-</html>

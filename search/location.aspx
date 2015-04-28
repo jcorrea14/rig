@@ -2,6 +2,8 @@
     Language="C#"
     MasterPageFile="/master/page.master"
     Title="Rig Locator Search By Location"
+    CodeFile="location.cs"
+    Inherits="LocationSearch"
     AutoEventWireup="true"
     %>
 <%@ Register Src="/search/resultlist.ascx" TagName="resultslist" TagPrefix="riglocator" %>
@@ -19,11 +21,13 @@
       <div class="row">
         <div class="col-md-3">
           <h4>Province/Region</h4>
+          <p id="noprovincemsg" class="errmsg" runat="server" visible="false">
+            Select an province!
+          </p>
           <div class="row">
             <div class="col-md-10">
               <div class="form-group input-group">
-                <asp:ListBox runat="server" id="province" class="form-control" rows="7">
-                  <asp:ListItem value="" selected="true">[ALL]</asp:ListItem>
+                <asp:ListBox runat="server" id="province" class="form-control" rows="6">
                   <asp:ListItem value="AB">Alberta</asp:ListItem>
                   <asp:ListItem value="SK">Saskatchewan</asp:ListItem>
                   <asp:ListItem value="BC">British Columbia</asp:ListItem>
@@ -32,12 +36,15 @@
                   <asp:ListItem value="NC">Northern Canada</asp:ListItem>
                 </asp:ListBox>
               </div>
-              <asp:Button runat="Server" text="Search" />
+              <asp:Button runat="Server" text="Search Province" onClick="search_province_click"/>
             </div>
           </div>
         </div>
         <div class="col-md-3">
-          <h4>DLS</h4>
+          <h4>Township/Range</h4>
+          <p id="nodlsmsg" class="errmsg" runat="server" visible="false">
+            Select an township, range and meridian!
+          </p>
           <div class="subbold">Township</div>
           <div class="row">
             <div class="col-md-5">
@@ -427,11 +434,14 @@
               </div>
             </div>
           </div>
-          <asp:Button runat="Server" text="Search" />
+          <asp:Button runat="Server" text="Search Township/Range" onclick="search_dls_click" />
         </div>
         <div class="col-md-3">
-          <h4>NTS</h4>
-          <div class="subbold">Map Unit</div>
+          <h4>BC NTS</h4>
+          <p id="nontsmsg" class="errmsg" runat="server" visible="false">
+            Select an quad, map and map sheet!
+          </p>
+          <div class="subbold">Quad</div>
           <div class="row">
             <div class="col-md-5">
               <div class="sub">From:</div>
@@ -458,7 +468,7 @@
               </div>
             </div>
           </div>
-          <div class="subbold">Map Unit Sub</div>
+          <div class="subbold">Map</div>
           <div class="row">
             <div class="col-md-5">
               <div class="sub">From:</div>
@@ -509,7 +519,7 @@
               </div>
             </div>
           </div>
-          <div class="subbold">Map Sheet</div>
+          <div class="subbold">Sheet</div>
           <div class="row">
             <div class="col-md-5">
               <div class="sub">From:</div>
@@ -560,8 +570,21 @@
               </div>
             </div>
           </div>
-          <asp:Button runat="Server" text="Search" />
+          <asp:Button runat="Server" text="Search BC NTS"  onclick="search_nts_click" />
         </div>
+      </div>
+    </div>
+    <div id="results" runat="server" visible="false">
+      <div class="row">
+        <h1>Drilling Rig Search Results</h1>
+        <ul>
+          <li><a href="/search/operator">By Operator</a></li>
+          <li><a href="/search/contractor">By Contractor</a></li>
+          <li><a href="/search/location">By Location</a></li>
+        </ul>
+      </div>
+      <div class="row">
+        <riglocator:resultslist id="result" runat="server" />
       </div>
     </div>
   </div>
