@@ -5,28 +5,11 @@
 
 <asp:Content runat="server" ContentPlaceholderId="page_content">
     <section class="mainContent">
-        <div class="container content">
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2>Rig Locator provides detailed information and reports on drilling rigs in Canada</h2>
-                </div>
-            </div>
-        </div>
-        <div class="container content">
-            <div class="row search-bar">
-                <div class="col-md-3 col-md-offset-2">
-                    <h4>Search for Drilling Rigs:</h4>
-                </div>
-                <div class="col-md-3">
-                    <form method="post" action="search.asp" class="form-inline">
-                        <div class="form-group input-group">
-                            <ul>
-                                <li><a href="/search/operator">By Operator</a></li>
-                                <li><a href="/search/contractor">By Contractor</a></li>
-                                <li><a href="/search/location">By Location</a></li>
-                            </ul>
-                        </div>
-                    </form>
+                    <h2>Welcome to your Rig Locator.</h2>
+                    <h4> This dashboard gives you the most accurate and current view of rig activity across western Canada. From here you can select more detailed reports, or navigate into Rig maps to visualize geographic data.</h4>
                 </div>
             </div>
         </div>

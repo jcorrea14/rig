@@ -14,9 +14,8 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="hidden"> <a href="#page-top"></a> </li>
-                        <li> <a href="#">My Profile</a> </li>
                         <li> <a href="https://secure.junewarren-nickles.com/corp-accounts.aspx" target="_blank">Corporate Accounts</a> </li>
-                        <li> <a href="#">About Us</a> </li>
+                        <li> <a href="/about.aspx">About Us</a> </li>
                         <li> <a href="#">Contact Us</a> </li>
                     </ul>
                 </div>
