@@ -1,17 +1,17 @@
 <%@ Page
     Language="C#"
-    MasterPageFile="/master/page.master"
-    Title="About Rig | Rig Locator"
+    MasterPageFile="/master/public.master"
+    Title="Contact Us | Rig Locator"
     %>
 <%@ Import Namespace="ContentMgr"%>
 <script runat="server">
   protected void Page_Load(object sender, EventArgs e) {
     try {
       if (!IsPostBack) {
-        WebPage p = new WebPage("RIG", "ABOUT");
+        WebPage p = new WebPage("RIG", "CONTACT");
         pageTitle.InnerText = p.Title;
         pageBody.InnerHtml = p.Body;
-        Page.Header.Title = "About Rig | Rig Locator";
+        Page.Header.Title = "Contact Us | Rig Locator";
       }
     } catch (Exception ex) {  }
   }

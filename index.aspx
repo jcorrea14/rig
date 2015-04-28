@@ -15,8 +15,8 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="hidden"> <a href="#page-top"></a> </li>
                         <li> <a href="https://secure.junewarren-nickles.com/corp-accounts.aspx" target="_blank">Corporate Accounts</a> </li>
-                        <li> <a href="/about.aspx">About Us</a> </li>
-                        <li> <a href="#">Contact Us</a> </li>
+                        <li> <a href="/public/about.aspx">About Us</a> </li>
+                        <li> <a href="/public/contact.aspx">Contact Us</a> </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse --> 
@@ -42,8 +42,8 @@
                         <li> <a class="page-scroll" href="#psac">PSAC</a> </li>
                     </ul>
                     <ul class="nav navbar-nav navbar-left navbar-buttons">
-                        <li> <a class="page-scroll" href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank">Become a Member</a> </li>
-                        <li> <a class="page-scroll" href="<%= LoginUrl %>">Login</a> </li>
+                        <li> <a href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank">Become a Member</a> </li>
+                        <li> <a href="<%= LoginUrl %>">Login</a> </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse --> 
