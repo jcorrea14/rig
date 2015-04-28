@@ -8,7 +8,7 @@
 <asp:Content runat="server" ContentPlaceholderId="page_content">
     <div class="mainNav">         
         <!-- Navigation -->
-        <nav class="navbar navbar-utility navbar-static-top utility-nav">
+        <nav class="navbar navbar-utility navbar-static-top utility-nav-home">
             <div class="container"> 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse">
