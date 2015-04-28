@@ -6,7 +6,7 @@
     %>
 
 <asp:Content runat="server" ContentPlaceholderId="page_content">
-    <div class="mainNav">         
+    <div class="mainNav"> 
         <!-- Navigation -->
         <nav class="navbar navbar-utility navbar-static-top utility-nav-home">
             <div class="container"> 
@@ -15,14 +15,14 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="hidden"> <a href="#page-top"></a> </li>
                         <li> <a href="https://secure.junewarren-nickles.com/corp-accounts.aspx" target="_blank">Corporate Accounts</a> </li>
-                        <li> <a href="/about.aspx">About Us</a> </li>
-                        <li> <a href="/contact.aspx">Contact Us</a> </li>
+                        <li> <a href="/public/about.aspx">About Us</a> </li>
+                        <li> <a href="/public/contact.aspx">Contact Us</a> </li>
                     </ul>
                 </div>
                 <!-- /.navbar-collapse --> 
             </div>
             <!-- /.container-fluid --> 
-        </nav>        
+        </nav>
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container"> 
@@ -55,8 +55,16 @@
     <header class="home">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Get the best information about western Canada’s drilling rig fleet.</div>
-                <div class="intro-heading">Rig Locator provides current, accurate data on rig activity, and updates the location of all rigs twice daily.</div>
+                <div class="intro-lead-in">Find business opportunities with Rig Locator.</div>
+                <div class="intro-lead-in">Analyze competition and market share with Rig Locator.</div>
+                <div class="intro-lead-in"> Monitor asset details with Rig Locator.</div>
+                <div class="intro-heading">Get the best information about western Canada’s drilling rig fleet.</div>
+                <div class="call-to-action col-md-6 col-centered">
+                    <ul>
+                        <li><a href="#" class="btn btn-xl">Start a Trial</a></li>
+                        <li> <a href="#" class="btn btn-xl">Become a Member</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
@@ -77,23 +85,29 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Add versatility to your search.</h2>
+                    <h2 class="section-heading">Everything you need for accurate rig information:</h2>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-4 col-md-offset-2"> <span class="feature-icon-1"> </span>
-                    <h3 class="section-subheading text-muted">Control of the map is in your hands with our advanced search filters and intuitive toolkit.</h3>
+                    <h4 class="service-heading">Maps</h4>
+                    <h4 class="section-subheading text-muted">
+                    Search for rig locations, operators or contractors.
+                    </p>
                 </div>
                 <div class="col-md-4"> <span class="feature-icon-2"></span>
-                    <h3 class="section-subheading text-muted"> Save your search parameters for use another day. </h3>
+                    <h4 class="service-heading">Reports</h4>
+                    <p class="section-subheading text-muted"> Dive deeper into your analysis with detailed rig reports. </p>
                 </div>
             </div>
             <div class="row text-center">
                 <div class="col-md-4 col-md-offset-2"> <span class="feature-icon-3"></span>
-                    <h3 class="section-subheading text-muted">Search for rigs any way you like. You can search by location, name, LSD coordinates, NTS coordinates, or within a chosen radius.</h3>
+                    <h4 class="service-heading">Search</h4>
+                    <p class="section-subheading text-muted">Search by rig locations, operator or contractor.</p>
                 </div>
                 <div class="col-md-4"> <span class="feature-icon-4"> </span>
-                    <h3 class="section-subheading text-muted"> Our drilling reports are concise and up-to-date. The data is gathered every day from government and industry sources, and cleaned of bugs and redundancies. </h3>
+                    <h4 class="service-heading">Mobile Ready</h4>
+                    <p class="section-subheading text-muted"> Search by rig locations, operator or contractor. </p>
                 </div>
             </div>
         </div>
@@ -106,7 +120,13 @@
                 <div class="col-lg-7 text-center block-center">
                     <h2 class="section-heading">We give you the data behind every rig.</h2>
                     <h3 class="section-subheading">Rig Locator provides data on contractors, operators and drilling activity. Find the information you need to identify industry trends, analyze market share and determine business opportunities. Print your search results or export them into an Excel file.</h3>
-                    <a href="#" class="page-scroll btn btn-xl">View Data</a> </div>
+                </div>
+                <div class="call-to-action col-md-6 col-centered">
+                    <ul>
+                        <li><a href="#" class="btn btn-xl">Start a Trial</a></li>
+                        <li> <a href="#" class="btn btn-xl">Become a Member</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -116,7 +136,7 @@
         <div class="container">
             <div class="col-md-6"><img src="img/placeholder-image-laptop.png" alt="placeholder" /> </div>
             <div class="col-md-6">
-                <h2 class="section-heading">We update rig locations twice a day.</h2>
+                <h2 class="section-heading">We update rig locations daily.</h2>
                 <h3 class="section-subheading">Locate rigs that are currently active, down or moving. View oil and gas facilities, pipelines, municipalities and access road features. Then print or save your search results to reference later.</h3>
                 <a href="#" class="page-scroll btn btn-xl">View Map</a> </div>
         </div>
@@ -183,9 +203,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2><strong>Find business opportunities with Rig Locator.</strong></h2>
-                    <h2><strong>Analyze competition and market share with Rig Locator.</strong></h2>
-                    <h2><strong>Monitor asset details with Rig Locator.</strong></h2>
+                    <h2 class="section-heading">Get the best information about western Canada’s drilling rig fleet.</h2>
+                    <h3 class="section-subheading">Rig Locator provides current, accurate data on rig activity, and updates the location of all rigs daily.</h3>
                 </div>
             </div>
         </div>

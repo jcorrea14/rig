@@ -23,7 +23,11 @@
                             </ul>
                         </div>
                         <div class="row">
-                            <h4>Select Criteria</h4>
+                            <div class="col-lg-12 nopadding">
+                                <h3>Select Criteria</h3>
+                            </div>
+                        </div>
+                        <div class="row">
                             <p id="noselectionmsg" class="errmsg" runat="server" visible="false"> Select an operator! </p>
                             <div class="col-md-4">
                                 <div class="toc">Operator</div>
@@ -59,42 +63,42 @@
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-lg-8">
-                                <div class="row">
-                                    <h4>Select a Sort Option</h4>
-                                    <div class="col-md-4">
-                                        <asp:RadioButton runat="server" id="locationsort"
+                            <div class="col-lg-12 nopadding">
+                                <h3>Select a Sort Option</h3>
+                                <div class="col-md-3">
+                                    <asp:RadioButton runat="server" id="locationsort"
                                text="Location" groupName="sort" checked="true" />
-                                        <br />
-                                        <asp:RadioButton runat="server" id="operatorsort"
+                                    <br />
+                                    <asp:RadioButton runat="server" id="operatorsort"
                                text="Operator" groupName="sort" />
-                                        <br />
-                                        <asp:RadioButton runat="server" id="rigsort"
+                                    <br />
+                                </div>
+                                <div class="col-md-3">
+                                    <asp:RadioButton runat="server" id="rigsort"
                                text="Contractor and Rig" groupName="sort" />
-                                        <br />
-                                    </div>
-                                    <div class="col-md-4">
-                                        <asp:RadioButton runat="server" id="areasort"
+                                    <br />
+                                    <asp:RadioButton runat="server" id="areasort"
                                text="Area Name" groupName="sort" />
-                                        <br />
-                                        <asp:RadioButton runat="server" id="spudsort"
+                                    <br />
+                                </div>
+                                <div class="col-md-3">
+                                    <asp:RadioButton runat="server" id="spudsort"
                                text="Spud Date" groupName="sort" />
-                                        <br />
-                                        <asp:RadioButton runat="server" id="classsort"
+                                    <br />
+                                    <asp:RadioButton runat="server" id="classsort"
                                text="Well Class" groupName="sort" />
-                                        <br />
-                                    </div>
-                                    <div class="col-md-4">
-                                        <asp:RadioButton runat="server" id="statussort"
+                                    <br />
+                                </div>
+                                <div class="col-md-3">
+                                    <asp:RadioButton runat="server" id="statussort"
                                text="Rig Status" groupName="sort" />
-                                        <br />
-                                    </div>
+                                    <br />
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-1">
-                                <asp:Button runat="server" text="SEARCH" onclick="search_click" />
+                            <div class="col-md-3 nopadding">
+                                <asp:Button class="btn btn-xl btn-rig" runat="server" text="SEARCH" onclick="search_click" />
                             </div>
                         </div>
                     </div>
