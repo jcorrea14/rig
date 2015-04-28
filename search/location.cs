@@ -50,84 +50,177 @@ public partial class LocationSearch : System.Web.UI.Page {
   }
 
   protected void search_dls_click (object sender, EventArgs e) {
-    /*
+    _criteria = "";
+
     int twp1, twp2, rge1, rge2, mer1, mer2;
 
     int.TryParse(fromTownship.SelectedValue, out twp1);
-    int twp2 = toTownship.SelectedValue;
-    int rge1 = fromRange.SelectedValue;
-    String rge2 = toRange.SelectedValue;
-    String mer1 = fromMeridian.SelectedValue;
-    String mer2 = toMeridian.SelectedValue;
+    int.TryParse(toTownship.SelectedValue, out twp2);
+    int.TryParse(fromRange.SelectedValue, out rge1);
+    int.TryParse(toRange.SelectedValue, out rge2);
+    int.TryParse(fromMeridian.SelectedValue, out mer1);
+    int.TryParse(toMeridian.SelectedValue, out mer2);
 
+    if (twp1 > 0) {
+      if (twp2 > 0) {
+        if (twp1 == twp2)
+          addClause(String.Format("Township = {0}" , twp1));
+        else {
+          if (twp1 > twp2)
+            addClause(String.Format("Township between {0} and {1}", twp2, twp1));
+          else
+            addClause(String.Format("Township between {0} and {1}", twp1, twp2));
+        }
+      }
+      else
+        addClause(String.Format("Township = {0}", twp1));
+    }
+    else {
+      if (twp2 > 0)
+        addClause(String.Format("Township = {0}", twp2));
+      else {
+        nodlsmsg.Visible = true;
+        return;
+      }
+    }
+        
+    if (rge1 > 0) {
+      if (rge2 > 0) {
+        if (rge1 == rge2)
+          addClause(String.Format("Range = {0}" , rge1));
+        else {
+          if (rge1 > rge2)
+            addClause(String.Format("Range between {0} and {1}", rge2, rge1));
+          else
+            addClause(String.Format("Range between {0} and {1}", rge1, rge2));
+        }
+      }
+      else
+        addClause(String.Format("Range = {0}", rge1));
+    }
+    else {
+      if (rge2 > 0)
+        addClause(String.Format("Range = {0}", rge2));
+      else {
+        nodlsmsg.Visible = true;
+        return;
+      }
+    }
 
-    if Request("fromTownship") <> "" then
-      if Request("toTownship") <> "" then
-        if Request("fromTownship") = Request("toTownship") then
-          addClause " Township = " & Request("fromTownship")
-        elseif cint(Request("fromTownship")) > _
-               cint(Request("toTownship")) then
-          addClause " Township between " & Request("toTownship") & _
-               " and " & Request("fromTownship")
-        else
-          addClause " Township between " & Request("fromTownship") & _
-               " and " & Request("toTownship")
-        end if
+    if (mer1 > 0) {
+      if (mer2 > 0) {
+        if (mer1 == mer2)
+          addClause(String.Format("Meridian = {0}" , mer1));
+        else {
+          if (mer1 > mer2)
+            addClause(String.Format("Meridian between {0} and {1}", mer2, mer1));
+          else
+            addClause(String.Format("Meridian between {0} and {1}", mer1, mer2));
+        }
+      }
       else
-        addClause " Township = " & Request("fromTownship")
-      end if
-    else
-      if Request("toTownship") <> "" then
-        addClause " Township = " & Request("toTownship")
-      end if
-    end if
-    if Request("fromRange") <> "" then
-      if Request("toRange") <> "" then
-        if Request("fromRange") = Request("toRange") then
-          addClause " Range = " & Request("fromRange")
-        elseif cint(Request("fromRange")) > _
-               cint(Request("toRange")) then
-          addClause " Range between " & Request("toRange") & _
-               " and " & Request("fromRange")
-        else
-          addClause " Range between " & Request("fromRange") & _
-               " and " & Request("toRange")
-        end if
-      else
-        addClause " Range = " & Request("fromRange")
-      end if
-    else
-      if Request("toRange") <> "" then
-        addClause " Range = " & Request("toRange")
-      end if
-    end if
-     if Request("fromMeridian") <> "" then
-      if Request("toMeridian") <> "" then
-        if Request("fromMeridian") = Request("toMeridian") then
-          addClause " Meridian = " & Request("fromMeridian")
-        elseif cint(Request("fromMeridian")) > _
-               cint(Request("toMeridian")) then
-          addClause " Meridian between " & Request("toMeridian") & _
-               " and " & Request("fromMeridian")
-        else
-          addClause " Meridian between " & Request("fromMeridian") & _
-               " and " & Request("toMeridian")
-        end if
-      else
-        addClause " Meridian = " & Request("fromMeridian")
-      end if
-    else
-      if Request("toMeridian") <> "" then
-        addClause " Meridian = " & Request("toMeridian")
-      end if
-    end if
+        addClause(String.Format("Meridian = {0}", mer1));
+    }
+    else {
+      if (mer2 > 0)
+        addClause(String.Format("Meridian = {0}", mer2));
+      else {
+        nodlsmsg.Visible = true;
+        return;
+      }
+    }
 
-    */
     showResults();
   }
 
   protected void search_nts_click (object sender, EventArgs e) {
+    _criteria = "";
+
+    int quad1, quad2, sheet1, sheet2;
+    string map1, map2;
+
+    int.TryParse(fromMapUnit.SelectedValue, out quad1);
+    int.TryParse(toMapUnit.SelectedValue, out quad2);
+    map1 = fromMapUnitSub.SelectedValue;
+    map2 = toMapUnitSub.SelectedValue;
+    int.TryParse(fromMapSheet.SelectedValue, out sheet1);
+    int.TryParse(toMapSheet.SelectedValue, out sheet2);
+
+    if (quad1 > 0) {
+      if (quad2 > 0) {
+        if (quad1 == quad2)
+          addClause(String.Format("MapUnit = {0}" , quad1));
+        else {
+          if (quad1 > quad2)
+            addClause(String.Format("MapUnit between {0} and {1}", quad2, quad1));
+          else
+            addClause(String.Format("MapUnit between {0} and {1}", quad1, quad2));
+        }
+      }
+      else
+        addClause(String.Format("MapUnit = {0}", quad1));
+    }
+    else {
+      if (quad2 > 0)
+        addClause(String.Format("MapUnit = {0}", quad2));
+      else {
+        nontsmsg.Visible = true;
+        return;
+      }
+    }
+        
+    if (map1 != "") {
+      if (map2 != "") {
+        if (map1 == map2)
+          addClause(String.Format("MapUnitSub = '{0}'" , map1));
+        else {
+          if (String.Compare(map1, map2) > 0)
+            addClause(String.Format("MapUnitSub between '{0}' and '{1}'", map2, map1));
+          else
+            addClause(String.Format("MapUnitSub between '{0}' and '{1}'", map1, map2));
+        }
+      }
+      else
+        addClause(String.Format("MapUnitSub = '{0}'", map1));
+    }
+    else {
+      if (map2 != "")
+        addClause(String.Format("MapUnitSub = '{0}'", map2));
+      else {
+        nontsmsg.Visible = true;
+        return;
+      }
+    }
+
+    if (sheet1 > 0) {
+      if (sheet2 > 0) {
+        if (sheet1 == sheet2)
+          addClause(String.Format("MapSheet = {0}" , sheet1));
+        else {
+          if (sheet1 > sheet2)
+            addClause(String.Format("MapSheet between {0} and {1}", sheet2, sheet1));
+          else
+            addClause(String.Format("MapSheet between {0} and {1}", sheet1, sheet2));
+        }
+      }
+      else
+        addClause(String.Format("MapSheet = {0}", sheet1));
+    }
+    else {
+      if (sheet2 > 0)
+        addClause(String.Format("MapSheet = {0}", sheet2));
+      else {
+        nontsmsg.Visible = true;
+        return;
+      }
+    }
+
     showResults();
   }
 
+  protected override void OnLoad(EventArgs e) {
+    noprovincemsg.Visible = false;
+    nodlsmsg.Visible = false;
+    nontsmsg.Visible = false;
+  }
 }

@@ -10,10 +10,9 @@ public partial class PublicNav : System.Web.UI.UserControl {
 
   protected string LoginUrl {
     get {
-      System.Uri url = Request.Url;
       return getSetting("Authentication.LoginUrl") +
         "?pub=" + getSetting("Authentication.PubCode") +
-        "&continue=" + Server.UrlEncode("http://" + url.Host + "/data.aspx");
+        "&continue=" + Server.UrlEncode(Request.Url.ToString());
     }
   }
 }
