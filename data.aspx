@@ -7,7 +7,7 @@
     <section class="mainContent">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12">
+                <div class="col-lg-12 text-center">
                     <h2>Welcome to your Rig Locator.</h2>
                     <h4> This dashboard gives you the most accurate and current view of rig activity across western Canada. From here you can select more detailed reports, or navigate into Rig maps to visualize geographic data.</h4>
                 </div>
@@ -51,9 +51,7 @@
                     <div>
                         <p><a href="/caodc.aspx">Click here</a> for important information about the CAODC's rig utilization data and the <em>Rig Locator</em>'s rig activity data.</p>
                     </div>
-                    <div>
-                        <p><a href="/service.aspx">Click here</a> for important information about <em>Rig Locator</em> service rig data.</p>
-                    </div>
+                    
                 </div>
             </div>
         </div>
