@@ -4,16 +4,10 @@ using System.Configuration;
 
 public partial class PublicMaster : System.Web.UI.MasterPage {
 
-  private string getSetting(string key) {
-    return ConfigurationManager.AppSettings[key].ToString();
-  }
-
-  protected string LoginUrl {
-    get {
-      return getSetting("Authentication.LoginUrl") +
-        "?pub=" + getSetting("Authentication.PubCode") +
-        "&continue=" + Server.UrlEncode(Request.Url.ToString());
-    }
+  protected override void OnInit(EventArgs e) {
+    bool loggedIn = ((BaseMaster)Master).LoggedIn;
+    logged_in.Visible = loggedIn;
+    not_logged_in.Visible = !loggedIn;
   }
 
 }

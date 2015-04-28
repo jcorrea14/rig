@@ -4,105 +4,42 @@
     CodeFile="public.cs"
     Inherits="PublicMaster"
 %>
+<%@ Register TagPrefix="riglocator" TagName="membernav" Src="/control/member-nav.ascx" %>
+<%@ Register TagPrefix="riglocator" TagName="publicnav" Src="/control/public-nav.ascx" %>
+<%@ Register TagPrefix="riglocator" TagName="dfpcode" Src="/control/dfp-code.ascx" %>
 <asp:Content runat="server" ContentPlaceHolderId="page_js_head">
-    <script type="text/javascript">
-    (function() {
-       var useSSL = 'https:' == document.location.protocol;
-       var src = (useSSL ? 'https:' : 'http:') +
-                  '//www.googletagservices.com/tag/js/gpt.js';
-       document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
-     })();
-  </script>
-    <script type="text/javascript">
-    googletag.defineSlot('/4326737/JWNWS_JWN_jwn-site_jwn-section_jwn-subsection_728x90_S1_RON_JWN-network', [728, 90], 'div-gpt-ad-1329923512779-13').addService(googletag.pubads())
-    .setTargeting("publisher", "JWN")
-    .setTargeting("site", "RIGW")
-    .setTargeting("section", "homepage");
-
-    googletag.defineSlot('/4326737/JWNWS_JWN_jwn-site_jwn-section_jwn-subsection_228x90_S1_RON_JWN-network', [228, 90], 'div-gpt-ad-1329923512779-9').addService(googletag.pubads())
-    .setTargeting("publisher", "JWN")
-    .setTargeting("site", "RIGW")
-    .setTargeting("section", "homepage");
-
-    googletag.defineSlot('/4326737/JWNWS_JWN_jwn-site_jwn-section_jwn-subsection_300x250_S1_RON_JWN-network', [300, 250], 'div-gpt-ad-1329923512779-10').addService(googletag.pubads())
-    .setTargeting("publisher", "JWN")
-    .setTargeting("site", "RIGW")
-    .setTargeting("section", "homepage");
-
-    googletag.defineSlot('/4326737/JWNWS_JWN_jwn-site_jwn-section_jwn-subsection_160x600_S1_RON_JWN-network', [160, 600], 'div-gpt-ad-1329923512779-3').addService(googletag.pubads())
-    .setTargeting("publisher", "JWN")
-    .setTargeting("site", "RIGW")
-    .setTargeting("section", "homepage");
-
-    googletag.defineSlot('/4326737/JWNWS_JWN_jwn-site_jwn-section_jwn-subsection_300x120_S1_RON_JWN-network', [300, 120], 'div-gpt-ad-1335301288326-2').addService(googletag.pubads())
-    .setTargeting("publisher", "JWN")
-    .setTargeting("site", "RIGW")
-    .setTargeting("section", "homepage");
-
-    googletag.pubads().enableSyncRendering();
-    googletag.pubads().enableSingleRequest();
-    googletag.enableServices();
-  </script>
-    <asp:ContentPlaceHolder runat="server" id="page_js_head" />
+  <riglocator:dfpcode runat="server" />
+  <asp:ContentPlaceHolder runat="server" id="page_js_head" />
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderId="page_content">
-    <form runat="server">
-        <!-- Header -->
-        <header>
-            <div class="mainNav sub-page">
-                <div class="leaderboard-holder">
-                    <div class="container"><img src="/img/leaderboard.jpg" alt="Leaderboard"/> </div>
-                </div>
-                
-                <!-- Navigation -->
-                <nav class="navbar navbar-utility navbar-static-top utility-nav">
-                    <div class="container"> 
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="hidden"> <a href="#page-top"></a> </li>
-                                <li> <a href="#">My Profile</a> </li>
-                                <li> <a href="https://secure.junewarren-nickles.com/corp-accounts.aspx" target="_blank">Corporate Accounts</a> </li>
-                                <li> <a href="/about.aspx">About Us</a> </li>
-                                <li> <a href="#">Contact Us</a> </li>
-                            </ul>
-                        </div>
-                        <!-- /.navbar-collapse --> 
-                    </div>
-                    <!-- /.container-fluid --> 
-                </nav>
-                
-                <!-- Navigation -->
-                
-                <nav class="navbar navbar-default navbar-static-top nav-subpage">
-                    <div class="container"> 
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="navbar-header page-scroll">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
-                            <a class="navbar-brand page-scroll" href="/"></a> </div>
-                        
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse bs-example-navbar-collapse-1">
-                            <ul class="nav navbar-nav navbar-right navbar-buttons">
-                                <li> <a href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank">Become a Member</a> </li>
-                        		  <li> <a href="<%= LoginUrl %>">Login</a> </li>
-                            </ul>
-                            
-                        </div>
-                        <!-- /.navbar-collapse --> 
-                    </div>
-                    <!-- /.container-fluid --> 
-                </nav>
-                <div class="spacer"></div>
-            </div>
-        </header>
-        <asp:ContentPlaceHolder runat="server" id="page_content" />
-    </form>
+  <form runat="server">
+    <!-- Header -->
+    <header>
+      <div class="mainNav sub-page">
+        <div class="leaderboard-holder">
+          <div class="container"><img src="/img/leaderboard.jpg" alt="Leaderboard"/> </div>
+        </div>
+
+        <asp:Placeholder runat="server" id="not_logged_in">
+          <riglocator:publicnav runat="server" />
+        </asp:Placeholder>
+
+        <asp:Placeholder runat="server" id="logged_in" visible="false">
+          <riglocator:membernav runat="server" />
+        </asp:Placeholder>
+
+        <div class="spacer"></div>
+      </div>
+    </header>
+    <asp:ContentPlaceHolder runat="server" id="page_content" />
+  </form>
 </asp:Content>
+
 <asp:Content runat="server" ContentPlaceHolderId="page_js">
     <asp:ContentPlaceHolder runat="server" id="page_js" />
 </asp:Content>
+
 <asp:Content runat="server" ContentPlaceHolderId="page_css">
     <asp:ContentPlaceHolder runat="server" id="page_css" />
 </asp:Content>
