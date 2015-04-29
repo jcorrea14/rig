@@ -1,13 +1,12 @@
-
-<div class="nd-par">April 17, 2015</div>
+<p>April 29, 2015</p>
 <table cellspacing="1" cellpadding="2" width="100%" class="nd-report">
-  <tr>
-    <td height="0" width="20%" style="border: 0px;" />
-    <td height="0" width="20%" style="border: 0px;" />
-    <td height="0" width="20%" style="border: 0px;" />
-    <td height="0" width="20%" style="border: 0px;" />
-    <td height="0" width="20%" style="border: 0px;" />
-  </tr>
+  <colgroup>
+    <col style="width: 20%;" />
+    <col style="width: 20%;" />
+    <col style="width: 20%;" />
+    <col style="width: 20%;" />
+    <col style="width: 20%;" />
+  </colgroup>
   <tr valign="top">
     <td>
     </td>
@@ -22,15 +21,15 @@
   <tr valign="top">
     <td>AB</td>
     <td class="count" align="right">52</td>
-    <td class="count" align="right">476</td>
-    <td class="count" align="right">528</td>
+    <td class="count" align="right">475</td>
+    <td class="count" align="right">527</td>
     <td class="percent" align="right">10%</td>
   </tr>
   <tr valign="top">
     <td>SK</td>
     <td class="count" align="right">5</td>
-    <td class="count" align="right">125</td>
-    <td class="count" align="right">130</td>
+    <td class="count" align="right">127</td>
+    <td class="count" align="right">132</td>
     <td class="percent" align="right">4%</td>
   </tr>
   <tr valign="top">
@@ -50,8 +49,8 @@
   <tr valign="top">
     <td class="header-left">WC Total</td>
     <td class="count-bold" align="right">81</td>
-    <td class="count-bold" align="right">673</td>
-    <td class="count-bold" align="right">754</td>
+    <td class="count-bold" align="right">674</td>
+    <td class="count-bold" align="right">755</td>
     <td class="percent-bold" align="right">11%</td>
   </tr>
   <tr valign="top">
@@ -67,8 +66,8 @@
   <tr valign="top">
     <td class="header-left">Canada</td>
     <td class="count-bold" align="right">81</td>
-    <td class="count-bold" align="right">674</td>
-    <td class="count-bold" align="right">755</td>
+    <td class="count-bold" align="right">675</td>
+    <td class="count-bold" align="right">756</td>
     <td class="percent-bold" align="right">11%</td>
   </tr>
 </table>
