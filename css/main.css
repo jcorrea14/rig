@@ -222,5 +222,5 @@ body { webkit-tap-highlight-color: #a92b45; }
 .spacer.fixed-spacer { display: block; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
 .col-centered { margin: 0 auto; float: none; }
 .nopadding { padding: 0; margin: 0; }
-.call-to-action ul li {float: left; margin:0 10px; list-style: none;}
+.call-to-action ul li {display: inline; margin:0 10px; list-style: none;}
 }

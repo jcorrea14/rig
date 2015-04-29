@@ -62,7 +62,7 @@
                 <div class="call-to-action col-md-6 col-centered">
                     <ul>
                         <li><a href="#" class="btn btn-xl">Start a Trial</a></li>
-                        <li> <a href="#" class="btn btn-xl">Become a Member</a></li>
+                        <li> <a href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank" class="btn btn-xl">Become a Member</a></li>
                     </ul>
                 </div>
             </div>
@@ -91,7 +91,7 @@
             <div class="row text-center">
                 <div class="col-md-4 col-md-offset-2"> <span class="feature-icon-1"> </span>
                     <h4 class="service-heading">Maps</h4>
-                    <h4 class="section-subheading text-muted">
+                    <p class="section-subheading text-muted">
                     Search for rig locations, operators or contractors.
                     </p>
                 </div>
@@ -124,7 +124,7 @@
                 <div class="call-to-action col-md-6 col-centered">
                     <ul>
                         <li><a href="#" class="btn btn-xl">Start a Trial</a></li>
-                        <li> <a href="#" class="btn btn-xl">Become a Member</a></li>
+                        <li> <a href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank" class="btn btn-xl">Become a Member</a></li>
                     </ul>
                 </div>
             </div>
@@ -138,7 +138,15 @@
             <div class="col-md-6">
                 <h2 class="section-heading">We update rig locations daily.</h2>
                 <h3 class="section-subheading">Locate rigs that are currently active, down or moving. View oil and gas facilities, pipelines, municipalities and access road features. Then print or save your search results to reference later.</h3>
-                <a href="#" class="page-scroll btn btn-xl">View Map</a> </div>
+                
+                <div class="call-to-action col-centered">
+                    <ul>
+                        <li><a href="#" class="btn btn-xl">Start a Trial</a></li>
+                        <li> <a href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank" class="btn btn-xl">Become a Member</a></li>
+                    </ul>
+                </div>
+           </div>
+           
         </div>
     </section>
     <!-- Who Section -->

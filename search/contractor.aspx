@@ -10,18 +10,18 @@
 
 <asp:Content runat="server" ContentPlaceholderId="page_content">
     <section class="mainContent">
-        <div id="search" runat="server">
-            <div class="container content">
-                <div class="row">
-                    <div class="col-md-10">
-                        <div class="row search-bar">
-                            <h1>Drilling Rig Search</h1>
-                            <ul>
-                                <li><a href="/search/operator" class="btn btn-xl btn-rig">By Operator</a></li>
-                                <li><a href="/search/contractor" class="btn btn-xl btn-rig selected">By Contractor</a></li>
-                                <li><a href="/search/location" class="btn btn-xl btn-rig">By Location</a></li>
-                            </ul>
-                        </div>
+        <div class="container content">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="row search-bar">
+                        <h1>Drilling Rig Search</h1>
+                        <ul>
+                            <li><a href="/search/operator" class="btn btn-xl btn-rig">By Operator</a></li>
+                            <li><a href="/search/contractor" class="btn btn-xl btn-rig selected">By Contractor</a></li>
+                            <li><a href="/search/location" class="btn btn-xl btn-rig">By Location</a></li>
+                        </ul>
+                    </div>
+                    <div id="search" runat="server">
                         <div class="row">
                             <div class="col-lg-12 nopadding">
                                 <h3>Select Criteria</h3>
@@ -102,24 +102,18 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 pull-right">
-                        <div class="row">
-                            <div class="skyscrapper-ad"><img src="/img/skyscrapper-placeholder.jpg" alt="advertisment"/> </div>
-                        </div>
+                </div>
+                <div class="col-md-2 pull-right">
+                    <div class="row">
+                        <div class="skyscrapper-ad"><img src="/img/skyscrapper-placeholder.jpg" alt="advertisment"/> </div>
                     </div>
                 </div>
-            </div>
-            <div id="results" runat="server" visible="false">
-                <div class="row">
-                    <h1>Drilling Rig Search Results</h1>
-                    <ul>
-                        <li><a href="/search/operator">By Operator</a></li>
-                        <li><a href="/search/contractor">By Contractor</a></li>
-                        <li><a href="/search/location">By Location</a></li>
-                    </ul>
-                </div>
-                <div class="row">
-                    <riglocator:resultslist id="result" runat="server" />
+                <div id="results" runat="server" visible="false">
+                    <div class="col-md-9">
+                        <div class="row">
+                            <riglocator:resultslist id="result" runat="server" />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
