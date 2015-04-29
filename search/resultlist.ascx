@@ -2,6 +2,21 @@
 CodeFile="resultlist.ascx.cs"
 Inherits="ResultList" %>
 <table class="nd-report">
+  <colgroup>
+    <col style="width: 3%;" />
+    <col style="width: 12%;" />
+    <col style="width: 7%;" />
+    <col style="width: 22%;" />
+    <col style="width: 5%;" />
+    <col style="width: 6%;" />
+    <col style="width: 6%;" />
+    <col style="width: 15%;" />
+    <col style="width: 5%;" />
+    <col style="width: 5%;" />
+    <col style="width: 7%;" />
+    <col style="width: 7%;" />
+  </colgroup>
+
   <tr style="display: table-row; vertical-align: baseline;">
     <td>Prov</td>
     <td>Location</td>
@@ -9,14 +24,12 @@ Inherits="ResultList" %>
     <td>Contractor</td>
     <td>Rig</td>
     <td>Status</td>
-    <td>Capac</td>
+    <td>Cap</td>
     <td>Operator</td>
-    <td>UC</td>
     <td>Type</td>
     <td>Class</td>
     <td>Spud</td>
     <td>P Depth</td>
-    <td>Camp</td>
   </tr>
   <asp:Repeater id="result" runat="server">
     <ItemTemplate runat="server">
@@ -46,9 +59,6 @@ Inherits="ResultList" %>
           <%# Server.HtmlEncode(Eval("OperatorName").ToString()) %>
         </td>
         <td>
-          <%# ((bool)(Eval("UC"))) ? "*": ""  %>
-        </td>
-        <td>
           <%# Eval("WellType") %>
         </td>
         <td>
@@ -61,9 +71,6 @@ Inherits="ResultList" %>
           <%# Eval("ProjDepth") == System.DBNull.Value ?
                       "" :
                       Double.Parse(Eval("ProjDepth").ToString()).ToString("#,###.0;-#,###.0,#") %>
-        </td>
-        <td>
-          <%# ((bool)(Eval("Camp"))) ? "*": ""  %>
         </td>
       </tr>
     </ItemTemplate>
