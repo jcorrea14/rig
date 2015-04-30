@@ -62,7 +62,10 @@ public partial class BaseMaster : System.Web.UI.MasterPage {
       } else {
         reply = client.DecodeToken(token);
         setCookies(reply);
-        Response.Redirect(Session["RequestUrl"].ToString());
+        if (Session["RequestUrl"] == null)
+          Response.Redirect("/");
+        else
+          Response.Redirect(Session["RequestUrl"].ToString());
       }
 
       bool loggedIn = reply.Action == "ALLOW";
