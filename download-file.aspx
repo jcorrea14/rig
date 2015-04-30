@@ -3,6 +3,8 @@
   MasterPageFile="/master/page.master"
   EnableViewState="false"
   Title="Premium Membership Required"
+  CodeFile="download-file.cs"
+  Inherits="DownloadFile"
  %>
 <asp:Content runat="server" ContentPlaceholderId="page_content">
   <section class="mainContent">

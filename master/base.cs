@@ -70,6 +70,8 @@ public partial class BaseMaster : System.Web.UI.MasterPage {
 
       bool loggedIn = reply.Action == "ALLOW";
       ViewState["loggedin"] = loggedIn;
+      Session["Reference"] = loggedIn ? reply.Reference : null ;
+
     } catch (Exception ex) {     }
   }
 

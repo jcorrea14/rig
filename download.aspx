@@ -23,7 +23,7 @@
             <ul>
               <li>
                 <h3>
-                  <a href="#">Printer friendly HTML version</a>
+                  <a href="<%= HtmlLink %>">Printer friendly HTML version</a>
                 </h3>
                 <p>
                   A drilling rig report for browsing or printing.
@@ -36,7 +36,7 @@
               </li>
               <li>
                 <h3>
-                  <a href="#">Mapping comma delimited ASCII file</a>
+                  <a href="<%= MapLink %>">Mapping comma delimited ASCII file</a>
                 </h3>
                 <p>
                   An electronic drilling rig report for mapping and database users.
@@ -53,7 +53,7 @@
               </li>
               <li>
                 <h3>
-                  <a href="#">Legacy comma delimited ASCII file</a>
+                  <a href="<%= FileLink %>">Legacy comma delimited ASCII file</a>
                 </h3>
                 <p>
                   An electronic drilling rig report provided
