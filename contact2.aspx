@@ -1,8 +1,7 @@
-<%@ Page Language="C#"
-         Title="Contact us regarding the Investment Guide to Alberta’s Energy Industry"
-         CodeFile="contact.aspx.cs"
-         Inherits="Contact"
-         MasterPageFile="/master/site.master" %>
+<%@ Page
+    MasterPageFile="/master/page.master"
+    Title="Contact Us | Rig Locator"
+    %>
 <%@ Register Assembly="MSCaptcha" Namespace="MSCaptcha" TagPrefix="cc1" %>
 <asp:Content runat="server" ContentPlaceHolderID="page_content">
  <div class="subHeader contact"> <img src="../img/sub-header-image.jpg" alt="Header Image"/> </div>

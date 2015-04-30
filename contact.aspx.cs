@@ -7,14 +7,6 @@ using MSCaptcha;
 
 public partial class Contact : System.Web.UI.Page {
 
-  protected void Page_Load(object sender, EventArgs e) {
-    try {
-      if (!IsPostBack) {
-        ((SiteMaster) Page.Master).SearchBoxVisible = false;
-      }
-    } catch (Exception ex) {    }
-  }
-
   private Boolean checkEmail(String email) {
     string pattern = @"^(?!\.)(""([^""\r\\]|\\[""\r\\])*""|"
       + @"([-a-z0-9!#$%&'*+/=?^_`{|}~]|(?<!\.)\.)*)(?<!\.)"
@@ -40,7 +32,7 @@ public partial class Contact : System.Web.UI.Page {
         MailMessage mail = new MailMessage();
         mail.From = new MailAddress("webform@junewarren-nickles.com");
         if (dept.SelectedValue == "Web Master")
-          mail.To.Add("web@junewarren-nickles.com");
+          mail.To.Add("bbowes@junewarren-nickles.com");
         else if (dept.SelectedValue == "Sales")
           mail.To.Add("sales@junewarren-nickles.com");
         else

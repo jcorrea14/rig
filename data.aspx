@@ -7,7 +7,7 @@
     <section class="mainContent">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12">
                     <h2>Welcome to your Rig Locator.</h2>
                     <h4> This dashboard gives you the most accurate and current view of rig activity across western Canada. From here you can select more detailed reports, or navigate into Rig maps to visualize geographic data.</h4>
                 </div>

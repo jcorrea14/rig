@@ -1,6 +1,6 @@
 <%@ Page
     Language="C#"
-    MasterPageFile="/master/public.master"
+    MasterPageFile="/master/page.master"
     Title="About Rig | Rig Locator"
     %>
 <%@ Import Namespace="ContentMgr"%>
