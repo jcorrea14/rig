@@ -55,9 +55,9 @@
     <header class="home">
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Find business opportunities with Rig Locator.</div>
-                <div class="intro-lead-in">Analyze competition and market share with Rig Locator.</div>
-                <div class="intro-lead-in"> Monitor asset details with Rig Locator.</div>
+                <div class="intro-lead-in">Find business opportunities.</div>
+                <div class="intro-lead-in">Analyze competition and market share.</div>
+                <div class="intro-lead-in"> Monitor asset details.</div>
                 <div class="intro-heading">Get the best information about western Canada’s drilling rig fleet.</div>
                 <div class="call-to-action col-md-6 col-centered">
                     <ul>

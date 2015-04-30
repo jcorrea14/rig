@@ -16,9 +16,9 @@
                     <div class="row search-bar">
                         <h1>Drilling Rig Search</h1>
                         <ul>
+                            <li><a href="/search/location" class="btn btn-xl btn-rig">By Location</a></li>
                             <li><a href="/search/operator" class="btn btn-xl btn-rig selected">By Operator</a></li>
                             <li><a href="/search/contractor" class="btn btn-xl btn-rig">By Contractor</a></li>
-                            <li><a href="/search/location" class="btn btn-xl btn-rig">By Location</a></li>
                         </ul>
                     </div>
                     <div id="search" runat="server">

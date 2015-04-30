@@ -8,7 +8,7 @@
 <%@ Register Assembly="MSCaptcha" Namespace="MSCaptcha" TagPrefix="cc1" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="page_content">
-    <section class="mainContent contact">
+    <section id="contact" class="mainContent">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -24,10 +24,10 @@
                             <asp:ValidationSummary id="errormessages" runat="server"
                              ValidationGroup="feedbackgroup" />
                         </div>
-                        <div class="contact-line">
+                        <div class="form-group">
                             <div class="label"> To: </div>
                             <div class="contact-input">
-                                <asp:DropDownList runat="server" id="dept">
+                                <asp:DropDownList class="form-control" runat="server" id="dept">
                                     <asp:ListItem>Editor</asp:ListItem>
                                     <asp:ListItem>Sales</asp:ListItem>
                                     <asp:ListItem>Web Master</asp:ListItem>
@@ -35,19 +35,19 @@
                                 </asp:DropDownList>
                             </div>
                         </div>
-                        <div class="contact-line">
+                        <div class="form-group">
                             <div class="label"> Name*:
                                 <asp:RequiredFieldValidator
-            ID="nameRequiredValidator"
+            ID="nameRequiredValidator"            
             runat="server" ControlToValidate="name"
             ErrorMessage="Name is missing"
             ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:RequiredFieldValidator>
                             </div>
                             <div class="contact-input">
-                                <asp:Textbox runat="server" id="name" />
+                                <asp:Textbox runat="server" class="form-control" id="name" />
                             </div>
                         </div>
-                        <div class="contact-line">
+                        <div class="form-group">
                             <div class="label"> Email*:
                                 <asp:RequiredFieldValidator
             ID="emailRequiredValidator"
@@ -62,10 +62,10 @@
             ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:CustomValidator>
                             </div>
                             <div class="contact-input">
-                                <asp:TextBox runat="server" id="email" />
+                                <asp:TextBox runat="server" class="form-control" id="email" />
                             </div>
                         </div>
-                        <div class="contact-line">
+                        <div class="form-group">
                             <div class="label"> Verify email*:
                                 <asp:CompareValidator
             ID="compareEmailValidator"
@@ -76,16 +76,16 @@
             ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:CompareValidator>
                             </div>
                             <div class="contact-input">
-                                <asp:TextBox runat="server" id="verifyEmail" />
+                                <asp:TextBox runat="server" class="form-control" id="verifyEmail" />
                             </div>
                         </div>
-                        <div class="contact-line">
+                        <div class="form-group">
                             <div class="label">Phone:</div>
                             <div class="contact-input">
-                                <asp:TextBox runat="server" id="phone" />
+                                <asp:TextBox runat="server" class="form-control" id="phone" />
                             </div>
                         </div>
-                        <div class="contact-line">
+                        <div class="form-group">
                             <div class="label"> Message*:
                                 <asp:RequiredFieldValidator
             ID="commentRequiredValidator"
@@ -95,10 +95,10 @@
             ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:RequiredFieldValidator>
                             </div>
                             <div class="contact-input">
-                                <asp:TextBox runat="server" id="comment" TextMode="MultiLine" Rows="10" Columns="35"/>
+                                <asp:TextBox runat="server" class="form-control" id="comment" TextMode="MultiLine" Rows="10" Columns="35"/>
                             </div>
                         </div>
-                        <div class="contact-line">
+                        <div class="form-group">
                             <div class="label"> Anti-spam verification*:
                                 <asp:CustomValidator
             runat="server"
@@ -118,15 +118,15 @@
                               Width="180px" CaptchaLength="5" BackColor="WhiteSmoke"
                               EnableViewState="False" />
                                 </div>
-                                <asp:TextBox runat="server" id="captcha" CssClass="captcha-input" />
+                                <asp:TextBox runat="server" id="captcha" CssClass="captcha-input form-control" />
                             </div>
                         </div>
-                        <div class="contact-line">
+                        <div class="form-group">
                             <div class="label"></div>
                             <div class="contact-input">
                                 <asp:Button runat="server"
                     id="submit"
-                    CssClass="contact-submit"
+                    CssClass="contact-submit btn btn-xl btn-rig"
                     Text="Submit"
                     ValidationGroup="feedbackgroup"
                     OnClick="submit_Click" />
@@ -134,7 +134,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 pull-right">
+                <div class="col-md-3 pull-right bg-lighter-gray">
                     <h3>JuneWarren-Nickle's Energy Group</h3>
                     <h4>Calgary Location</h4>
                     <p> 2nd Flr-816 55 Avenue NE<br />
@@ -142,14 +142,15 @@
                         Canada T2E 6Y4 </p>
                     <p> Ph: 403.209.3500<br />
                         Toll-Free Ph: 1.800.387.2446</p>
-                    <p>&nbsp;</p>
+                    
                     <h4>Edmonton Location</h4>
                     <p> 220-9303 34 Ave NW<br />
                         Edmonton, Alberta<br />
                         Canada T6E 5W8 </p>
                     <p> Ph: 780.944.9333<br />
                         Toll-Free Ph: 1.800.563.2946 </p>
-                    <div style="clear: both;"></div>
+                        <p>&nbsp;</p>
+                    
                 </div>
             </div>
         </div>
