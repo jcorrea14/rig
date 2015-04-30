@@ -35,10 +35,6 @@
 
     <asp:ContentPlaceHolder runat="server" id="page_js_head" />
     
-    <script type="text/javascript">
-  (function(s,o,c,g,a,m){a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.defer=1;a.charset=c;a.src=g;m.parentNode.insertBefore(a,m)})
-  (document,'script','utf-8','https://usabilitytools.com/ff/rest/script/120707');
-</script>
 
   </head>
   <body id="page-top" class="index">

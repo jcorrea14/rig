@@ -9,7 +9,7 @@
 <%@ Register TagPrefix="riglocator" TagName="dfpcode" Src="/control/dfp-code.ascx" %>
 <asp:Content runat="server" ContentPlaceHolderId="page_js_head">
   <riglocator:dfpcode runat="server" />
-  <asp:ContentPlaceHolder runat="server" id="page_js_head" />
+  <asp:ContentPlaceHolder runat="server" id="page_js_head" />	  
 </asp:Content>
 
 <asp:Content runat="server" ContentPlaceHolderId="page_content">

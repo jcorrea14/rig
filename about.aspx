@@ -1,6 +1,6 @@
 <%@ Page
     Language="C#"
-    MasterPageFile="/master/page.master"
+    MasterPageFile="/master/public.master"
     Title="About Rig | Rig Locator"
     %>
 <%@ Import Namespace="ContentMgr"%>
@@ -18,14 +18,14 @@
 </script>
 
 <asp:Content runat="server" ContentPlaceholderId="page_content">
-    <section class="mainContent">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 id="pageTitle" runat="server" />
-                    <div id="pageBody" runat="server" />
-                </div>
-            </div>
+  <section class="mainContent">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h1 id="pageTitle" runat="server" />
+          <div id="pageBody" runat="server" />
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 </asp:Content>
