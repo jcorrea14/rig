@@ -17,7 +17,7 @@ Inherits="ResultList" %>
     <col style="width: 7%;" />
   </colgroup>
 
-  <tr style="display: table-row; vertical-align: baseline;">
+  <tr style="display: vertical-align: baseline;">
     <td>Prov</td>
     <td>Location</td>
     <td>Area</td>

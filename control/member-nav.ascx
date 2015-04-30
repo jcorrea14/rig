@@ -57,7 +57,7 @@
           <li><a href="/report/dr-activity">Drilling Activity Surveys</a></li>
           <li><a href="/report/survey">Western Canada Drilling Chart</a></li>
           <li><a href="/report/utilization">Contractor Utilization Summary</a></li>
-          <li><a href="/download.asp">Download and print reports</a></li>
+          <li><a href="/download">Download and print reports</a></li>
         </ul>
         </li>
         <li> <a href="http://www.datacentralcanada.com/licences.asp" target="_blank">Well Licenses</a> </li>
