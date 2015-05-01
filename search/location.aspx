@@ -19,6 +19,7 @@
                             <li><a href="/search/location" class="btn btn-xl btn-rig selected">By Location</a></li>
                             <li><a href="/search/operator" class="btn btn-xl btn-rig">By Operator</a></li>
                             <li><a href="/search/contractor" class="btn btn-xl btn-rig">By Contractor</a></li>
+                            <li><input type="reset" value="Clear" class="btn btn-xl btn-rig" /></li>
                         </ul>
                     </div>
                     <div id="search" runat="server">

@@ -28,7 +28,14 @@
                 </div>
                 <div class="col-md-2 pull-right">
                     <div class="row">
-                        <div class="skyscrapper-ad"><img src="img/skyscrapper-placeholder.jpg" alt="advertisment"/> </div>
+                        <div class="skyscrapper-ad">
+                          <!-- skyscraper -->
+                          <div id='div-gpt-ad-1329923512779-3' style='width:160px; height:600px;'> 
+                            <script type='text/javascript'>
+                              googletag.display('div-gpt-ad-1329923512779-3');
+                            </script> 
+                          </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -38,8 +45,22 @@
                 <div class="col-md-4">
                     <div class="row">
                         <div class="side-ad">
-                            <div><img src="img/bigbox-ad.jpg" alt="advertisment"/> </div>
-                            <div><img src="img/buttonbox-ad.jpg" alt="advertisment"/> </div>
+                            <div>
+                              <!-- big box -->
+                              <div id='div-gpt-ad-1329923512779-10' style='width:300px; height:250px;'> 
+                                <script type='text/javascript'>
+                                  googletag.display('div-gpt-ad-1329923512779-10');
+                                </script> 
+                              </div>
+                            </div>
+                            <div>
+                              <!-- button box -->
+                              <div id='div-gpt-ad-1335301288326-2' style='width:300px; height:120px;'> 
+                                <script type='text/javascript'>
+                                  googletag.display('div-gpt-ad-1335301288326-2');
+                                </script> 
+                              </div>
+                            </div>
                         </div>
                     </div>
                 </div>

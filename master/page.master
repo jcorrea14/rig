@@ -6,6 +6,7 @@
 %>
 <%@ Register TagPrefix="riglocator" TagName="membernav" Src="/control/member-nav.ascx" %>
 <%@ Register TagPrefix="riglocator" TagName="dfpcode" Src="/control/dfp-code.ascx" %>
+<%@ Register TagPrefix="riglocator" TagName="leaderboard" Src="/control/leaderboard.ascx" %>
 <asp:Content runat="server" ContentPlaceHolderId="page_js_head">
   <riglocator:dfpcode runat="server" />
   <asp:ContentPlaceHolder runat="server" id="page_js_head" />
@@ -27,9 +28,7 @@
     <!-- Header -->
     <header>
       <div class="mainNav sub-page">
-        <div class="leaderboard-holder">
-          <div class="container"><img src="/img/leaderboard.jpg" alt="Leaderboard"/> </div>
-        </div>
+        <riglocator:leaderboard runat="server" />
         <riglocator:membernav runat="server" />
         <div class="spacer"></div>
       </div>
