@@ -20,9 +20,10 @@ public partial class DownloadPage : System.Web.UI.Page {
         conn.Open();
       
         String sql = @"
-select distinct top 20
+select distinct
   Updated,
   replace(convert(varchar, updated, 11), '/', '') S
+where updated >= getDate() - 28
 from webRig2 order by Updated desc";
         SqlDataAdapter ad = new SqlDataAdapter(sql, conn);
         DataSet ds = new DataSet();
