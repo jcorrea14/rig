@@ -11,16 +11,17 @@
   <section class="mainContent">
     <div class="container content">
       <div class="row">
-        <h1>Title</h1>
+        <h1><% = ContractorName %></h1>
         <table class="nd-report">
           <colgroup>
             <col style="width: 5%;" />
             <col style="width: 3%;" />
             <col style="width: 12%;" />
+            <col style="width: 5%;" />
             <col style="width: 7%;" />
-            <col style="width: 6%;" />
+            <col style="width: 5%;" />
             <col style="width: 10%;" />
-            <col style="width: 26%;" />
+            <col style="width: 27%;" />
             <col style="width: 5%;" />
             <col style="width: 5%;" />
             <col style="width: 10%;" />
@@ -30,14 +31,15 @@
             <td>Rig</td>
             <td>Prov</td>
             <td>Location</td>
+            <td>PSAC</td>
             <td>Area</td>
             <td>Status</td>
-            <td>Cap</td>
+            <td style="text-align: right">Cap</td>
             <td>Operator</td>
             <td>Type</td>
             <td>Class</td>
             <td>Spud</td>
-            <td>P Depth</td>
+            <td style="text-align: right;">P Depth</td>
           </tr>
           <asp:Repeater id="result" runat="server">
             <ItemTemplate runat="server">
@@ -50,6 +52,9 @@
                 </td>
                 <td>
                   <%# Eval("Location") %>
+                </td>
+                <td>
+                  <%# Eval("PSACArea") %>
                 </td>
                 <td>
                   <%# Server.HtmlEncode(Eval("Area").ToString()) %>
