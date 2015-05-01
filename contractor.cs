@@ -31,9 +31,6 @@ where ContractorName like Replace('{0}', '-', '%')
         
         _contractorname = ds.Tables["contractor"].Rows[0][0].ToString();
 
-        Response.Write("http://staging.riglocator.ca/contractor/" +
-                       new System.Text.RegularExpressions.Regex("\\W+").Replace(_contractorname, "-").ToLower());
-
         sql = String.Format(@"
 select
   Rig,
