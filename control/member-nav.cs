@@ -9,6 +9,14 @@ public partial class MemberNav : System.Web.UI.UserControl {
     return ConfigurationManager.AppSettings[key].ToString();
   }
 
+  protected string ProfileUrl {
+    get {
+      return getSetting("Authentication.ProfileUrl") +
+        "?pub=RIG_BROWSE&continue=" +
+        Server.UrlEncode(Request.Url.ToString());
+    }
+  }
+
   private void setCookies(AuthenticationReply reply) {
     HttpCookie cookie = new HttpCookie("NDID");
     cookie.Value = reply.Device;
