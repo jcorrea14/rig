@@ -5,6 +5,10 @@
     Inherits="IndexPage"
     %>
 
+<asp:Content runat="server" ContentPlaceholderId="page_meta">
+  <meta name="description" content="" />
+</asp:Content>
+
 <asp:Content runat="server" ContentPlaceholderId="page_content">
     <div class="mainNav"> 
         <!-- Navigation -->

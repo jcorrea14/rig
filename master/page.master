@@ -44,3 +44,7 @@
 <asp:Content runat="server" ContentPlaceHolderId="page_css">
   <asp:ContentPlaceHolder runat="server" id="page_css" />
 </asp:Content>
+
+<asp:Content runat="server" ContentPlaceHolderId="page_meta">
+  <asp:ContentPlaceHolder runat="server" id="page_meta" />
+</asp:Content>
