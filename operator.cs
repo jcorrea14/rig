@@ -3,33 +3,36 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
 
-public partial class ContractorPage : System.Web.UI.Page {
+public partial class OperatorPage : System.Web.UI.Page {
   
-  string _contractorname = "";
+  string _operatorname = "";
 
-  protected String ContractorName { get { return _contractorname; } }
+  protected String OperatorName { get { return _operatorname; } }
 
   override protected void OnLoad(EventArgs e) {
     try {
       if (!IsPostBack) {
-        String contractor = Request["id"];
+        String op = Request["id"];
 
         SqlConnection conn = new SqlConnection(
             ConfigurationManager.ConnectionStrings["WellConnectionString"].ToString());
         conn.Open();
+
         string sql = String.Format(@"
-select distinct ContractorName
+select distinct OperatorName
 from vwWebRig2
-where ContractorName like Replace('{0}', '-', '%')
-", contractor);
+where OperatorName like Replace('{0}', '-', '%')
+", op);
+
+
         SqlDataAdapter ad = new SqlDataAdapter(sql, conn);
         DataSet ds = new DataSet();
-        ad.Fill(ds, "contractor");
+        ad.Fill(ds, "operator");
 
-        if (ds.Tables["contractor"].Rows.Count != 1)
-          throw new Exception("not single contractor");
+        if (ds.Tables["operator"].Rows.Count != 1)
+          throw new Exception("not single operator");
         
-        _contractorname = ds.Tables["contractor"].Rows[0][0].ToString();
+        _operatorname = ds.Tables["operator"].Rows[0][0].ToString();
 
         sql = String.Format(@"
 select
@@ -40,14 +43,14 @@ select
   Area,
   Status,
   Capacity,
-  OperatorName,
+  ContractorName,
   WellType,
   Class,
   Spud,
   ProjDepth
 from vwWebRig2
-where ContractorName = '{0}'
-order by Rig", _contractorname.Replace("'", "''"));
+where OperatorName = '{0}'
+order by Rig", _operatorname.Replace("'", "''"));
         ad = new SqlDataAdapter(sql, conn);
         ad.Fill(ds, "rig");
         conn.Close();
