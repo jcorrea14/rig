@@ -27,6 +27,8 @@ label { display: inline-block; max-width: 100%; font-weight: normal; margin: 10p
 .btn-blk { border-color: #000000; color: #000000; margin: 20px 0; }
 .btn-rig { border-color: #881630; color: #881630; margin: 20px 0; background: none; }
 .btn-xl:hover, .btn-xl:focus, .btn-xl:active, .btn-xl.active, .dropdown-toggle.btn-xl { border-color: #881630; color: #fff; background-color: #881630; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; }
+.btn-2xl:hover, .btn-2xl:focus, .btn-2xl:active, .btn-2xl.active, .dropdown-toggle.btn-2xl { border-color: #881630; color: #fff; background-color: #222; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; }
+
 .btn-xl:active, .btn-xl.active, .dropdown-toggle.btn-xl { background-image: none; }
 .btn-xl.disabled, .btn-xl[disabled], fieldset[disabled] .btn-xl, .btn-xl.disabled:hover, .btn-xl[disabled]:hover, fieldset[disabled] .btn-xl:hover, .btn-xl.disabled:focus, .btn-xl[disabled]:focus, fieldset[disabled] .btn-xl:focus, .btn-xl.disabled:active, .btn-xl[disabled]:active, fieldset[disabled] .btn-xl:active, .btn-xl.disabled.active, .btn-xl[disabled].active, fieldset[disabled] .btn-xl.active { border-color: #881630; background-color: #881630; }
 .btn-xl .badge { color: #881630; background-color: #fff; }
@@ -199,8 +201,8 @@ body { webkit-tap-highlight-color: #881630; }
 .nd-report thead tr:nth-child(2n-1) { background-color: #ffffff }
 .nd-report tr:hover td { background: #881630; color: #FFFFFF; }
 .nd-report tr:hover td a { color: #FFFFFF; }
-.header-left, .header-right { }
-.header-center { text-align: center; }
+.header, .header-left, .header-right, .header-center { font-weight:  bold;}
+td.header-right { text-align: center; }
 .search-bar ul { overflow: hidden; padding: 0; }
 .search-bar ul li { float: left; margin: 0 10px; list-style: none; }
 .search-bar .selected { border-color: #881630; color: #fff; background-color: #881630; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; }

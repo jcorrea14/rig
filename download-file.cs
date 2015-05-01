@@ -9,8 +9,14 @@ public partial class DownloadFile : System.Web.UI.Page {
         AuthenticationClient client = AuthenticationClient.getClient();
         AuthenticationUser user = client.GetUser(Session["Reference"].ToString());
         if (user.CanAccess("RIG_EXPORT")) {
-          try {
+         try {
             string filename = (String)Request["id"];
+	    string s = "20" + filename.Substring(4, 2) +
+	               "-" + filename.Substring(6, 2) +
+		       "-" + filename.Substring(8, 2);
+            DateTime d = DateTime.Parse(s);
+	    if (d < d.AddDays(-30))
+	      throw new Exception("scraping alert"); 
             Response.Clear();
             Response.ContentType = "text/csv";
             Response.AddHeader("Content-disposition", "inline; filename=" + filename);

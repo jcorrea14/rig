@@ -8,7 +8,7 @@
     <div class="container content">
       <div class="row">
         <div class="col-lg-12">
-          <h1>Drilling Summary</h1>
+          <h1>Drilling Graphs</h1>
         </div>
       </div>
       <div class="row">

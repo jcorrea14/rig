@@ -140,8 +140,8 @@
                 
                 <div class="call-to-action col-centered">
                     <ul>
-                        <li><a href="#" class="btn btn-xl">Start a Trial</a></li>
-                        <li> <a href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank" class="btn btn-xl">Become a Member</a></li>
+                        <li><a href="#" class="btn btn-xl btn-2xl">Start a Trial</a></li>
+                        <li> <a href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank" class="btn btn-xl btn-2xl">Become a Member</a></li>
                     </ul>
                 </div>
            </div>
