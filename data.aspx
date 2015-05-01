@@ -47,7 +47,7 @@
                         <div class="side-ad">
                             <div>
                               <!-- big box -->
-                              <div id='div-gpt-ad-1329923512779-10' style='width:300px; height:250px;'> 
+                              <div id='div-gpt-ad-1329923512779-10' style='width:300px; height:250px; margin:10px 0 20px 0;'> 
                                 <script type='text/javascript'>
                                   googletag.display('div-gpt-ad-1329923512779-10');
                                 </script> 
@@ -55,7 +55,7 @@
                             </div>
                             <div>
                               <!-- button box -->
-                              <div id='div-gpt-ad-1335301288326-2' style='width:300px; height:120px;'> 
+                              <div id='div-gpt-ad-1335301288326-2' style='width:300px; height:120px; margin-bottom:10px;'> 
                                 <script type='text/javascript'>
                                   googletag.display('div-gpt-ad-1335301288326-2');
                                 </script> 

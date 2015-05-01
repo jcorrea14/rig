@@ -44,9 +44,9 @@
         <li> <a href="http://maps.riglocator.ca" target="_blank">Rig Map</a> </li>
         <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rig Search</a>
         <ul class="dropdown-menu">
-          <li><a href="/search/operator"> By Operator</a></li>
-          <li><a href="/search/contractor">By Contractor</a></li>
           <li><a href="/search/location" >By Location</a></li>
+          <li><a href="/search/operator"> By Operator</a></li>
+          <li><a href="/search/contractor">By Contractor</a></li>          
         </ul>
         </li>
         <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Drilling Rig Reports</a>

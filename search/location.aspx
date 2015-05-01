@@ -12,14 +12,14 @@
     <section class="mainContent">
         <div class="container content">
             <div class="row">
-                <div class="col-md-10">
+                <div class="col-lg-12">
                     <div class="row search-bar">
                         <h1>Drilling Rig Search</h1>
                         <ul>
                             <li><a href="/search/location" class="btn btn-xl btn-rig selected">By Location</a></li>
                             <li><a href="/search/operator" class="btn btn-xl btn-rig">By Operator</a></li>
                             <li><a href="/search/contractor" class="btn btn-xl btn-rig">By Contractor</a></li>
-                            <li><input type="reset" value="Clear" class="btn btn-xl btn-rig" /></li>
+                            <li class="pull-right"><input type="reset" value="Clear" class="btn btn-xl btn-rig" /></li>
                         </ul>
                     </div>
                     <div id="search" runat="server">
@@ -43,7 +43,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4 extra-padding">
+                            <div class="col-md-5 extra-padding">
                                 <h4>Township/Range</h4>
                                 <p id="nodlsmsg" class="errmsg" runat="server" visible="false"> Select an township, range and meridian! </p>
                                 <div class="subbold">Township</div>
@@ -574,13 +574,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-2 pull-right">
-                    <div class="row">
-                        <div class="skyscrapper-ad"><img src="/img/skyscrapper-placeholder.jpg" alt="advertisment"/> </div>
-                    </div>
-                </div>
+                
                 <div id="results" runat="server" visible="false">
-                    <div class="col-md-9">
+                    <div class="col-lg-12">
                         <div class="row">
                             <riglocator:resultslist id="result" runat="server" />
                         </div>
