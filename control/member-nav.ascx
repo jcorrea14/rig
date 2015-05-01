@@ -38,18 +38,18 @@
           <asp:LinkButton runat="server" onclick="LogoutClick" Text="Logout" />
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right navbar-home">
+      <ul class="nav navbar-nav navbar-right navbar-sub">
         <li class="hidden"> <a href="#page-top"></a> </li>
         <li> <a href="/data.aspx">Rig Data</a> </li>
         <li> <a href="http://maps.riglocator.ca" target="_blank">Rig Map</a> </li>
-        <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rig Search</a>
+        <li> <a href="/search/location">Rig Search</a>
         <ul class="dropdown-menu">
           <li><a href="/search/location" >By Location</a></li>
           <li><a href="/search/operator"> By Operator</a></li>
           <li><a href="/search/contractor">By Contractor</a></li>          
         </ul>
         </li>
-        <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown">Drilling Rig Reports</a>
+        <li class="dropdown"> <a href="/report/summary">Drilling Rig Reports</a>
         <ul class="dropdown-menu">
           <li><a href="/report/summary">Contractors' Summary</a></li>
           <li><a href="/report/operators">Top Operators</a></li>
@@ -62,7 +62,7 @@
         </ul>
         </li>
         <li> <a href="http://www.datacentralcanada.com/licences.asp" target="_blank">Well Licenses</a> </li>
-        <li> <a href="../summary.aspx">Drilling Summary</a> </li>
+        <li> <a href="../summary.aspx">Drilling Graphs</a> </li>
       </ul>
     </div>
     <!-- /.container-fluid --> 

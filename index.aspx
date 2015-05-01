@@ -13,8 +13,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
-                        <li class="hidden"> <a href="#page-top"></a> </li>
-                        <li> <a href="https://secure.junewarren-nickles.com/corp-accounts.aspx" target="_blank">Corporate Accounts</a> </li>
+                        <li class="hidden"> <a href="#page-top"></a> </li>                        
                         <li> <a href="/about.aspx">About Us</a> </li>
                         <li> <a href="/contact.aspx">Contact Us</a> </li>
                     </ul>
@@ -39,7 +38,7 @@
                         <li> <a class="page-scroll" href="#data">Rig Locator Data</a> </li>
                         <li> <a class="page-scroll" href="#map">Rig Locator Map</a></li>
                         <li> <a class="page-scroll" href="#membership">Membership</a> </li>
-                        <li> <a class="page-scroll" href="#psac">PSAC</a> </li>
+                        
                     </ul>
                     <ul class="nav navbar-nav navbar-left navbar-buttons">
                         <li> <a href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank">Become a Member</a> </li>
@@ -216,19 +215,5 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- PSAC Map Section -->
-    <section>
-        <div id="psac" class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Focus on the region that matters to you.</h2>
-                    <h3 class="section-subheading text-muted">Search individual PSAC regions for rig activity in that unique area. Specify a PSAC region and receive email updates when new well licences are issued or drilling activity changes within that region.</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12 text-center"> <img src="img/PSAC-map.jpg" alt="PSAC Map" /> </div>
-            </div>
-        </div>
-    </section>
+    </section>    
 </asp:Content>
