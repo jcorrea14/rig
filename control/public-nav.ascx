@@ -8,8 +8,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li class="hidden"> <a href="#page-top"></a> </li>
-        <li> <a href="https://secure.junewarren-nickles.com/corp-accounts.aspx" target="_blank">Corporate Accounts</a> </li>
+        <li class="hidden"> <a href="#page-top"></a> </li>        
         <li> <a href="/about.aspx">About Us</a> </li>
         <li> <a href="/contact.aspx">Contact Us</a> </li>
       </ul>

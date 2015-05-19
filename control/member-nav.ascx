@@ -40,8 +40,8 @@
       </ul>
       <ul class="nav navbar-nav navbar-right navbar-sub">
         <li class="hidden"> <a href="#page-top"></a> </li>
-        <li> <a href="/data.aspx">Rig Data</a> </li>
-        <li> <a href="http://maps.riglocator.ca" target="_blank">Rig Map</a> </li>
+        <li> <a href="/data.aspx">Rig Dashboard</a> </li>
+        <li> <a href="http://staging-maps.riglocator.ca/default.aspx" target="_blank">Rig Map</a> </li>
         <li> <a href="/search/location">Rig Search</a>
         <ul class="dropdown-menu">
           <li><a href="/search/location" >By Location</a></li>
@@ -61,7 +61,7 @@
           <li><a href="/download">Download and print reports</a></li>
         </ul>
         </li>
-        <li> <a href="http://www.datacentralcanada.com/licences.asp" target="_blank">Well Licenses</a> </li>
+        <li> <a href="/well-licences.aspx">Well Licences</a> </li>
         <li> <a href="../summary.aspx">Drilling Graphs</a> </li>
       </ul>
     </div>

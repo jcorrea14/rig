@@ -1,7 +1,7 @@
 <%@ Page
     Language="C#"
     MasterPageFile="/master/public.master"
-    Title="About Rig | Rig Locator"
+    Title="More about Rig Locator"
     %>
 <%@ Import Namespace="ContentMgr"%>
 <script runat="server">
@@ -11,11 +11,14 @@
         WebPage p = new WebPage("RIG", "ABOUT");
         pageTitle.InnerText = p.Title;
         pageBody.InnerHtml = p.Body;
-        Page.Header.Title = "About Rig | Rig Locator";
+        Page.Header.Title = "More about Rig Locator";
       }
     } catch (Exception ex) {  }
   }
 </script>
+<asp:Content runat="server" ContentPlaceholderId="page_meta">
+  <meta name="description" content="Find out more about the Rig Locator, western Canada's best rig fleet information tool." />
+</asp:Content>
 
 <asp:Content runat="server" ContentPlaceholderId="page_content">
   <section class="mainContent">

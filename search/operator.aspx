@@ -13,25 +13,17 @@
     <div class="container content">
       <div class="row">
         <div class="col-lg-12">
-          <div class="row search-bar">
-            <h1>Drilling Rig Search</h1>
+          <div class="search-bar">
+            <h1>Rig Operator Search</h1>
             <ul>
-              <li><a href="/search/location" class="btn btn-xl btn-rig">By Location</a></li>
-              <li><a href="/search/operator" class="btn btn-xl btn-rig selected">By Operator</a></li>
-              <li><a href="/search/contractor" class="btn btn-xl btn-rig">By Contractor</a></li>
-              <li class="pull-right">
-                <input type="reset" value="Clear" class="btn btn-xl btn-rig" />
-              </li>
-              <li class="pull-right">
-                <asp:Button class="btn btn-xl btn-rig" runat="server" text="Search" onclick="search_click" />
-              </li>
+              <li><a href="/search/location" class="btn btn-xl btn-rig full-width">By Location</a></li>
+              <li><a href="/search/operator" class="btn btn-xl btn-rig full-width selected">By Operator</a></li>
+              <li><a href="/search/contractor" class="btn btn-xl btn-rig full-width">By Contractor</a></li>
             </ul>
           </div>
           <div id="search" runat="server">
-            <div class="row">
-              <div class="col-lg-12 nopadding">
-                <h3>Select Criteria</h3>
-              </div>
+            <div class="col-lg-12 nopadding">
+              <h3>Select Criteria</h3>
             </div>
             <div class="row">
               <p id="noselectionmsg" class="errmsg" runat="server" visible="false"> Select an operator! </p>
@@ -68,37 +60,44 @@
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-lg-12 nopadding">
-                <h3>Select a Sort Option</h3>
-                <div class="col-md-3">
-                  <asp:RadioButton runat="server" id="locationsort"
+            <div class="col-lg-12 nopadding">
+              <h3>Select a Sort Option</h3>
+              <div class="col-md-3">
+                <asp:RadioButton runat="server" id="locationsort"
                                text="Location" groupName="sort" checked="true" />
-                  <br />
-                  <asp:RadioButton runat="server" id="operatorsort"
+                <br />
+                <asp:RadioButton runat="server" id="operatorsort"
                                text="Operator" groupName="sort" />
-                  <br />
-                </div>
-                <div class="col-md-3">
-                  <asp:RadioButton runat="server" id="rigsort"
+                <br />
+              </div>
+              <div class="col-md-3">
+                <asp:RadioButton runat="server" id="rigsort"
                                text="Contractor and Rig" groupName="sort" />
-                  <br />
-                  <asp:RadioButton runat="server" id="areasort"
+                <br />
+                <asp:RadioButton runat="server" id="areasort"
                                text="Area Name" groupName="sort" />
-                  <br />
-                </div>
-                <div class="col-md-3">
-                  <asp:RadioButton runat="server" id="spudsort"
+                <br />
+              </div>
+              <div class="col-md-3">
+                <asp:RadioButton runat="server" id="spudsort"
                                text="Spud Date" groupName="sort" />
-                  <br />
-                  <asp:RadioButton runat="server" id="classsort"
+                <br />
+                <asp:RadioButton runat="server" id="classsort"
                                text="Well Class" groupName="sort" />
-                  <br />
-                </div>
-                <div class="col-md-3">
-                  <asp:RadioButton runat="server" id="statussort"
+                <br />
+              </div>
+              <div class="col-md-3">
+                <asp:RadioButton runat="server" id="statussort"
                                text="Rig Status" groupName="sort" />
-                  <br />
+                <br />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 pull-right">
+                <div class="pull-right">
+                  <input type="reset" value="Clear All" class="btn btn-xl btn-rig" />
+                  &nbsp;
+                  <asp:Button class="btn btn-xl btn-rig pull-right" runat="server" text="Search" onclick="search_click" />
                 </div>
               </div>
             </div>
@@ -106,9 +105,7 @@
         </div>
         <div id="results" runat="server" visible="false">
           <div class="col-lg-12">
-            <div class="row">
-              <riglocator:resultslist id="result" runat="server" />
-            </div>
+            <riglocator:resultslist id="result" runat="server" />
           </div>
         </div>
       </div>

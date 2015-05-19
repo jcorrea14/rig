@@ -75,9 +75,9 @@ $(document).ready(function() {
         $('.why-rig-locator').parallax({
             speed: 0.25
         });
-
-        $('.become-member').parallax({
-            speed: 0.45
+       
+				$('header.home').parallax({
+            speed: 0.30
         });
     }
 });
