@@ -57,51 +57,25 @@ public partial class LicenceLoc : System.Web.UI.Page {
       throw new Exception(field + " is required");
   }
 
+  protected void search_dls_click (object sender, EventArgs e) {
+    _criteria = "";
+    addClause(span("Township", fromTownship.SelectedValue, toTownship.SelectedValue));
+    addClause(span("Range", fromRange.SelectedValue, toRange.SelectedValue));
+    addClause(span("Meridian", fromMeridian.SelectedValue, toMeridian.SelectedValue));
+    search_click(sender, e);
+  }
+    
+  protected void search_nts_click (object sender, EventArgs e) {
+    _criteria = "";
+    addClause(span("MapUnit", fromMapUnit.SelectedValue, toMapUnit.SelectedValue));
+    addClause(spanString("MapUnitSub", fromMapUnitSub.SelectedValue, toMapUnitSub.SelectedValue));
+    addClause(span("MapSheet", fromMapSheet.SelectedValue, toMapSheet.SelectedValue));
+    search_click(sender, e);
+  }
+    
+
   protected void search_click (object sender, EventArgs e) {
     try {
-      _criteria = "";
-      if(dls.Checked) {
-        addClause(span("Township", fromTownship.SelectedValue, toTownship.SelectedValue));
-        addClause(span("Range", fromRange.SelectedValue, toRange.SelectedValue));
-        addClause(span("Meridian", fromMeridian.SelectedValue, toMeridian.SelectedValue));
-      }
-      else if(nts.Checked) {
-        addClause(span("MapUnit", fromMapUnit.SelectedValue, toMapUnit.SelectedValue));
-        addClause(spanString("MapUnitSub", fromMapUnitSub.SelectedValue, toMapUnitSub.SelectedValue));
-        addClause(span("MapSheet", fromMapSheet.SelectedValue, toMapSheet.SelectedValue));
-      }
-      else if(ec.Checked)
-        addClause("Province in ('ON', 'QC', 'NB', 'PE', 'NS', 'NL')");
-      else if(nc.Checked)
-        addClause("Province in ('YT', 'NT', 'NU')");
-
-      if(objective.SelectedValue != "ANY")
-        addClause("Objective = " + sqlString(objective.SelectedValue));
-
-      if(type.SelectedValue != "ANY")
-        addClause("Type = " + sqlString(type.SelectedValue));
-
-      if(wellclass.SelectedValue != "ANY")
-        addClause("WellClass = " + sqlString(wellclass.SelectedValue));
-
-      if(depth.SelectedValue != "ANY")
-        switch(int.Parse(depth.SelectedValue)) {
-        case 1:
-          addClause("cast(ProjectedDepth as int) <= 950"); break;
-        case 2:
-          addClause("cast(ProjectedDepth as int) between 951 and 1850"); break;
-        case 3:
-          addClause("cast(ProjectedDepth as int) between 1851 and 2450"); break;
-        case 4:
-          addClause("cast(ProjectedDepth as int) between 2451 and 3050"); break;
-        case 5:
-          addClause("cast(ProjectedDepth as int) between 3051 and 3700"); break;
-        case 6:
-          addClause("cast(ProjectedDepth as int) between 3701 and 4600"); break;
-        case 7:
-          addClause("cast(ProjectedDepth as int) > 4600"); break;
-        }
-
       addClause(String.Format("LicenceDate between '{0}-{1}-{2}' and '{3}-{4}-{5}'",
                               yearfrom.SelectedValue,
                               monthfrom.SelectedValue,

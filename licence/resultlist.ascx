@@ -20,6 +20,11 @@ Inherits="ResultList" %>
     <td></td>
     <td></td>
     <td align="left">UWI</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
   </tr>
   <asp:Repeater id="result" runat="server">
     <ItemTemplate runat="server">
