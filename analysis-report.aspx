@@ -10,7 +10,7 @@
         <div class="col-lg-12 text-center">
           <h1>Rig Market Share Analysis Report</h1>
           <span class="data-icon-1"> </span>
-          <h4> This dashboard gives you the most accurate and current view of rig activity across western Canada. From here you can select more detailed reports, or navigate into rig maps to visualize geographic data.</h4>
+          <h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et euismod purus. Quisque ut sapien in nulla tincidunt suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</h4>
         </div>
       </div>
     </div>

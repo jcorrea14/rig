@@ -3,6 +3,7 @@ Language="C#"
 MasterPageFile="/master/page.master"
 Title="Rig Locator | Daily Well Licences PDF" %>
 <%@ Register Src="/licence/calendar.ascx" TagName="calendar" TagPrefix="dob" %>
+
 <asp:Content ContentPlaceHolderId="page_content" runat="server">
   <section class="mainContent">
     <div class="container content">
@@ -20,9 +21,33 @@ Title="Rig Locator | Daily Well Licences PDF" %>
           </div>
         </div>
       </div>
+    </div>
+    <div class="container">
       <div class="row">
-        <div class="dnl-calendar">
-          <dob:calendar runat="server" UrlFormat="/licence/view-pdf.aspx?file=dnl-{0:yyMMdd}.pdf" />
+        <div class="col-md-8">
+          <div class="dnl-calendar">
+            <dob:calendar runat="server" UrlFormat="/licence/view-pdf.aspx?file=dnl-{0:yyMMdd}.pdf" />
+          </div>
+        </div>
+        <div class="col-md-4 vert-offset-top-6">
+          <div class="row">
+            <div class="side-ad pull-right"> 
+              <!-- big box -->
+              <div id='div-gpt-ad-1329923512779-10' style='width:300px; height:250px; margin:10px 0 20px 0;'> 
+                <script type='text/javascript'>
+                     googletag.display('div-gpt-ad-1329923512779-10');
+                </script> 
+              </div>
+              <div> 
+                <!-- button box -->
+                <div id='div-gpt-ad-1335301288326-2' style='width:300px; height:120px; margin-bottom:10px;'> 
+                  <script type='text/javascript'>
+                      googletag.display('div-gpt-ad-1335301288326-2');
+                </script> 
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -51,6 +51,7 @@
         </li>
         <li class="dropdown"> <a href="/report/summary">Drilling Rig Reports</a>
         <ul class="dropdown-menu">
+          <li><a href="/analysis-report.aspx">Rig Market Share Analysis Report</a></li>
           <li><a href="/report/rig/summary">Contractors’ Summary</a></li>
           <li><a href="/report/rig/operators">Top Operators</a></li>
           <li><a href="/report/rig/depth">Depth Activity</a></li>
@@ -70,7 +71,7 @@
           <li><a href="/licence/">Licence Search</a></li>
         </ul>
         </li>
-        <li> <a href="/summary.aspx">Drilling Graphs</a> </li>
+       
       </ul>
     </div>
   </div>

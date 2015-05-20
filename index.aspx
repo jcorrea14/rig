@@ -78,19 +78,19 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Access complete rig details in easy-to-use formats</h2>
+          <h2 class="section-heading">Information that matters.</h2>
         </div>
       </div>
       <div class="row vert-offset-top-3">
         <div class="col-md-7">
           <h3 class="service-heading">Reports</h3>
-          <h4 class="section-subheading"><strong>The most up-to-date and comprehensive rig data on the market, verified by the Rig Locator data analysis team.</strong></h4>
+          <h4 class="section-subheading"><strong>The most up-to-date and comprehensive rig data on the market.</strong></h4>
           <ul class="section-subheading">
-            <li>Get an overview of drilling activity and top 5 operators with the Rig Dashboard.</li>
+            <li>Get an overview of drilling activity and top 5 active operators with the Rig Dashboard.</li>
             <li>View pre-built industry reports on contractors, operators and drilling activity.</li>
             <li>Narrow your search by operator, contractor, <a href="#" data-toggle="tooltip" data-placement="top" title="Dominion Land Survey">DLS</a> or <a href="#" data-toggle="tooltip" data-placement="top" title="National Topographic System">NTS</a>.</li>
-            <li>Daily rig activity charts, well licence reports and more.</li>
-            <li>Download daily rig files.</li>
+            <li>Access the daily well licence and more.</li>
+            <li>Download the daily rig file.</li>
           </ul>
         </div>
         <div class="col-md-5"><img src="img/reports-image.png" alt="placeholder"/> </div>
@@ -98,6 +98,7 @@
     </div>
   </section>
   
+
   <!-- About Section -->
   <section id="map" class="rig-maps">
     <div class="container">
@@ -110,12 +111,13 @@
         <div class="col-md-5"><img src="img/mapping-image.png" alt="placeholder" width="430"/> </div>
         <div class="col-md-7">
           <h3 class="service-heading">Maps</h3>
-          <h4 class="section-subheading"><strong>Results can be exported, printed and saved.</strong></h4>
+          <h4 class="section-subheading"><strong>Pinpoint business opportunities, fast.</strong></h4>
           <ul class="section-subheading">
-            <li>Filter by <a href="#" data-toggle="tooltip" data-placement="top" title="Petroleum Services Association of Canada">PSAC</a> area, contractor and operator.</li>
-            <li>Search by operator, contractor, <a href="#" data-toggle="tooltip" data-placement="top" title="Dominion Land Survey">DLS</a>, <a href="#" data-toggle="tooltip" data-placement="top" title="National Topographic System">NTS</a>, latitude/longitude or custom radius. </li>
-            <li>Layer in enhanced roads & lakes, oil sands projects, facilities, pipelines and more.</li>
-            <li> Input start and end location to retrieve directions and distance.</li>
+          <li>Results can be exported, printed and saved.</li>
+            <li>Search/filter by <a href="#" data-toggle="tooltip" data-placement="top" title="Petroleum Services Association of Canada">PSAC</a> area, contractor and operator.</li>
+            <li>Create your own custom radius or search by <a href="#" data-toggle="tooltip" data-placement="top" title="Dominion Land Survey">DLS</a>, <a href="#" data-toggle="tooltip" data-placement="top" title="National Topographic System">NTS</a> or latitude/longitude. </li>
+            <li>Layer in access roads, facilities, pipelines and more.</li>
+            <li>Input start and end location to retrieve directions and distance.</li>
           </ul>
         </div>
       </div>

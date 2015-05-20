@@ -2,6 +2,7 @@
 MasterPageFile="/master/page.master"
 Title="Rig Locator | Browse Well Licences By Date" %>
 <%@ Register Src="/licence/calendar.ascx" TagName="calendar" TagPrefix="dob" %>
+
 <asp:Content ContentPlaceHolderId="page_content" runat="server">
   <section class="mainContent">
     <div class="container content">
@@ -19,38 +20,35 @@ Title="Rig Locator | Browse Well Licences By Date" %>
           </div>
         </div>
       </div>
+    </div>
+    <div class="container">
       <div class="row">
-        <div class="dnl-calendar">
-          <dob:calendar runat="server" UrlFormat="/licence/results.aspx?date={0:yyyy-MM-dd}" />
+        <div class="col-md-8">
+          <div class="dnl-calendar">
+            <dob:calendar runat="server" UrlFormat="/licence/results.aspx?date={0:yyyy-MM-dd}" />
+          </div>
+        </div>
+        <div class="col-md-4 vert-offset-top-6">
+          <div class="row">
+            <div class="side-ad pull-right"> 
+              <!-- big box -->
+              <div id='div-gpt-ad-1329923512779-10' style='width:300px; height:250px; margin:10px 0 20px 0;'> 
+                <script type='text/javascript'>
+                     googletag.display('div-gpt-ad-1329923512779-10');
+                </script> 
+              </div>
+              <div> 
+                <!-- button box -->
+                <div id='div-gpt-ad-1335301288326-2' style='width:300px; height:120px; margin-bottom:10px;'> 
+                  <script type='text/javascript'>
+                      googletag.display('div-gpt-ad-1335301288326-2');
+                </script> 
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
-</asp:Content>
-
-<asp:Content ContentPlaceHolderId="page_css" runat="server">
-  <style>
-
-.dnl-calendar table {
-  width: 100%;
-}
-  
-
-.dnl-calendar table tr td {
-  font-size: 1em;
-  vertical-align: top;
-  width: 14.285714285714287%;
-}
-
-.dnl-calendar table tr td.weekday {
-  text-align: center;
-  color: white;
-  background: #881630;
-}
-
-.dnl-calendar table tr td.day {
-  text-align: center;
-}
-  </style>
-
 </asp:Content>
