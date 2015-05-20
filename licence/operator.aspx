@@ -12,7 +12,7 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="search-bar">
-            <h1>Daily Well Licences</h1>
+            <h1>Well Licence Search</h1>
             <ul>
               <li><a href="/licence/" class="btn btn-xl btn-rig full-width">By Date</a></li>
               <li><a href="/licence/pdf.aspx" class="btn btn-xl btn-rig full-width">Daily PDF</a></li>
@@ -107,7 +107,7 @@
               <div class=class="col-lg-12">
                 <div class="form-group input-group">
                   <div class="toc">
-                    Licence Issue Date From:
+                    From Issue Date:
                   </div>
                   <div class="row">
                     <div class="col-md-4">
@@ -172,7 +172,7 @@
               <div class=class="col-md-12">
                 <div class="form-group input-group">
                   <div class="toc">
-                    Licence Issue Date From:
+                    To Issue Date:
                   </div>
                   <div class="row">
                     <div class="col-md-4">
