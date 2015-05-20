@@ -73,5 +73,6 @@
         <li> <a href="/summary.aspx">Drilling Graphs</a> </li>
       </ul>
     </div>
+  </div>
     <!-- /.container-fluid --> 
 </nav>

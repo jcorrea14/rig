@@ -1,4 +1,3 @@
-
 <%@ Control Language="C#" %>
 <script runat="server">
   public String UrlFormat {
