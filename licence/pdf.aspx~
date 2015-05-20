@@ -1,0 +1,26 @@
+<%@ Page
+Language="C#"
+MasterPageFile="/master/menu.master"
+Title="Daily Oil Bulletin | Daily Well Licences PDF" %>
+<%@ Register Src="/licence/calendar.ascx" TagName="calendar" TagPrefix="dob" %>
+<asp:Content ContentPlaceHolderId="page_content" runat="server">
+  <h1>Daily Well Licences</h1>
+  <ul class="sub-nav">
+    <li>
+      <a class="btn" href="/licence/">By Date</a>
+    </li>
+    <li>
+      <span class="btn selected">Daily PDF</span>
+    </li>
+    <li>
+      <a class="btn" href="/licence/operator.aspx">By Operator</a>
+    </li>
+    <li>
+      <a class="btn" href="/licence/location.aspx">By Location</a>
+    </li>
+  </ul>
+
+  <div class="dob-calendar">
+    <dob:calendar runat="server" UrlFormat="/licence/view-pdf.aspx?file=dnl-{0:yyMMdd}.pdf" />
+  </div>
+</asp:Content>

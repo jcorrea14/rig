@@ -6,9 +6,9 @@ public partial class Report : System.Web.UI.Page {
   protected void Page_Load(object sender, EventArgs e) {
     try {
       if (!IsPostBack) {
+        String dir = Request["dir"];
         String link = Request["id"];
-        StreamReader sr = new StreamReader("c:\\issues\\rig\\" +
-                                           link + ".html", System.Text.Encoding.Default);
+        StreamReader sr = new StreamReader(String.Format("c:\\issues\\{0}\\{1}.html", dir, link));
         String html = sr.ReadToEnd();
         sr.Close();
 

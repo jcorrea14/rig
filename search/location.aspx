@@ -25,7 +25,7 @@
           <div id="search" runat="server">
             <div class="col-md-3">
               <h4>Province/Region</h4>
-              <p id="noprovincemsg" class="errmsg" runat="server" visible="false"> Select an province! </p>
+              <p id="noprovincemsg" class="errmsg" runat="server" visible="false"> Select a province! </p>
               <div class="row">
                 <div class="col-md-12">
                   <div class="form-group input-group" style="margin-bottom: 25px;">
@@ -44,7 +44,7 @@
             </div>
             <div class="col-md-5 extra-padding">
               <h4>Township/Range</h4>
-              <p id="nodlsmsg" class="errmsg" runat="server" visible="false"> Select an township, range and meridian! </p>
+              <p id="nodlsmsg" class="errmsg" runat="server" visible="false"> Select a township, range and meridian! </p>
               <div class="subbold">Township</div>
               <div class="row">
                 <div class="col-md-6">
@@ -432,7 +432,7 @@
             </div>
             <div class="col-md-4">
               <h4>BC NTS</h4>
-              <p id="nontsmsg" class="errmsg" runat="server" visible="false"> Select an quad, map and map sheet! </p>
+              <p id="nontsmsg" class="errmsg" runat="server" visible="false"> Select a quad, map and map sheet! </p>
               <div class="subbold">Quad</div>
               <div class="row">
                 <div class="col-md-6">

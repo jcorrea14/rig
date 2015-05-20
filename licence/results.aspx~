@@ -1,0 +1,25 @@
+<%@ Page
+    MasterPageFile="/master/base.master"
+    CodeFile="results.aspx.cs"
+    Inherits="Results"
+    Title="Daily Oil Bulletin | Browse Well Licences By Date" %>
+<%@ Register Src="/licence/resultlist.ascx" TagName="resultslist" TagPrefix="dob" %>
+<asp:Content ContentPlaceHolderId="page_content" runat="server">
+  <h1>Daily Well Licences</h1>
+  <ul class="sub-nav">
+    <li>
+      <a class="btn" href="/licence/">By Date</a>
+    </li>
+    <li>
+      <a class="btn" href="/licence/pdf.aspx">Daily PDF</a>
+    </li>
+    <li>
+      <a class="btn" href="/licence/operator.aspx">By Operator</a>
+    </li>
+    <li>
+      <a class="btn" href="/licence/location.aspx">By Location</a>
+    </li>
+  </ul>
+  <h3>New Locations Announced To The Daily Oil Bulletin <% = PubDate %></h3>
+  <dob:resultslist id="result" runat="server" />
+</asp:Content>

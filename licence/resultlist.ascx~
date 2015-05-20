@@ -1,0 +1,64 @@
+<%@ Control
+CodeFile="resultlist.ascx.cs"
+Inherits="ResultList" %>
+<table>
+  <tr valign="baseline">
+    <th align="left">Well&nbsp;Name</th>
+    <th align="left">Province</th>
+    <th align="left">Licence</th>
+    <th align="left">Issue&nbsp;Date</th>
+    <th align="left">Operator</th>
+    <th align="left">Class</th>
+    <th align="left">Objective</th>
+    <th align="left">Direction</th>
+    <th align="left">Projected&nbsp;Zone</th>
+    <th align="right">P&nbsp;Depth</th>
+  </tr>
+  <tr valign="baseline">
+    <th align="left">Location</th>
+    <th></th>
+    <th></th>
+    <th></th>
+    <th align="left">UWI</th>
+  </tr>
+  <asp:Repeater id="result" runat="server">
+    <ItemTemplate runat="server">
+      <tr valign="top">
+        <td>
+          <%# Server.HtmlEncode(Eval("WellName").ToString()) %><br />
+          <%# Eval("LocationLine") %>
+          <%# Eval("LocationLine").ToString() == Eval("Surface").ToString() ? "" :
+          "<br />SURFACE: " + Eval("Surface") %>
+        </td>
+        <td>
+          <%# Eval("Province") %>
+        </td>
+        <td>
+          <%# Eval("LicenceId") %>
+        </td>
+        <td>
+          <%# ((DateTime)Eval("LicenceDate")).ToString("MMM d, yyyy") %>
+        </td>
+        <td>
+          <%# Server.HtmlEncode(Eval("Operator").ToString()) %><br />
+          <%# Server.HtmlEncode(Eval("UWI").ToString()) %>
+        </td>
+        <td>
+          <%# Eval("WellClass") %>
+        </td>
+        <td>
+          <%# Eval("Objective") %>
+        </td>
+        <td>
+          <%# Eval("Type") %>
+        </td>
+        <td>
+          <%# Server.HtmlEncode(Eval("ProjectedZone").ToString()) %>
+        </td>
+        <td align="right">
+          <%# Double.Parse(Eval("ProjectedDepth").ToString()).ToString("#,###.0;-#,###.0,#") %>
+        </td>
+      </tr>
+    </ItemTemplate>
+  </asp:Repeater>
+</table>

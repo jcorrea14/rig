@@ -1,0 +1,25 @@
+<%@ Page
+MasterPageFile="/master/page.master"
+Title="Rig Locator | Browse Well Licences By Date" %>
+<%@ Register Src="/licence/calendar.ascx" TagName="calendar" TagPrefix="dob" %>
+<asp:Content ContentPlaceHolderId="page_content" runat="server">
+  <h1>Daily Well Licences</h1>
+  <ul class="sub-nav">
+    <li>
+      <span class="btn selected">By Date</span>
+    </li>
+    <li>
+      <a class="btn" href="/licence/pdf.aspx">Daily PDF</a>
+    </li>
+    <li>
+      <a class="btn" href="/licence/operator.aspx">By Operator</a>
+    </li>
+    <li>
+      <a class="btn" href="/licence/location.aspx">By Location</a>
+    </li>
+  </ul>
+
+  <div class="dob-calendar">
+    <dob:calendar runat="server" UrlFormat="/licence/results.aspx?date={0:yyyy-MM-dd}" />
+  </div>
+</asp:Content>
