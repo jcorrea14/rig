@@ -34,16 +34,16 @@
         
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-left navbar-home">
-            <li class="hidden"> <a href="#page-top"></a> </li>
-            <li> <a class="page-scroll" href="#features">Features</a> </li>
-            <li> <a class="page-scroll" href="#data">Pinpoint Business</a> </li>
-            <li> <a class="page-scroll" href="#map">Improved Mapping</a></li>
-            <li> <a class="page-scroll" href="#membership">Free Trial</a> </li>
-          </ul>
           <ul class="nav navbar-nav navbar-left navbar-buttons pull-right">
             <li> <a href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank">Become a Member</a> </li>
             <li> <a href="<%= LoginUrl %>">Login</a> </li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right navbar-home">
+            <li class="hidden"> <a href="#page-top"></a> </li>
+            <li> <a class="page-scroll" href="#features">Comprehensive Reports</a> </li>
+            <!--li> <a class="page-scroll" href="#data">Pinpoint Business</a> </li>-->
+            <li> <a class="page-scroll" href="#map">Improved Mapping</a></li>
+            <li> <a class="page-scroll" href="#membership">Free Trial</a> </li>
           </ul>
         </div>
         <!-- /.navbar-collapse --> 
@@ -74,28 +74,17 @@
   </section>
   
   <!-- Features Section -->
-  <section id="features" class="bg-light-gray">
+  <section id="features" class="rig-features bg-light-gray">
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h2 class="section-heading">Access complete rig details in easy-to-use formats</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-6 text-center"> <span class="feature-icon-1"> </span>
-          <h3 class="service-heading text-center">Maps</h3>
-          <p class="service-heading"><strong>Results can be exported, printed and saved.</strong></p>
-          <ul class="section-subheading">
-            <li>Filter by <a href="#" data-toggle="tooltip" data-placement="top" title="Petroleum Services Association of Canada">PSAC</a> area, contractor and operator.</li>
-            <li>Search by operator, contractor, <a href="#" data-toggle="tooltip" data-placement="top" title="Dominion Land Survey">DLS</a>, <a href="#" data-toggle="tooltip" data-placement="top" title="National Topographic System">NTS</a>, latitude/longitude or custom radius. 
-            </li>
-            <li>Layer in enhanced roads & lakes, oil sands projects and leases, facilities, pipelines and more.</li>
-            <li> Input start and end location to retrieve directions and distance.</li>
-          </ul>
-        </div>
-        <div class="col-md-6 text-center"> <span class="feature-icon-2"></span>
-          <h3 class="service-heading text-center">Reports</h3>
-          <p class="service-heading"><strong>The most up-to-date and comprehensive rig data on the market, verified by the Rig Locator data analysis team.</strong></p>
+      <div class="row vert-offset-top-3">
+        <div class="col-md-7">
+          <h3 class="service-heading">Reports</h3>
+          <h4 class="section-subheading"><strong>The most up-to-date and comprehensive rig data on the market, verified by the Rig Locator data analysis team.</strong></h4>
           <ul class="section-subheading">
             <li>Get an overview of drilling activity and top 5 operators with the Rig Dashboard.</li>
             <li>View pre-built industry reports on contractors, operators and drilling activity.</li>
@@ -104,40 +93,43 @@
             <li>Download daily rig files.</li>
           </ul>
         </div>
-      </div>
-    </div>
-  </section>
-  
-  <!-- Portfolio Grid Section -->
-  <section id="data" class="why-rig-locator">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center vert-offset-top-3">
-          <h2 class="section-heading">Pinpoint business opportunities, fast.</h2>
-          <h3 class="section-subheading">Identify industry trends, analyze market share and determine business opportunities.</h3>
-        </div>
+        <div class="col-md-5"><img src="img/reports-image.png" alt="placeholder"/> </div>
       </div>
     </div>
   </section>
   
   <!-- About Section -->
-  <section id="map" class="about-rig-locator">
+  <section id="map" class="rig-maps">
     <div class="container">
-      <div class="col-md-6"><img src="img/placeholder-image-laptop.png" alt="placeholder"/> </div>
-      <div class="col-md-6 vert-offset-top-5">
-        <h2 class="section-heading ">Improved mapping streamlines your search.</h2>
-        <h3 class="section-subheading">Rig Locator’s unique custom radius function lets you define your area of interest. Layer in facilities, pipelines and oilsands projects to refine your target. Add other filters to zero in on the information you need.</h3>
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading ">Improved mapping streamlines your search.</h2>
+        </div>
+      </div>
+      <div class="row vert-offset-top-3">
+        <div class="col-md-5"><img src="img/mapping-image.png" alt="placeholder" width="430"/> </div>
+        <div class="col-md-7">
+          <h3 class="service-heading">Maps</h3>
+          <h4 class="section-subheading"><strong>Results can be exported, printed and saved.</strong></h4>
+          <ul class="section-subheading">
+            <li>Filter by <a href="#" data-toggle="tooltip" data-placement="top" title="Petroleum Services Association of Canada">PSAC</a> area, contractor and operator.</li>
+            <li>Search by operator, contractor, <a href="#" data-toggle="tooltip" data-placement="top" title="Dominion Land Survey">DLS</a>, <a href="#" data-toggle="tooltip" data-placement="top" title="National Topographic System">NTS</a>, latitude/longitude or custom radius. </li>
+            <li>Layer in enhanced roads & lakes, oil sands projects, facilities, pipelines and more.</li>
+            <li> Input start and end location to retrieve directions and distance.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
-  <!-- Who Section -->
-  <section id="membership">
+  
+  <!-- Portfolio Grid Section -->
+  <section id="membership" class="free-trial">
     <div class="container">
       <div class="row">
-        <div class="col-lg-7 text-center block-center"> <span class="feature-icon-1"> </span>
+        <div class="col-lg-12 text-center block-center">
           <h2 class="section-heading">Take the new Rig Locator for a test drive.</h2>
-          <h3 class="section-subheading"><a href="#">Sign up</a> for a 5-day, limited access trial to see how the mapping and reporting features on Rig Locator make businesses more agile.</h3>
-          <a href="#" class="btn btn-xl btn-blk">Start a Trial</a> </div>
+          <h3 class="section-subheading">Sign up for a 5-day, limited access trial to see how the mapping and reporting features on Rig Locator make businesses more agile.</h3>
+          <a href="#" class="btn btn-xl">Start a Trial</a> </div>
       </div>
     </div>
   </section>

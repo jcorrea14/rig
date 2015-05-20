@@ -72,7 +72,7 @@ $(document).ready(function() {
     if ($window.width() > 1200) {
         // Cache the Window object
 	   
-        $('.why-rig-locator').parallax({
+        $('.free-trial').parallax({
             speed: 0.25
         });
        

@@ -8,9 +8,11 @@ a { color: #881630; font-weight: 500; }
 a:hover, a:focus, a:active, a.active { color: #881630; }
 h1, h2, h3, h4, h5, h6 { /* text-transform: uppercase; */ font-family: 'Open Sans', sans-serif; font-weight: 200; margin: 30px 0; line-height: 30px; }
 
-ul {  line-height: 28px;  padding-left: 20px;}
+ul {  line-height: 34px;  padding-left: 20px; list-style: none;}
 
-#features ul li:before { font-family: 'FontAwesome'; content: "\f111";   margin-right: 10px;  color: #222;  font-size: 7px; position: relative; top: -3px;}
+#features ul li:before, #map ul li:before { font-family: 'FontAwesome'; content: "\f111";   margin-right: 10px;  color: #222;  font-size: 7px; position: relative; top: -3px;}
+#features ul li, #map ul li {font-size: 16px;font-weight: 100;}
+#map a {color: #000; font-weight: 700;}
 
 label { display: inline-block; max-width: 100%; font-weight: normal; margin: 10px; }
 .img-centered { margin: 0 auto; }
@@ -53,7 +55,7 @@ label { display: inline-block; max-width: 100%; font-weight: normal; margin: 10p
 
 .navbar-default .navbar-nav>.active>a { border-radius: 0; color: #fff; border-bottom: 3px solid #881630; background: none; }
 .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus { color: #fff; background-color: #222; }
-.navbar-home li a { padding: 15px 25px;}
+.navbar-home li a { padding: 15px 30px;}
 @media(min-width:1200px) {
 .navbar-default { padding: 10px 0; border: 0; background-color: transparent; -webkit-transition: padding .3s; -moz-transition: padding .3s; transition: padding .3s; }
 .navbar-default .navbar-brand { font-size: 2em; -webkit-transition: all .3s; -moz-transition: all .3s; transition: all .3s; }
@@ -99,7 +101,7 @@ img { max-width: 100%; }
 .navbar-buttons li a { border: none; padding: 10px 20px; }
 .navbar-buttons li a:hover { background: none !important; border: none !important; padding: 10px 20px !important; }
 header .intro-text { padding-top: 200px; padding-bottom: 52px; }
-.why-rig-locator { background-attachment: scroll !important; position: relative; }
+.free-trial { background-attachment: scroll !important; position: relative; }
 .become-member { background-attachment: scroll !important; position: relative; }
 .navbar-utility a { border-right: none; }
 .navbar-default.nav-subpage { background-image: none !important; }
@@ -192,8 +194,8 @@ img::selection { background: 0 0; }
 body { webkit-tap-highlight-color: #881630; }
 .dataPartnerships { padding: 20px 0; }
 .features { background: #ecedf1; }
-.why-rig-locator { background: url(../img/whyRigLocator-03.jpg) no-repeat center center fixed; text-align: center; color: #fff; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; padding: 200px 0; }
-.about-rig-locator { background: url(../img/red-topography-image.jpg) no-repeat; text-align: center; color: #fff; background-attachment: scroll; background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; padding: 200px 0; }
+.free-trial { background: url(../img/whyRigLocator-03.jpg) no-repeat center center fixed; text-align: center; color: #fff; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; padding: 200px 0; }
+.rig-maps { background: url(../img/red-topography-image.jpg) no-repeat; /* text-align: center; */ color: #fff; background-attachment: scroll; background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; padding: 200px 0; }
 .become-member { background: url(../img/ready-for-rig-image.jpg) no-repeat center center fixed; text-align: center; color: #fff; background-position: center center; -webkit-background-size: cover; -moz-background-size: cover; background-size: cover; -o-background-size: cover; }
 .block-center { margin: 0 auto; float: none; }
 .navbar-default .container { margin-top: 55px; -webkit-transition: all 0.5s ease; -moz-transition: all 0.5s ease; -o-transition: all 0.5s ease; }
@@ -295,6 +297,6 @@ section#contact .text-danger { color: #e74c3c; }
 .extra-padding { padding: 0 50px; }
 .errmsg { color: red; font-weight: bold; }
 
-.about-rig-locator img {margin:40px 0;}
+.rig-maps img, .rig-features img {margin: 20px 0;}
 
 #outdated {top: 30px !important;}
