@@ -34,11 +34,11 @@
         
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav navbar-left navbar-home">
+          <ul class="nav navbar-nav navbar-left navbar-home">
             <li class="hidden"> <a href="#page-top"></a> </li>
             <li> <a class="page-scroll" href="#features">Features</a> </li>
-            <li> <a class="page-scroll" href="#data">Rig Locator Data</a> </li>
-            <li> <a class="page-scroll" href="#map">Rig Locator Map</a></li>
+            <li> <a class="page-scroll" href="#data">Pinpoint Business</a> </li>
+            <li> <a class="page-scroll" href="#map">Improved Mapping</a></li>
             <li> <a class="page-scroll" href="#membership">Free Trial</a> </li>
           </ul>
           <ul class="nav navbar-nav navbar-left navbar-buttons pull-right">
@@ -57,14 +57,7 @@
       <div class="intro-text">
         <div class="intro-lead-in">Find business opportunities.</div>
         <div class="intro-lead-in">Analyze competition and market share.</div>
-        <div class="intro-lead-in"> Monitor asset details.</div>
-        <div class="intro-heading">Get the best information about western Canada’s drilling rig fleet.</div>
-        <div class="call-to-action col-md-6 col-centered">
-          <ul>
-            <li><a href="#" class="btn btn-xl">Start a Trial</a></li>
-            <li> <a href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank" class="btn btn-xl">Become a Member</a></li>
-          </ul>
-        </div>
+        <div class="intro-heading">Get current and accurate information about western Canada’s drilling rig fleet.</div>
       </div>
     </div>
   </header>
@@ -85,27 +78,31 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading">Everything you need for accurate rig information:</h2>
+          <h2 class="section-heading">Access complete rig details in easy-to-use formats</h2>
         </div>
       </div>
-      <div class="row text-center">
-        <div class="col-md-4 col-md-offset-2"> <span class="feature-icon-1"> </span>
-          <h4 class="service-heading">Maps</h4>
-          <p class="section-subheading text-muted"> Search for rig locations, operators or contractors. </p>
+      <div class="row">
+        <div class="col-md-6 text-center"> <span class="feature-icon-1"> </span>
+          <h3 class="service-heading text-center">Maps</h3>
+          <p class="service-heading"><strong>Results can be exported, printed and saved.</strong></p>
+          <ul class="section-subheading">
+            <li>Filter by <a href="#" data-toggle="tooltip" data-placement="top" title="Petroleum Services Association of Canada">PSAC</a> area, contractor and operator.</li>
+            <li>Search by operator, contractor, <a href="#" data-toggle="tooltip" data-placement="top" title="Dominion Land Survey">DLS</a>, <a href="#" data-toggle="tooltip" data-placement="top" title="National Topographic System">NTS</a>, latitude/longitude or custom radius. 
+            </li>
+            <li>Layer in enhanced roads & lakes, oil sands projects and leases, facilities, pipelines and more.</li>
+            <li> Input start and end location to retrieve directions and distance.</li>
+          </ul>
         </div>
-        <div class="col-md-4"> <span class="feature-icon-2"></span>
-          <h4 class="service-heading">Reports</h4>
-          <p class="section-subheading text-muted"> Dive deeper into your analysis with detailed rig reports. </p>
-        </div>
-      </div>
-      <div class="row text-center">
-        <div class="col-md-4 col-md-offset-2"> <span class="feature-icon-3"></span>
-          <h4 class="service-heading">Search</h4>
-          <p class="section-subheading text-muted">Search by rig locations, operator or contractor.</p>
-        </div>
-        <div class="col-md-4"> <span class="feature-icon-4"> </span>
-          <h4 class="service-heading">Mobile Ready</h4>
-          <p class="section-subheading text-muted"> Search by rig locations, operator or contractor. </p>
+        <div class="col-md-6 text-center"> <span class="feature-icon-2"></span>
+          <h3 class="service-heading text-center">Reports</h3>
+          <p class="service-heading"><strong>The most up-to-date and comprehensive rig data on the market, verified by the Rig Locator data analysis team.</strong></p>
+          <ul class="section-subheading">
+            <li>Get an overview of drilling activity and top 5 operators with the Rig Dashboard.</li>
+            <li>View pre-built industry reports on contractors, operators and drilling activity.</li>
+            <li>Narrow your search by operator, contractor, <a href="#" data-toggle="tooltip" data-placement="top" title="Dominion Land Survey">DLS</a> or <a href="#" data-toggle="tooltip" data-placement="top" title="National Topographic System">NTS</a>.</li>
+            <li>Daily rig activity charts, well licence reports and more.</li>
+            <li>Download daily rig files.</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -115,15 +112,9 @@
   <section id="data" class="why-rig-locator">
     <div class="container">
       <div class="row">
-        <div class="col-lg-7 text-center block-center">
-          <h2 class="section-heading">We give you the data behind every rig.</h2>
-          <h3 class="section-subheading">Rig Locator provides data on contractors, operators and drilling activity. Find the information you need to identify industry trends, analyze market share and determine business opportunities. Print your search results or export them into an Excel file.</h3>
-        </div>
-        <div class="call-to-action col-md-6 col-centered">
-          <ul>
-            <li><a href="#" class="btn btn-xl">Start a Trial</a></li>
-            <li> <a href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank" class="btn btn-xl">Become a Member</a></li>
-          </ul>
+        <div class="col-lg-12 text-center vert-offset-top-3">
+          <h2 class="section-heading">Pinpoint business opportunities, fast.</h2>
+          <h3 class="section-subheading">Identify industry trends, analyze market share and determine business opportunities.</h3>
         </div>
       </div>
     </div>
@@ -132,16 +123,10 @@
   <!-- About Section -->
   <section id="map" class="about-rig-locator">
     <div class="container">
-      <div class="col-md-5"><img src="img/placeholder-image-laptop.png" alt="placeholder" width="490"/> </div>
-      <div class="col-md-7 vert-offset-top-7">
-        <h2 class="section-heading ">Rig locations updated daily.</h2>
-        
-        <div class="call-to-action vert-offset-top-3">
-          <ul>
-            <li><a href="#" class="btn btn-xl btn-2xl">Start a Trial</a></li>
-            <li> <a href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank" class="btn btn-xl btn-2xl">Become a Member</a></li>
-          </ul>
-        </div>
+      <div class="col-md-6"><img src="img/placeholder-image-laptop.png" alt="placeholder"/> </div>
+      <div class="col-md-6 vert-offset-top-5">
+        <h2 class="section-heading ">Improved mapping streamlines your search.</h2>
+        <h3 class="section-subheading">Rig Locator’s unique custom radius function lets you define your area of interest. Layer in facilities, pipelines and oilsands projects to refine your target. Add other filters to zero in on the information you need.</h3>
       </div>
     </div>
   </section>
@@ -149,13 +134,10 @@
   <section id="membership">
     <div class="container">
       <div class="row">
-        <div class="col-lg-7 text-center block-center">
-        <span class="feature-icon-1"> </span>
-          <h2 class="section-heading">Start your free trial today.</h2>
-          <h3 class="section-subheading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dapibus dignissim elit, vitae ultrices nisl ornare quis. Etiam at scelerisque nisl. Vestibulum vehicula mi ac vulputate cursus. Duis sagittis ante nec urna sodales dignissim. Praesent egestas sed nulla sit amet pretium. In hac habitasse platea dictumst.</h3>
-          <a href="#" class="btn btn-xl btn-blk">Start a Trial</a>
-        </div>
-        
+        <div class="col-lg-7 text-center block-center"> <span class="feature-icon-1"> </span>
+          <h2 class="section-heading">Take the new Rig Locator for a test drive.</h2>
+          <h3 class="section-subheading"><a href="#">Sign up</a> for a 5-day, limited access trial to see how the mapping and reporting features on Rig Locator make businesses more agile.</h3>
+          <a href="#" class="btn btn-xl btn-blk">Start a Trial</a> </div>
       </div>
     </div>
   </section>

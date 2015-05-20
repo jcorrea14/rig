@@ -7,6 +7,11 @@ a, a:hover, a:focus, a:active, a.active { outline: 0; }
 a { color: #881630; font-weight: 500; }
 a:hover, a:focus, a:active, a.active { color: #881630; }
 h1, h2, h3, h4, h5, h6 { /* text-transform: uppercase; */ font-family: 'Open Sans', sans-serif; font-weight: 200; margin: 30px 0; line-height: 30px; }
+
+ul {  line-height: 28px;  padding-left: 20px;}
+
+#features ul li:before { font-family: 'FontAwesome'; content: "\f111";   margin-right: 10px;  color: #222;  font-size: 7px; position: relative; top: -3px;}
+
 label { display: inline-block; max-width: 100%; font-weight: normal; margin: 10px; }
 .img-centered { margin: 0 auto; }
 .bg-light-gray { background-color: #ecedf1; }
@@ -40,7 +45,7 @@ label { display: inline-block; max-width: 100%; font-weight: normal; margin: 10p
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: #881630; }
 .navbar-buttons li a { border: 1px solid #ffffff; padding: 17px 25px; margin: 0 10px }
 .navbar-buttons li a:hover { background: #881630 !important; border: 1px solid #881630 !important; color: #ffffff !important; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; }
-.navbar-home { margin: 0 24px; }
+.navbar-home { margin: 0 10px; }
 .navbar-default .nav li a { font-family: 'Open Sans', sans-serif; font-weight: 200; letter-spacing: 1px; color: #fff; }
 .navbar-default .navbar-home li:hover > a, .navbar-default .navbar-home li:focus > a { outline: 0; color: #ffffff; border-bottom: 3px solid #881630;/* padding-bottom: 5px; */ }
 .navbar-default .navbar-sub li:hover > a, .navbar-default .navbar-home li:focus > a { outline: 0; color: #ffffff; border-bottom: 3px solid #881630;/* padding-bottom: 5px; */ }
@@ -48,7 +53,7 @@ label { display: inline-block; max-width: 100%; font-weight: normal; margin: 10p
 
 .navbar-default .navbar-nav>.active>a { border-radius: 0; color: #fff; border-bottom: 3px solid #881630; background: none; }
 .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus { color: #fff; background-color: #222; }
-.navbar-home li a { padding: 15px 25px }
+.navbar-home li a { padding: 15px 25px;}
 @media(min-width:1200px) {
 .navbar-default { padding: 10px 0; border: 0; background-color: transparent; -webkit-transition: padding .3s; -moz-transition: padding .3s; transition: padding .3s; }
 .navbar-default .navbar-brand { font-size: 2em; -webkit-transition: all .3s; -moz-transition: all .3s; transition: all .3s; }
@@ -109,7 +114,7 @@ header .intro-text { padding-top: 200px; padding-bottom: 52px; }
 .extra-padding {padding:0 !important;}
 }
 @media(min-width:1200px) {
-header .intro-text { padding-top: 250px; padding-bottom: 250px; }
+header .intro-text { padding-top: 280px; padding-bottom: 280px; }
 header .intro-text .intro-lead-in { margin-bottom: 25px; font-family: 'Open Sans', sans-serif; font-size: 38px; line-height: 40px; font-weight: 800; }
 header .intro-text .intro-heading { margin-bottom: 50px; font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: 300; line-height: 75px; }
 }
