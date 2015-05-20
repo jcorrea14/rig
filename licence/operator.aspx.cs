@@ -63,7 +63,7 @@ public partial class Op : System.Web.UI.Page {
 
       result.Criteria = _criteria;
       results.Visible = true;
-      form.Visible = false;
+      search.Visible = false;
     } catch (Exception ex) {  }
   }
 
@@ -84,9 +84,13 @@ public partial class Op : System.Web.UI.Page {
             ConfigurationManager.ConnectionStrings["WellConnectionString"].ToString());
         conn.Open();
         String sql = String.Format(@"
+select * from (
+select
+  '[SELECT AN OPERATOR]' Operator
+union
 select distinct
   Operator
-from WebWell2
+from WebWell2) T
 order by Operator");
         SqlDataAdapter ad = new SqlDataAdapter(sql, conn);
         DataSet ds = new DataSet();
