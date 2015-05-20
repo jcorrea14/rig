@@ -8,7 +8,7 @@ Title="Rig Locator | Browse Well Licences By Date" %>
       <div class="row">
         <div class="col-lg-12">
           <div class="search-bar">
-            <h1>Daily Well Licences</h1>
+            <h1>Well Licence Search</h1>
             <ul>
               <li><a href="/licence/" class="btn btn-xl btn-rig full-width selected">By Date</a></li>
               <li><a href="/licence/pdf.aspx" class="btn btn-xl btn-rig full-width">Daily PDF</a></li>
