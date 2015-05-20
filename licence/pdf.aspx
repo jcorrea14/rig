@@ -16,7 +16,6 @@ Title="Rig Locator | Daily Well Licences PDF" %>
               <li><a href="/licence/pdf.aspx" class="btn btn-xl btn-rig full-width selected">Daily PDF</a></li>
               <li><a href="/licence/operator.aspx" class="btn btn-xl btn-rig full-width">By Operator</a></li>
               <li><a href="/licence/location.aspx" class="btn btn-xl btn-rig full-width">By Location</a></li>
-              <li class="pull-right"> </li>
             </ul>
           </div>
         </div>

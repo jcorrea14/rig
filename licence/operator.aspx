@@ -25,14 +25,15 @@
       <asp:Placeholder id="search" runat="server">
         <div class="row">
           <div class="col-lg-4">
+            <h3>
+              Operator
+            </h3>
             <div class="form-group input-group">
-              <div class="toc">
-                Operator
-              </div>
               <asp:DropDownList id="op" class="form-control" runat="server" />
             </div>
           </div>
           <div class="col-lg-3">
+            <h3>Additional Criteria</h3>
             <div class="form-group input-group">
               <div class="toc">
                 Well Type
@@ -105,9 +106,10 @@
           <div class="col-md-4 pull-right">
             <div class="row">
               <div class=class="col-lg-12">
+                <h3>Issue Date</h3>
                 <div class="form-group input-group">
                   <div class="toc">
-                    From Issue Date:
+                    From
                   </div>
                   <div class="row">
                     <div class="col-md-4">
@@ -172,7 +174,7 @@
               <div class=class="col-md-12">
                 <div class="form-group input-group">
                   <div class="toc">
-                    To Issue Date:
+                    To
                   </div>
                   <div class="row">
                     <div class="col-md-4">
@@ -249,6 +251,7 @@
       <asp:Placeholder id="results" runat="server" visible="false">
         <div class="row">
           <div class="col-lg-12">
+            <p>Results for <%= Criteria %></p>
             <dob:resultslist id="result" runat="server" />
           </div>
         </div>
