@@ -51,18 +51,26 @@
         </li>
         <li class="dropdown"> <a href="/report/summary">Drilling Rig Reports</a>
         <ul class="dropdown-menu">
-          <li><a href="/report/summary">Contractors' Summary</a></li>
-          <li><a href="/report/operators">Top Operators</a></li>
-          <li><a href="/report/depth">Depth Activity</a></li>
-          <li><a href="/report/projects">Planned Drilling Projects</a></li>
-          <li><a href="/report/dr-activity">Drilling Activity Surveys</a></li>
-          <li><a href="/report/survey">Western Canada Drilling Chart</a></li>
-          <li><a href="/report/utilization">Contractor Utilization Summary</a></li>
+          <li><a href="/report/rig/summary">Contractors’ Summary</a></li>
+          <li><a href="/report/rig/operators">Top Operators</a></li>
+          <li><a href="/report/rig/depth">Depth Activity</a></li>
+          <li><a href="/report/rig/projects">Planned Drilling Projects</a></li>
+          <li><a href="/report/rig/dr-activity">Drilling Activity Surveys</a></li>
+          <li><a href="/report/rig/survey">Western Canada Drilling Chart</a></li>
+          <li><a href="/report/rig/utilization">Contractor Utilization Summary</a></li>
           <li><a href="/download">Download and print reports</a></li>
         </ul>
         </li>
-        <li> <a href="/well-licences.aspx">Well Licences</a> </li>
-        <li> <a href="../summary.aspx">Drilling Graphs</a> </li>
+        <li class="dropdown"> <a href="/report/dnl/count">Well Licences</a>
+        <ul class="dropdown-menu">
+          <li><a href="/report/dnl/count">Monthly Licence Count</a></li>
+          <li><a href="/report/dnl/hz-dir">Horizontal and Directional Count</a></li>
+          <li><a href="/report/dnl/expl-dev">Exploratory and Development Count</a></li>
+          <li><a href="/report/dnl/top-25">Top 25 Licencees</a></li>
+          <li><a href="/licence/">Licence Search</a></li>
+        </ul>
+        </li>
+        <li> <a href="/summary.aspx">Drilling Graphs</a> </li>
       </ul>
     </div>
     <!-- /.container-fluid --> 

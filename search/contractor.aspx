@@ -25,7 +25,7 @@
             <div class="col-lg-12 nopadding">
               <h3>Select Criteria</h3>
             </div>
-            <p id="noselectionmsg" class="errmsg" runat="server" visible="false"> Select an contractor! </p>
+            <p id="noselectionmsg" class="errmsg" runat="server" visible="false"> Select a contractor! </p>
             <div class="col-md-4">
               <div class="toc">Contractor</div>
               <div class="form-group input-group">
