@@ -21,17 +21,20 @@ public partial class LicenceLoc : System.Web.UI.Page {
   }
 
   private String span(String field, String a, String b) {
-    if(a != "")
-      if(b != "")
-        if(a == b)
+    int m = 0, n = 0;
+    int.TryParse(a, out m);
+    int.TryParse(b, out n);
+    if(m != 0)
+      if(n != 0)
+        if(m == n)
           return field + " = " + a;
-        else if(int.Parse(a) < int.Parse(b))
+        else if(m < n)
           return field + " between " + a + " and " + b;
         else
           return field + " between " + b + " and " + a;
       else
         return field + " = " + a;
-    else if(b != "")
+    else if(n != 0)
       return field + " = " + b;
     else
       throw new Exception(field + " is required");
@@ -59,20 +62,23 @@ public partial class LicenceLoc : System.Web.UI.Page {
 
   protected void search_dls_click (object sender, EventArgs e) {
     _criteria = "";
-    addClause(span("Township", fromTownship.SelectedValue, toTownship.SelectedValue));
-    addClause(span("Range", fromRange.SelectedValue, toRange.SelectedValue));
-    addClause(span("Meridian", fromMeridian.SelectedValue, toMeridian.SelectedValue));
-    search_click(sender, e);
+    try {
+      addClause(span("Township", fromTownship.SelectedValue, toTownship.SelectedValue));
+      addClause(span("Range", fromRange.SelectedValue, toRange.SelectedValue));
+      addClause(span("Meridian", fromMeridian.SelectedValue, toMeridian.SelectedValue));
+      search_click(sender, e);
+    } catch (Exception ex) { errMsg.InnerText = ex.Message; }
   }
     
   protected void search_nts_click (object sender, EventArgs e) {
     _criteria = "";
+    try {
     addClause(span("MapUnit", fromMapUnit.SelectedValue, toMapUnit.SelectedValue));
     addClause(spanString("MapUnitSub", fromMapUnitSub.SelectedValue, toMapUnitSub.SelectedValue));
     addClause(span("MapSheet", fromMapSheet.SelectedValue, toMapSheet.SelectedValue));
     search_click(sender, e);
+    } catch (Exception ex) { errMsg.InnerText = ex.Message; }
   }
-    
 
   protected void search_click (object sender, EventArgs e) {
     try {
