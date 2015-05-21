@@ -50,7 +50,7 @@
                 <div class="col-md-6">
                   <div class="form-group input-group">
                     <asp:DropDownList runat="server" id="fromTownship" class="form-control">
-                      <asp:ListItem>From</asp:ListItem>
+                      <asp:ListItem value="">From</asp:ListItem>
                       <asp:ListItem>1</asp:ListItem>
                       <asp:ListItem>2</asp:ListItem>
                       <asp:ListItem>3</asp:ListItem>
@@ -183,7 +183,7 @@
                 <div class="col-md-6">
                   <div class="form-group input-group">
                     <asp:DropDownList runat="server" id="toTownship" class="form-control">
-                      <asp:ListItem>To</asp:ListItem>
+                      <asp:ListItem value="">To</asp:ListItem>
                       <asp:ListItem>1</asp:ListItem>
                       <asp:ListItem>2</asp:ListItem>
                       <asp:ListItem>3</asp:ListItem>
@@ -319,7 +319,7 @@
                 <div class="col-md-6">
                   <div class="form-group input-group">
                     <asp:DropDownList runat="server" id="fromRange" class="form-control">
-                      <asp:ListItem>From</asp:ListItem>
+                      <asp:ListItem value="">From</asp:ListItem>
                       <asp:ListItem>1</asp:ListItem>
                       <asp:ListItem>2</asp:ListItem>
                       <asp:ListItem>3</asp:ListItem>
@@ -360,7 +360,7 @@
                 <div class="col-md-6">
                   <div class="form-group input-group">
                     <asp:DropDownList runat="server" id="toRange" class="form-control">
-                      <asp:ListItem>To</asp:ListItem>
+                      <asp:ListItem value="">To</asp:ListItem>
                       <asp:ListItem>1</asp:ListItem>
                       <asp:ListItem>2</asp:ListItem>
                       <asp:ListItem>3</asp:ListItem>
@@ -404,7 +404,7 @@
                 <div class="col-md-6">
                   <div class="form-group input-group">
                     <asp:DropDownList runat="server" id="fromMeridian" class="form-control">
-                      <asp:ListItem>From</asp:ListItem>
+                      <asp:ListItem value="">From</asp:ListItem>
                       <asp:ListItem>1</asp:ListItem>
                       <asp:ListItem>2</asp:ListItem>
                       <asp:ListItem>3</asp:ListItem>
@@ -417,7 +417,7 @@
                 <div class="col-md-6">
                   <div class="form-group input-group">
                     <asp:DropDownList runat="server" id="toMeridian" class="form-control">
-                      <asp:ListItem>To</asp:ListItem>
+                      <asp:ListItem value="">To</asp:ListItem>
                       <asp:ListItem>1</asp:ListItem>
                       <asp:ListItem>2</asp:ListItem>
                       <asp:ListItem>3</asp:ListItem>
@@ -438,7 +438,7 @@
                 <div class="col-md-6">
                   <div class="form-group input-group">
                     <asp:DropDownList runat="server" id="fromMapUnit" class="form-control">
-                      <asp:ListItem>From</asp:ListItem>
+                      <asp:ListItem value="">From</asp:ListItem>
                       <asp:ListItem>82</asp:ListItem>
                       <asp:ListItem>92</asp:ListItem>
                       <asp:ListItem>93</asp:ListItem>
@@ -449,7 +449,7 @@
                 <div class="col-md-6">
                   <div class="form-group input-group">
                     <asp:DropDownList runat="server" id="toMapUnit" class="form-control">
-                      <asp:ListItem>To</asp:ListItem>
+                      <asp:ListItem value="">To</asp:ListItem>
                       <asp:ListItem>82</asp:ListItem>
                       <asp:ListItem>92</asp:ListItem>
                       <asp:ListItem>93</asp:ListItem>
@@ -463,7 +463,7 @@
                 <div class="col-md-6">
                   <div class="form-group input-group">
                     <asp:DropDownList runat="server" id="fromMapUnitSub" class="form-control">
-                      <asp:ListItem>From</asp:ListItem>
+                      <asp:ListItem value="">From</asp:ListItem>
                       <asp:ListItem>A</asp:ListItem>
                       <asp:ListItem>B</asp:ListItem>
                       <asp:ListItem>C</asp:ListItem>
@@ -486,7 +486,7 @@
                 <div class="col-md-6">
                   <div class="form-group input-group">
                     <asp:DropDownList runat="server" id="toMapUnitSub" class="form-control">
-                      <asp:ListItem>To</asp:ListItem>
+                      <asp:ListItem value="">To</asp:ListItem>
                       <asp:ListItem>A</asp:ListItem>
                       <asp:ListItem>B</asp:ListItem>
                       <asp:ListItem>C</asp:ListItem>
@@ -512,7 +512,7 @@
                 <div class="col-md-6">
                   <div class="form-group input-group">
                     <asp:DropDownList runat="server" id="fromMapSheet" class="form-control">
-                      <asp:ListItem>From</asp:ListItem>
+                      <asp:ListItem value="">From</asp:ListItem>
                       <asp:ListItem>1</asp:ListItem>
                       <asp:ListItem>2</asp:ListItem>
                       <asp:ListItem>3</asp:ListItem>
@@ -535,7 +535,7 @@
                 <div class="col-md-6">
                   <div class="form-group input-group">
                     <asp:DropDownList runat="server" id="toMapSheet" class="form-control">
-                      <asp:ListItem>To</asp:ListItem>
+                      <asp:ListItem value="">To</asp:ListItem>
                       <asp:ListItem>1</asp:ListItem>
                       <asp:ListItem>2</asp:ListItem>
                       <asp:ListItem>3</asp:ListItem>
