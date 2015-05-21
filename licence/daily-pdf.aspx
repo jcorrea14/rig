@@ -1,6 +1,7 @@
 <%@ Page
+Language="C#"
 MasterPageFile="/master/page.master"
-Title="Rig Locator | Browse Well Licences By Date" %>
+Title="Rig Locator | Daily Well Licences PDF" %>
 <%@ Register Src="/licence/calendar.ascx" TagName="calendar" TagPrefix="dob" %>
 
 <asp:Content ContentPlaceHolderId="page_content" runat="server">
@@ -11,8 +12,8 @@ Title="Rig Locator | Browse Well Licences By Date" %>
           <div class="search-bar">
             <h1>Well Licence Search</h1>
             <ul>
-              <li><a href="/licence/" class="btn btn-xl btn-rig full-width selected">By Date</a></li>
-              <li><a href="/licence/daily-pdf" class="btn btn-xl btn-rig full-width">Daily PDF</a></li>
+              <li><a href="/licence/" class="btn btn-xl btn-rig full-width">By Date</a></li>
+              <li><a href="/licence/daily-pdf" class="btn btn-xl btn-rig full-width selected">Daily PDF</a></li>
               <li><a href="/licence/operator" class="btn btn-xl btn-rig full-width">By Operator</a></li>
               <li><a href="/licence/location" class="btn btn-xl btn-rig full-width">By Location</a></li>
             </ul>
@@ -24,7 +25,7 @@ Title="Rig Locator | Browse Well Licences By Date" %>
       <div class="row">
         <div class="col-md-8">
           <div class="dnl-calendar">
-            <dob:calendar runat="server" UrlFormat="/licence/date/{0:yyyy-MM-dd}" />
+            <dob:calendar runat="server" UrlFormat="/licence/pdf/dnl-{0:yyMMdd}.pdf" />
           </div>
         </div>
         <div class="col-md-4 vert-offset-top-6">

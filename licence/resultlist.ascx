@@ -1,7 +1,7 @@
 <%@ Control
-CodeFile="resultlist.ascx.cs"
+CodeFile="resultlist.cs"
 Inherits="ResultList" %>
-<table class="nd-report">
+<table class="nd-report" style="width: 100%;">
   <tr valign="baseline">
     <td class="header-left">Well&nbsp;Name</td>
     <td class="header-left">Prov</td>
@@ -15,11 +15,11 @@ Inherits="ResultList" %>
     <td class="header-right">P&nbsp;Depth</td>
   </tr>
   <tr valign="baseline">
-    <td align="left">Location</td>
+    <td class="header-left">Location</td>
     <td></td>
     <td></td>
     <td></td>
-    <td align="left">UWI</td>
+    <td class="header-left">UWI</td>
     <td></td>
     <td></td>
     <td></td>

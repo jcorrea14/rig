@@ -1,7 +1,7 @@
 <%@ Page
   Language="C#"
   MasterPageFile="/master/page.master"
-  CodeFile="operator.aspx.cs"
+  CodeFile="operator.cs"
   Inherits="Op"
   AutoEventWireup="true"
   Title="Rig Locator | Search Well Licences By Operator" %>
@@ -15,9 +15,9 @@
             <h1>Well Licence Search</h1>
             <ul>
               <li><a href="/licence/" class="btn btn-xl btn-rig full-width">By Date</a></li>
-              <li><a href="/licence/pdf.aspx" class="btn btn-xl btn-rig full-width">Daily PDF</a></li>
-              <li><a href="/licence/operator.aspx" class="btn btn-xl btn-rig full-width selected">By Operator</a></li>
-              <li><a href="/licence/location.aspx" class="btn btn-xl btn-rig full-width">By Location</a></li>
+              <li><a href="/licence/daily-pdf" class="btn btn-xl btn-rig full-width">Daily PDF</a></li>
+              <li><a href="/licence/operator" class="btn btn-xl btn-rig full-width selected">By Operator</a></li>
+              <li><a href="/licence/location" class="btn btn-xl btn-rig full-width">By Location</a></li>
             </ul>
           </div>
         </div>

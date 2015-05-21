@@ -1,6 +1,6 @@
 <%@ Page
     MasterPageFile="/master/page.master"
-    CodeFile="results.aspx.cs"
+    CodeFile="date.cs"
     Inherits="Results"
     Title="Rig Locator | Browse Well Licences By Date" %>
 <%@ Register Src="/licence/resultlist.ascx" TagName="resultslist" TagPrefix="dob" %>
