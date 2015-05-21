@@ -38,7 +38,7 @@
                       <asp:ListItem value="NC">Northern Canada</asp:ListItem>
                     </asp:ListBox>
                   </div>
-                  <asp:Button class="btn btn-xl btn-rig" runat="Server" text="Search Province" onClick="search_province_click"/>
+                  <asp:Button class="btn btn-xl btn-rig" runat="Server" text="Search Province" onClick="search_province_click" OnClientClick="_gaq.push(['_trackEvent', 'Location Search', 'Search Province']);"/>
                 </div>
               </div>
             </div>
@@ -428,7 +428,7 @@
                   </div>
                 </div>
               </div>
-              <asp:Button class="btn btn-xl btn-rig" runat="Server" text="Search Township/Range" onclick="search_dls_click" />
+              <asp:Button class="btn btn-xl btn-rig" runat="Server" text="Search Township/Range" onclick="search_dls_click" OnClientClick="_gaq.push(['_trackEvent', 'Location Search', 'Search Township/Range']);"/>
             </div>
             <div class="col-md-4">
               <h4>BC NTS</h4>
@@ -556,8 +556,8 @@
                   </div>
                 </div>
               </div>
-              <asp:Button class="btn btn-xl btn-rig" runat="Server" text="Search BC NTS"  onclick="search_nts_click" />
-              <input type="reset" value="Clear All" class="btn btn-xl btn-rig full-width pull-right" />
+              <asp:Button class="btn btn-xl btn-rig" runat="Server" text="Search BC NTS"  onclick="search_nts_click"  OnClientClick="_gaq.push(['_trackEvent', 'Location Search', 'Search Township/Range']);"/>
+              <input type="reset" value="Clear All" class="btn btn-xl btn-rig full-width pull-right" onclick="_gaq.push(['_trackEvent', 'Location Search', 'Clear All']);" />
             </div>
           </div>
         </div>
