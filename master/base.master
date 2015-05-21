@@ -41,10 +41,8 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-		
+
 <asp:ContentPlaceHolder runat="server" id="page_js_head" />
-
-
 </head>
 <body id="page-top" class="index">
 <asp:ContentPlaceHolder runat="server" id="page_content" />
@@ -56,12 +54,15 @@
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 </script> 
 <script type="text/javascript">
-      try {
-      var pageTracker = _gat._getTracker("UA-6217271-15");
-      pageTracker._trackPageview();
-      } catch(err) {}
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+			ga('create', 'UA-6217271-15', 'auto');
+			ga('send', 'pageview');
 </script> 
-<script src="/outdatedbrowser/outdatedbrowser.min.js"></script>
+<script src="/outdatedbrowser/outdatedbrowser.min.js"></script> 
 <script type="text/javascript">
 		//event listener: DOM ready
 		function addLoadEvent(func) {
@@ -88,18 +89,16 @@
 		});
 </script> 
 
-
 <!-- jQuery --> 
 <script src="/js/jquery.js"></script> 
 
 <!-- Bootstrap Core JavaScript --> 
 <script src="/js/bootstrap.min.js"></script> 
-
 <script type="text/javascript">
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
 });
-</script>
+</script> 
 
 <!-- Plugin JavaScript --> 
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script> 

@@ -49,7 +49,7 @@
           <li><a href="/search/contractor">By Contractor</a></li>          
         </ul>
         </li>
-        <li class="dropdown"> <a href="/report/summary">Drilling Rig Reports</a>
+        <li class="dropdown"> <a href="/report/rig/summary">Drilling Rig Reports</a>
         <ul class="dropdown-menu">
           <li><a href="/analysis-report.aspx">Rig Market Share Analysis Report</a></li>
           <li><a href="/report/rig/summary">Contractors’ Summary</a></li>
@@ -59,7 +59,7 @@
           <li><a href="/report/rig/dr-activity">Drilling Activity Surveys</a></li>
           <li><a href="/report/rig/survey">Western Canada Drilling Chart</a></li>
           <li><a href="/report/rig/utilization">Contractor Utilization Summary</a></li>
-          <li><a href="/download">Download and print reports</a></li>
+          <li><a href="/download">View and download reports</a></li>
         </ul>
         </li>
         <li class="dropdown"> <a href="/report/dnl/count">Well Licences</a>

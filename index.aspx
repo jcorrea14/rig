@@ -89,7 +89,7 @@
             <li>Get an overview of drilling activity and top 5 active operators with the Rig Dashboard.</li>
             <li>View pre-built industry reports on contractors, operators and drilling activity.</li>
             <li>Narrow your search by operator, contractor, <a href="#" data-toggle="tooltip" data-placement="top" title="Dominion Land Survey">DLS</a> or <a href="#" data-toggle="tooltip" data-placement="top" title="National Topographic System">NTS</a>.</li>
-            <li>Access the daily well licence and more.</li>
+            <li>Access the daily well licences and more.</li>
             <li>Download the daily rig file.</li>
           </ul>
         </div>
