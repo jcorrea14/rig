@@ -49,7 +49,7 @@ public partial class OperatorSearch : System.Web.UI.Page {
       switch(rigStatus) {
         case "all": break;
         case "active": addClause("Status in ('DRILL', 'MIR')"); break;
-        default: addClause("Prov = " + sqlString(rigStatus)); break;
+        default: addClause("Status = " + sqlString(rigStatus)); break;
       }
 
       if (rigsort.Checked) sort = "Contractor, Rig";
