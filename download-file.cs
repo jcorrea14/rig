@@ -28,7 +28,7 @@ public partial class DownloadFile : System.Web.UI.Page {
           Response.Status = "404 Not Found";
         }
         Response.End();
-      }
-    } catch (Exception ex) {  }
+      } catch (Exception ex) {  }
+    }
   }
 }

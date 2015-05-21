@@ -95,9 +95,9 @@
             <div class="row">
               <div class="col-md-4 pull-right">
                 <div class="pull-right">
-                  <input type="reset" value="Clear All" class="btn btn-xl btn-rig" />
+                  <input type="reset" value="Clear All" class="btn btn-xl btn-rig" onclick="_gaq.push(['_trackEvent', 'Operator Search', 'Clear All']);" />
                   &nbsp;
-                  <asp:Button class="btn btn-xl btn-rig pull-right" runat="server" text="Search" onclick="search_click" />
+                  <asp:Button class="btn btn-xl btn-rig pull-right" runat="server" text="Search" onclick="search_click" OnClientClick="_gaq.push(['_trackEvent', 'Operator Search', 'Search']);"/>
                 </div>
               </div>
             </div>
