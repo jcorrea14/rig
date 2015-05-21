@@ -6,20 +6,20 @@
 <!-- Navigation -->
 
 <nav class="navbar navbar-utility navbar-static-top utility-nav">
-    <div class="container"> 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="hidden"> <a href="#page-top"></a> </li>
-                <li> <a href="<% = ProfileUrl %>" target="_blank">My Profile</a> </li>
-                <li> <a href="https://secure.junewarren-nickles.com/corp-accounts.aspx" target="_blank">Corporate Accounts</a> </li>
-                <li> <a href="/about.aspx">About Us</a> </li>
-                <li> <a href="/contact.aspx">Contact Us</a> </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse --> 
+  <div class="container"> 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="hidden"> <a href="#page-top"></a> </li>
+        <li> <a href="<% = ProfileUrl %>" target="_blank">My Profile</a> </li>
+        <li> <a href="https://secure.junewarren-nickles.com/corp-accounts.aspx" target="_blank">Corporate Accounts</a> </li>
+        <li> <a href="/about.aspx">About Us</a> </li>
+        <li> <a href="/contact.aspx">Contact Us</a> </li>
+      </ul>
     </div>
-    <!-- /.container-fluid --> 
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container-fluid --> 
 </nav>
 
 <!-- Navigation -->
@@ -41,11 +41,11 @@
       <ul class="nav navbar-nav navbar-right navbar-sub">
         <li class="hidden"> <a href="#page-top"></a> </li>
         <li> <a href="/data.aspx">Rig Dashboard</a> </li>
-        <li> <a href="http://staging-maps.riglocator.ca/default.aspx" target="_blank">Rig Map</a> </li>
+        <li> <a href="http://maps.riglocator.ca/default.aspx" target="_blank">Rig Map</a> </li>
         <li> <a href="/search/location">Rig Search</a>
         <ul class="dropdown-menu">
-          <li><a href="/search/location" >By Location</a></li>
-          <li><a href="/search/operator"> By Operator</a></li>
+          <li><a href="/search/location">By Location</a></li>
+          <li><a href="/search/operator">By Operator</a></li>
           <li><a href="/search/contractor">By Contractor</a></li>          
         </ul>
         </li>
@@ -53,11 +53,11 @@
         <ul class="dropdown-menu">
           <li><a href="/analysis-report.aspx">Rig Market Share Analysis Report</a></li>
           <li><a href="/report/rig/summary">Contractors’ Summary</a></li>
-          <li><a href="/report/rig/operators">Top Operators</a></li>
+          <li><a href="/report/rig/operators">Top Active Operators</a></li>
           <li><a href="/report/rig/depth">Depth Activity</a></li>
           <li><a href="/report/rig/projects">Planned Drilling Projects</a></li>
           <li><a href="/report/rig/dr-activity">Drilling Activity Surveys</a></li>
-          <li><a href="/report/rig/survey">Western Canada Drilling Chart</a></li>
+          <li><a href="/report/rig/survey">PSAC Drilling Chart</a></li>
           <li><a href="/report/rig/utilization">Contractor Utilization Summary</a></li>
           <li><a href="/download">View and download reports</a></li>
         </ul>
@@ -71,9 +71,8 @@
           <li><a href="/licence/">Licence Search</a></li>
         </ul>
         </li>
-       
       </ul>
     </div>
   </div>
-    <!-- /.container-fluid --> 
+  <!-- /.container-fluid --> 
 </nav>
