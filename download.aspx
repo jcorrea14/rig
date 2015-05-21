@@ -31,8 +31,8 @@ i.fa { font-size: 1.8rem; }
               <ItemTemplate runat="server">
                 <tr style="vertical-align: middle">
                   <td> <%# ((DateTime)Eval("Updated")).ToString("dddd, MMM d, yyyy") %> </td>
-                  <td style="text-align: center;"> <a href="/report/rig/rig-<%# Eval("S") %>"> <i class="fa fa-eye"></i> </a> </td>
-                  <td style="text-align: center;"> <a href="/download-file/map-<%# Eval("S") %>.csv"> <i class="fa fa-download"></i> </a> </td>
+                  <td style="text-align: center;"> <a onclick="_gaq.push(['_trackEvent', 'View & Download Reports', 'View']);"  href="/report/rig/rig-<%# Eval("S") %>"> <i class="fa fa-eye"></i> </a> </td>
+                  <td style="text-align: center;"> <a onclick="_gaq.push(['_trackEvent', 'View & Download Reports', 'Download']);"  href="/download-file/map-<%# Eval("S") %>.csv"> <i class="fa fa-download"></i> </a> </td>
                 </tr>
               </ItemTemplate>
             </asp:Repeater>
