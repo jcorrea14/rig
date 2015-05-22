@@ -53,7 +53,6 @@ public partial class OperatorSearch : System.Web.UI.Page {
       }
 
       if (rigsort.Checked) sort = "Contractor, Rig";
-      else if (areasort.Checked) sort = "case when Area is null then 1 else 0 end, Area, Sort";
       else if (spudsort.Checked) sort = "case when Spud is null then 1 else 0 end, Spud, Sort";
       else if (classsort.Checked) sort = "case when Class is null then 1 else 0 end, Class, Sort";
       else if (statussort.Checked) sort = "Status, Sort";

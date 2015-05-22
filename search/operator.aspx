@@ -66,24 +66,18 @@
                 <asp:RadioButton runat="server" id="locationsort"
                                text="Location" groupName="sort" checked="true" />
                 <br />
-                <asp:RadioButton runat="server" id="operatorsort"
-                               text="Operator" groupName="sort" />
+                <asp:RadioButton runat="server" id="classsort"
+                               text="Well Class" groupName="sort" />
                 <br />
               </div>
               <div class="col-md-3">
                 <asp:RadioButton runat="server" id="rigsort"
                                text="Contractor and Rig" groupName="sort" />
                 <br />
-                <asp:RadioButton runat="server" id="areasort"
-                               text="Area Name" groupName="sort" />
-                <br />
               </div>
               <div class="col-md-3">
                 <asp:RadioButton runat="server" id="spudsort"
                                text="Spud Date" groupName="sort" />
-                <br />
-                <asp:RadioButton runat="server" id="classsort"
-                               text="Well Class" groupName="sort" />
                 <br />
               </div>
               <div class="col-md-3">
