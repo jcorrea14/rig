@@ -10,33 +10,13 @@
         <div class="col-lg-12 text-center">
           <h1>Rig Market Share Analysis Report</h1>
           <span class="data-icon-1"> </span>
-          <h4> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et euismod purus. Quisque ut sapien in nulla tincidunt suscipit. Interdum et malesuada fames ac ante ipsum primis in faucibus.</h4>
+          <h4> This report leverages JuneWarren-Nickel’s drilling data to provide Q1 2015 drilling contractor marketshare rankings, drilled wells depths and types, and producer activity rankings for western Canadian PSAC regions.</h4>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-8"> </div>
-        <div class="col-md-4 vert-offset-top-6">
-          <div class="row">
-            <div class="side-ad pull-right"> 
-              <!-- big box -->
-              <div id='div-gpt-ad-1329923512779-10' style='width:300px; height:250px; margin:10px 0 20px 0;'> 
-                <script type='text/javascript'>
-                     googletag.display('div-gpt-ad-1329923512779-10');
-                </script> 
-              </div>
-              <div> 
-                <!-- button box -->
-                <div id='div-gpt-ad-1335301288326-2' style='width:300px; height:120px; margin-bottom:10px;'> 
-                  <script type='text/javascript'>
-                      googletag.display('div-gpt-ad-1335301288326-2');
-                </script> 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div class="col-md-5 block-center text-center"> <a href="pdf/Rig-Locator-Drilling-Market-Analysis-Report-20150519-Final.pdf" target="_blank" onclick="_gaq.push(['_trackEvent', 'Rig Market Share Analysis Report', 'Download PDF']);"><img src="img/market-share-report.jpg" alt="Rig Market Share Analysis Report"/></a> <a href="pdf/Rig-Locator-Drilling-Market-Analysis-Report-20150519-Final.pdf" target="_blank" class="btn btn-xl btn-rig" onclick="_gaq.push(['_trackEvent', 'Rig Market Share Analysis Report', 'Download PDF']);">Download PDF</a> </div>
       </div>
     </div>
   </section>

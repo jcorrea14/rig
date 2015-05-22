@@ -1,4 +1,4 @@
-body { overflow-x: hidden; font-family: 'Open Sans', sans-serif; }
+body { overflow-x: hidden; font-family: 'Open Sans', sans-serif;}
 .text-muted { color: #777; }
 .text-primary { color: #881630; }
 p { font-size: 14px; line-height: 1.75; }
@@ -10,7 +10,7 @@ h1, h2, h3, h4, h5, h6 { /* text-transform: uppercase; */ font-family: 'Open San
 ul { line-height: 34px; padding-left: 20px; list-style: none; }
 #features ul li:before, #map ul li:before { font-family: 'FontAwesome'; content: "\f111"; margin-right: 10px; color: #222; font-size: 7px; position: relative; top: -3px; }
 #features ul li, #map ul li { font-size: 16px; font-weight: 100; }
-#map a { color: #000; font-weight: 700; }
+#map a { color: #fff; font-weight: 700; }
 label { display: inline-block; max-width: 100%; font-weight: normal; margin: 10px; }
 .img-centered { margin: 0 auto; }
 .bg-light-gray { background-color: #ecedf1; }
@@ -44,7 +44,7 @@ label { display: inline-block; max-width: 100%; font-weight: normal; margin: 10p
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus { background-color: #881630; }
 .navbar-buttons li a { border: 1px solid #ffffff; padding: 17px 25px; margin: 0 10px }
 .navbar-buttons li a:hover { background: #881630 !important; border: 1px solid #881630 !important; color: #ffffff !important; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; }
-.navbar-home { margin: 0 10px; }
+.navbar-home { margin: 0 0 0 20px; }
 .navbar-default .nav li a { font-family: 'Open Sans', sans-serif; font-weight: 200; letter-spacing: 1px; color: #fff; }
 .navbar-default .navbar-home li:hover > a, .navbar-default .navbar-home li:focus > a { outline: 0; color: #ffffff; border-bottom: 3px solid #881630;/* padding-bottom: 5px; */ }
 .navbar-default .navbar-sub li:hover > a, .navbar-default .navbar-home li:focus > a { outline: 0; color: #ffffff; border-bottom: 3px solid #881630;/* padding-bottom: 5px; */ }
@@ -105,6 +105,8 @@ header .intro-text { padding-top: 200px; padding-bottom: 52px; }
 .search-bar ul li { float: none !important; margin: 0 auto !important; list-style: none !important; width: 90% !important; }
 .full-width { width: 100% !important; margin: 10px 0 !important; }
 .extra-padding { padding: 0 !important; }
+.service-heading, .section-subheading {text-align: center;}
+.navbar-home li a {padding: 15px;}
 }
 @media(min-width:1200px) {
 header .intro-text { padding-top: 280px; padding-bottom: 280px; }

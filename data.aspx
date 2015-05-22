@@ -21,7 +21,7 @@
           <div style="margin-bottom: 1em;"> 
             <!--#include file="activity.inc" --> 
           </div>
-          <div class="heading-block"> TOP DRILLING RIG OPERATORS </div>
+          <div class="heading-block"> TOP 5 ACTIVE OPERATORS </div>
           <div style="margin-bottom: 1em;"> 
             <!--#include file="ops.inc" --> 
           </div>

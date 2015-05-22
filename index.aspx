@@ -34,17 +34,20 @@
         
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav navbar-left navbar-buttons pull-right">
-            <li> <a href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank">Become a Member</a> </li>
-            <li> <a href="<%= LoginUrl %>">Login</a> </li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right navbar-home">
+          
+          <ul class="nav navbar-nav navbar-left navbar-home">
             <li class="hidden"> <a href="#page-top"></a> </li>
             <li> <a class="page-scroll" href="#features">Comprehensive Reports</a> </li>
             <!--li> <a class="page-scroll" href="#data">Pinpoint Business</a> </li>-->
             <li> <a class="page-scroll" href="#map">Improved Mapping</a></li>
-            <li> <a class="page-scroll" href="#membership">Free Trial</a> </li>
+            <li> <a class="page-scroll" href="#membership">Start a Trial</a> </li>
           </ul>
+          
+          <ul class="nav navbar-nav navbar-left navbar-buttons pull-right">
+            <li> <a href="http://www.junewarren-nickles.com/new-membership/rig.html" target="_blank" onclick="_gaq.push(['_trackEvent', 'Sales Page', 'Become a Member']);">Become a Member</a> </li>
+            <li> <a href="<%= LoginUrl %>">Login</a> </li>
+          </ul>
+          
         </div>
         <!-- /.navbar-collapse --> 
       </div>
@@ -88,7 +91,7 @@
           <ul class="section-subheading">
             <li>Get an overview of drilling activity and top 5 active operators with the Rig Dashboard.</li>
             <li>View pre-built industry reports on contractors, operators and drilling activity.</li>
-            <li>Narrow your search by operator, contractor, <a href="#" data-toggle="tooltip" data-placement="top" title="Dominion Land Survey">DLS</a> or <a href="#" data-toggle="tooltip" data-placement="top" title="National Topographic System">NTS</a>.</li>
+            <li>Narrow your search by operator, contractor, <a data-toggle="tooltip" data-placement="top" title="Dominion Land Survey">DLS</a> or <a data-toggle="tooltip" data-placement="top" title="National Topographic System">NTS</a>.</li>
             <li>Access the daily well licences and more.</li>
             <li>Download the daily rig file.</li>
           </ul>
@@ -114,8 +117,8 @@
           <h4 class="section-subheading"><strong>Pinpoint business opportunities, fast.</strong></h4>
           <ul class="section-subheading">
           <li>Results can be exported, printed and saved.</li>
-            <li>Search/filter by <a href="#" data-toggle="tooltip" data-placement="top" title="Petroleum Services Association of Canada">PSAC</a> area, contractor and operator.</li>
-            <li>Create your own custom radius or search by <a href="#" data-toggle="tooltip" data-placement="top" title="Dominion Land Survey">DLS</a>, <a href="#" data-toggle="tooltip" data-placement="top" title="National Topographic System">NTS</a> or latitude/longitude. </li>
+            <li>Search/filter by <a data-toggle="tooltip" data-placement="top" title="Petroleum Services Association of Canada">PSAC</a> area, contractor and operator.</li>
+            <li>Create your own custom radius or search by <a data-toggle="tooltip" data-placement="top" title="Dominion Land Survey">DLS</a>, <a data-toggle="tooltip" data-placement="top" title="National Topographic System">NTS</a> or latitude/longitude. </li>
             <li>Layer in access roads, facilities, pipelines and more.</li>
             <li>Input start and end location to retrieve directions and distance.</li>
           </ul>
@@ -131,7 +134,7 @@
         <div class="col-lg-12 text-center block-center">
           <h2 class="section-heading">Take the new Rig Locator for a test drive.</h2>
           <h3 class="section-subheading">Sign up for a 5-day, limited access trial to see how the mapping and reporting features on Rig Locator make businesses more agile.</h3>
-          <a href="#" class="btn btn-xl">Start a Trial</a> </div>
+          <a href="http://www.junewarren-nickles.com/free-trial/rig.html" target="_blank" class="btn btn-xl" onclick="_gaq.push(['_trackEvent', 'Sales Page', 'Start a Trial']);">Start a Trial</a> </div>
       </div>
     </div>
   </section>

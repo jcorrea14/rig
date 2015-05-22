@@ -410,10 +410,7 @@ Title="Rig Locator | Search Well Licences" %>
                 </div>
               </div>
             </div>
-            <asp:Button class="btn btn-xl btn-rig"
-                        runat="Server"
-                        text="Search Township/Range"
-                        onclick="search_dls_click" />
+            <asp:Button class="btn btn-xl btn-rig" runat="Server" text="Search Township/Range" onclick="search_dls_click" OnClientClick="_gaq.push(['_trackEvent', 'Well Licence Search By Location', 'Search Township/Range']);"/>
           </div>
           <div class="col-md-4">
             <h3>BC NTS</h3>
@@ -540,10 +537,7 @@ Title="Rig Locator | Search Well Licences" %>
                 </div>
               </div>
             </div>
-            <asp:Button class="btn btn-xl btn-rig"
-                        runat="Server"
-                        text="Search BC NTS"
-                        onclick="search_nts_click" />
+            <asp:Button class="btn btn-xl btn-rig" runat="Server" text="Search BC NTS" onclick="search_nts_click" OnClientClick="_gaq.push(['_trackEvent', 'Well Licence Search By Location', 'Search BC NTS']);"/>
           </div>
 
           <div class="col-md-4">

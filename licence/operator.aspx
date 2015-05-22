@@ -241,7 +241,7 @@
               <div class="pull-right">
                 <input type="reset" value="Clear All" class="btn btn-xl btn-rig" />
                 &nbsp;
-                <asp:Button class="btn btn-xl btn-rig pull-right" runat="server" text="Search" onclick="search_click" />
+                <asp:Button class="btn btn-xl btn-rig pull-right" runat="server" text="Search" onclick="search_click" OnClientClick="_gaq.push(['_trackEvent', 'Well Licence Search By Operator', 'Search']);"/>
               </div>
             </div>
           </div>
