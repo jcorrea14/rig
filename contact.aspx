@@ -28,17 +28,6 @@
                              ValidationGroup="feedbackgroup" />
             </div>
             <div class="form-group">
-              <div class="label"> To: </div>
-              <div class="contact-input">
-                <asp:DropDownList class="form-control" runat="server" id="dept">
-                  <asp:ListItem>Editor</asp:ListItem>
-                  <asp:ListItem>Sales</asp:ListItem>
-                  <asp:ListItem>Web Master</asp:ListItem>
-                  <asp:ListItem>General</asp:ListItem>
-                </asp:DropDownList>
-              </div>
-            </div>
-            <div class="form-group">
               <div class="label"> Name*:
                 <asp:RequiredFieldValidator
             ID="nameRequiredValidator"            

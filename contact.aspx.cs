@@ -31,12 +31,7 @@ public partial class Contact : System.Web.UI.Page {
         String site = Request.Url.Host;
         MailMessage mail = new MailMessage();
         mail.From = new MailAddress("webform@junewarren-nickles.com");
-        if (dept.SelectedValue == "Web Master")
-          mail.To.Add("bbowes@junewarren-nickles.com");
-        else if (dept.SelectedValue == "Sales")
-          mail.To.Add("sales@junewarren-nickles.com");
-        else
-          mail.To.Add("eigbook@junewarren-nickles.com");
+        mail.To.Add("web@junewarren-nickles.com");
         mail.Subject = "Website contact form submission";
         mail.Body = String.Format(@"Message from contact form at {0}
 
