@@ -611,7 +611,7 @@ Title="Rig Locator | Search Well Licences" %>
               <div class=class="col-md-12">
                 <div class="form-group input-group">
                   <div class="toc">
-                    To Issue Date:
+                    To
                   </div>
                   <div class="row">
                     <div class="col-md-4">
@@ -669,8 +669,14 @@ Title="Rig Locator | Search Well Licences" %>
                       </asp:DropdownList>
                     </div>
                   </div>
+		  <div class="row">
+                    <div class="col-md-12">
+		      <input type="reset" value="Clear All" class="btn btn-xl btn-rig"/>
+                    </div>
+		  </div>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
