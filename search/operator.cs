@@ -32,12 +32,8 @@ public partial class OperatorSearch : System.Web.UI.Page {
       String rigStatus = status.SelectedValue;
       String sort = "";
 
-      if (operatorName == "[SELECT AN OPERATOR]") {
-        noselectionmsg.Visible = true;
-        return;
-      } else {
+      if (operatorName != "[ALL]")
         addClause("OperatorName = " + sqlString(operatorName));
-      }
 
       switch(prov) {
         case "": break;
@@ -74,7 +70,7 @@ public partial class OperatorSearch : System.Web.UI.Page {
         String sql = @"
 select * from (
 select
-  '[SELECT AN OPERATOR]' Operator
+  '[ALL]' Operator
 union
 select
   distinct OperatorName as Operator
