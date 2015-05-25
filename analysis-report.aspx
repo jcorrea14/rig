@@ -10,7 +10,7 @@
         <div class="col-lg-12 text-center">
           <h1>Rig Market Share Analysis Report</h1>
           <span class="data-icon-1"> </span>
-          <h4> This report leverages JuneWarren-Nickel’s drilling data to provide Q1 2015 drilling contractor marketshare rankings, drilled wells depths and types, and producer activity rankings for western Canadian PSAC regions.</h4>
+          <h4> This report provides the Q1 2015 drilling contractor marketshare rankings, drilled wells depths and types, and producer activity rankings for western Canadian PSAC regions.</h4>
         </div>
       </div>
     </div>

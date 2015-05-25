@@ -20,7 +20,7 @@
       </div>
       <div class="row">
         <div class="col-md-8">
-          <p> We welcome any feedback, questions or ideas you have regarding the Rig Locator. Please select the appropriate department you would like to contact and complete the form below. You should receive a response within two business days. </p>
+          <p> We welcome any feedback, questions or ideas you have regarding the Rig Locator. Please complete the form below and you should receive a response within two business days. </p>
           <p> If you would like a response sooner, please feel free to contact us at either one of our Edmonton or Calgary office locations. </p>
           <div>
             <div class="errormsg">
