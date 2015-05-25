@@ -4,7 +4,7 @@
   CodeFile="operator.cs"
   Inherits="Op"
   AutoEventWireup="true"
-  Title="Rig Locator | Search Well Licences By Operator" %>
+  Title="Rig Locator Search Well Licences By Operator" %>
 <%@ Register Src="/licence/resultlist.ascx" TagName="resultslist" TagPrefix="dob" %>
 <asp:Content ContentPlaceHolderId="page_content" runat="server">
   <section class="mainContent">

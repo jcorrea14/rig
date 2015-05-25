@@ -4,7 +4,7 @@ MasterPageFile="/master/page.master"
 AutoEventWireup="true"
 Codefile="location.cs"
 Inherits="LicenceLoc"
-Title="Rig Locator | Search Well Licences" %>
+Title="Rig Locator Search Well Licences" %>
 <%@ Register Src="/licence/resultlist.ascx" TagName="resultslist" TagPrefix="dob" %>
 <asp:Content ContentPlaceHolderId="page_content" runat="server">
   <section class="mainContent">

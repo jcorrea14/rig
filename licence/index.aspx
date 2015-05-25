@@ -1,6 +1,6 @@
 <%@ Page
 MasterPageFile="/master/page.master"
-Title="Rig Locator | Browse Well Licences By Date" %>
+Title="Rig Locator Browse Well Licences By Date" %>
 <%@ Register Src="/licence/calendar.ascx" TagName="calendar" TagPrefix="dob" %>
 
 <asp:Content ContentPlaceHolderId="page_content" runat="server">

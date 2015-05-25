@@ -18,18 +18,18 @@ Inherits="ResultList" %>
   </colgroup>
 
   <tr style="display: vertical-align: baseline;">
-    <td>Prov</td>
-    <td>Location</td>
-    <td>Area</td>
-    <td>Contractor</td>
-    <td>Rig</td>
-    <td>Status</td>
-    <td>Cap</td>
-    <td>Operator</td>
-    <td>Type</td>
-    <td>Class</td>
-    <td>Spud</td>
-    <td>P Depth</td>
+    <td class="header-left">Prov</td>
+    <td class="header-left">Location</td>
+    <td class="header-left">Area</td>
+    <td class="header-left">Contractor</td>
+    <td class="header-right">Rig</td>
+    <td class="header-left">Status</td>
+    <td class="header-right">Capacity</td>
+    <td class="header-left">Operator</td>
+    <td class="header-left">Type</td>
+    <td class="header-left">Class</td>
+    <td class="header-left">Spud</td>
+    <td class="header-right">P Depth</td>
   </tr>
   <asp:Repeater id="result" runat="server">
     <ItemTemplate runat="server">

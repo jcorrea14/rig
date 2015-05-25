@@ -32,12 +32,8 @@ public partial class ContractorSearch : System.Web.UI.Page {
       String rigStatus = status.SelectedValue;
       String sort = "";
 
-      if (contractorName == "[SELECT A CONTRACTOR]") {
-        noselectionmsg.Visible = true;
-        return;
-      } else {
+      if (contractorName != "[ALL]")
         addClause("Contractor = " + sqlString(contractorName));
-      }
 
       switch(prov) {
         case "": break;
@@ -52,8 +48,7 @@ public partial class ContractorSearch : System.Web.UI.Page {
         default: addClause("Status = " + sqlString(rigStatus)); break;
       }
 
-      if (rigsort.Checked) sort = "Contractor, Rig";
-      else if (areasort.Checked) sort = "case when Area is null then 1 else 0 end, Area, Sort";
+      if (operatorsort.Checked) sort = "case when Operator is null then 1 else 0 end, Operator, Sort";
       else if (spudsort.Checked) sort = "case when Spud is null then 1 else 0 end, Spud, Sort";
       else if (classsort.Checked) sort = "case when Class is null then 1 else 0 end, Class, Sort";
       else if (statussort.Checked) sort = "Status, Sort";
@@ -74,7 +69,7 @@ public partial class ContractorSearch : System.Web.UI.Page {
         String sql = @"
 select * from (
 select
-  '[SELECT A CONTRACTOR]' Contractor
+  '[ALL]' Contractor
 union
 select
   distinct Contractor

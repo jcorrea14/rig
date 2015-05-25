@@ -20,7 +20,7 @@
       </div>
       <div class="row">
         <div class="col-md-8">
-          <p> We welcome any feedback, questions or ideas you have regarding the Rig Locator. Please select the appropriate department you would like to contact and complete the form below. You should receive a response within two business days. </p>
+          <p> We welcome any feedback, questions or ideas you have regarding the Rig Locator. Please complete the form below and you should receive a response within two business days. </p>
           <p> If you would like a response sooner, please feel free to contact us at either one of our Edmonton or Calgary office locations. </p>
           <div>
             <div class="errormsg">
@@ -30,10 +30,10 @@
             <div class="form-group">
               <div class="label"> Name*:
                 <asp:RequiredFieldValidator
-            ID="nameRequiredValidator"            
-            runat="server" ControlToValidate="name"
-            ErrorMessage="Name is missing"
-            ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:RequiredFieldValidator>
+                    ID="nameRequiredValidator"            
+                    runat="server" ControlToValidate="name"
+                    ErrorMessage="Name is missing"
+                    ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:RequiredFieldValidator>
               </div>
               <div class="contact-input">
                 <asp:Textbox runat="server" class="form-control" id="name" />
@@ -42,16 +42,16 @@
             <div class="form-group">
               <div class="label"> Email*:
                 <asp:RequiredFieldValidator
-            ID="emailRequiredValidator"
-            runat="server"
-            ControlToValidate="email"
-            ErrorMessage="Email address is missing"
-            ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:RequiredFieldValidator>
+                    ID="emailRequiredValidator"
+                    runat="server"
+                    ControlToValidate="email"
+                    ErrorMessage="Email address is missing"
+                    ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:RequiredFieldValidator>
                 <asp:CustomValidator
-            runat="server"
-            ErrorMessage="Email address isn't in the correct format"
-            OnServerValidate="validateEmail"
-            ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:CustomValidator>
+                    runat="server"
+                    ErrorMessage="Email address isn't in the correct format"
+                    OnServerValidate="validateEmail"
+                    ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:CustomValidator>
               </div>
               <div class="contact-input">
                 <asp:TextBox runat="server" class="form-control" id="email" />
@@ -60,12 +60,12 @@
             <div class="form-group">
               <div class="label"> Verify email*:
                 <asp:CompareValidator
-            ID="compareEmailValidator"
-            runat="server"
-            ControlToCompare="verifyEmail"
-            ControlToValidate="email"
-            ErrorMessage="Verify email address doesn't match"
-            ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:CompareValidator>
+                    ID="compareEmailValidator"
+                    runat="server"
+                    ControlToCompare="verifyEmail"
+                    ControlToValidate="email"
+                    ErrorMessage="Verify email address doesn't match"
+                    ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:CompareValidator>
               </div>
               <div class="contact-input">
                 <asp:TextBox runat="server" class="form-control" id="verifyEmail" />
@@ -80,11 +80,11 @@
             <div class="form-group">
               <div class="label"> Message*:
                 <asp:RequiredFieldValidator
-            ID="commentRequiredValidator"
-            runat="server"
-            ControlToValidate="comment"
-            ErrorMessage="No comment or question was entered"
-            ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:RequiredFieldValidator>
+                    ID="commentRequiredValidator"
+                    runat="server"
+                    ControlToValidate="comment"
+                    ErrorMessage="No comment or question was entered"
+                    ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:RequiredFieldValidator>
               </div>
               <div class="contact-input">
                 <asp:TextBox runat="server" class="form-control" id="comment" TextMode="MultiLine" Rows="10" Columns="35"/>
@@ -93,18 +93,18 @@
             <div class="form-group">
               <div class="label"> Anti-spam verification*:
                 <asp:CustomValidator
-            runat="server"
-            ErrorMessage="Enter the anti-spam verification code"
-            OnServerValidate="validateCaptcha"
-            ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:CustomValidator>
+                    runat="server"
+                    ErrorMessage="Enter the anti-spam verification code"
+                    OnServerValidate="validateCaptcha"
+                    ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:CustomValidator>
               </div>
               <div class="contact-input">
                 <asp:RequiredFieldValidator
-            ID="captchaRequiredValidator"
-            runat="server"
-            ControlToValidate="captcha"
-            ErrorMessage="No anti-span verification was entered"
-            ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:RequiredFieldValidator>
+                    ID="captchaRequiredValidator"
+                    runat="server"
+                    ControlToValidate="captcha"
+                    ErrorMessage="No anti-span verification was entered"
+                    ValidationGroup="feedbackgroup"><span class="errormsg">●</span></asp:RequiredFieldValidator>
                 <div class="captcha-image">
                   <cc1:CaptchaControl ID="captchaImage" runat="server" Height="50px" 
                               Width="180px" CaptchaLength="5" BackColor="WhiteSmoke"

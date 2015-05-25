@@ -2,6 +2,7 @@
   Page Language="c#"
   EnableViewState="false"
   MasterPageFile="/master/page.master"
+	Title="Rig Locator Reports"
   CodeFile="report.cs"
   Inherits="Report" %>
 <asp:Content runat="server" ContentPlaceholderId="page_content">
