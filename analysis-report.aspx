@@ -16,7 +16,7 @@
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-md-5 block-center text-center"> <a href="pdf/Rig-Locator-Drilling-Market-Analysis-Report-20150519-Final.pdf" target="_blank" onclick="_gaq.push(['_trackEvent', 'Rig Market Share Analysis Report', 'Download PDF']);"><img src="img/market-share-report.jpg" alt="Rig Market Share Analysis Report"/></a> <a href="pdf/Rig-Locator-Drilling-Market-Analysis-Report-20150519-Final.pdf" target="_blank" class="btn btn-xl btn-rig" onclick="_gaq.push(['_trackEvent', 'Rig Market Share Analysis Report', 'Download PDF']);">Download PDF</a> </div>
+        <div class="col-md-5 block-center text-center"> <a href="pdf/Rig Locator-Drilling-Market-Analysis-Report-20150525-Final.pdf" target="_blank" onclick="_gaq.push(['_trackEvent', 'Rig Market Share Analysis Report', 'Download PDF']);"><img src="img/market-share-report.jpg" alt="Rig Market Share Analysis Report"/></a> <a href="pdf/Rig Locator-Drilling-Market-Analysis-Report-20150525-Final.pdf" target="_blank" class="btn btn-xl btn-rig" onclick="_gaq.push(['_trackEvent', 'Rig Market Share Analysis Report', 'Download PDF']);">Download PDF</a> </div>
       </div>
     </div>
   </section>
